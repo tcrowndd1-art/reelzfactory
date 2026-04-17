@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "혹시 매일 아침 일어나는 게 전쟁인가요? 하루 종일 피곤에 지치나요?",
+      "imagePrompt": "Dimly lit bedroom. An alarm clock on a nightstand reads 7:00 AM. The overall mood is tired and gloomy. 4K, realistic, commercial photography.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "아세로라 체리의 항산화 에너지로 매일 생기와 활력을 되찾으세요.",
+      "imagePrompt": "Close-up shot. The Nutrilite Vitamin C bottle stands on a clean white surface next to a small white bowl filled with fresh, vibrant red acerola cherries. Bright, natural lighting. 4K quality.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "피곤한 당신의 하루를 바꿔보세요! 지금 프로필 링크에서 만날 수 있어요.",
+      "imagePrompt": "A bright, sunlit kitchen counter. A glass of fresh water sits next to an open bottle of Nutrilite Vitamin C, with a single tablet placed beside it, ready for the day. 4K, realistic, lifestyle shot.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "----------------- 혹시 나도? -----------------",
+  "cta": "지금 바로 프로필 링크를 확인하세요!",
+  "hashtags": [
+    "#뉴트리라이트",
+    "#비타민C",
+    "#피로회복",
+    "#항산화",
+    "#건강필수템"
+  ],
+  "title": "매일 피곤한 분들 필수! 하루 활력을 채워주는 비타민C",
+  "structure": "AIDA"
+}

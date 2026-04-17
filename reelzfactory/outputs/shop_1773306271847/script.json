@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "매일 커피 사 마시듯, 비싼 영양제 꼭 먹어야 할까요?",
+      "imagePrompt": "A minimalist composition showing a steaming cup of coffee next to an almost empty wallet on a clean white table. The focus is on the cost.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "이거 하나면 하루 비타민C, 커피 한 잔 값보다 싸게 끝나요.",
+      "imagePrompt": "A crisp, high-resolution shot of the Nutrilite Vitamin C bottle. A hand is elegantly taking one tablet from the bottle. Bright, commercial lighting.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "피곤한 오후 대신 활기찬 하루를 챙기세요. 프로필 링크 확인!",
+      "imagePrompt": "A lifestyle shot of a glass of sparkling water with a Vitamin C tablet dissolving in it, placed next to a daily planner on a sunlit desk.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "매일 커피 사 마시듯, 비싼 영양제 꼭 먹어야 할까요?",
+  "cta": "프로필 링크 확인!",
+  "hashtags": [
+    "#뉴트리라이트",
+    "#비타민C",
+    "#가성비영양제",
+    "#피로회복",
+    "#건강관리"
+  ],
+  "title": "커피 값 아껴서 비타민C 챙기는 가장 쉬운 방법",
+  "structure": "QA"
+}

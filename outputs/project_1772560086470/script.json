@@ -1,0 +1,72 @@
+{
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "totalScenes": 4,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 지금 네 직업… AI가 대신할 수도 있어?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a shocked young Korean person staring at a glowing AI robot sitting at their office desk, dramatic lighting, close-up face expression, neon blue tones",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "AI",
+        "대신할"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "2026년, AI가 먹어치울 직업 TOP 5! 콜센터 상담원, 번역가, 회계사, 데이터 입력 직원, 그리고… 기자까지.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a futuristic digital countdown list of five jobs on a holographic screen, robotic arms crossing out job titles one by one, dark moody office background, red and blue neon light",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "TOP 5",
+        "기자"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "GPT-5 수준의 AI가 이미 기사 쓰고, 세금 계산하고, 24시간 고객 응대 중이거든. 현실임.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a hyper-realistic AI humanoid robot multitasking — typing articles, calculating taxes on holographic screens, wearing a headset for customer service, ultra-detailed office environment, cool white and blue lighting",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "GPT-5",
+        "현실"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "type": "cta",
+      "text": "내 직업 안전한지 궁금하면? 구독하고 다음 영상에서 확인해 ㅋ",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a young trendy Korean YouTuber pointing directly at the camera with a confident smirk, bold subscribe button animation overlaid, bright studio background with neon accent lights, dynamic angle",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "구독",
+        "다음 영상"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 💀 내 직업도 포함?",
+    "description": "GPT-5 시대, AI가 진짜로 대신할 직업 5가지를 솔직하게 정리했어요.\n콜센터, 번역가, 회계사… 생각보다 충격적인 리스트입니다.\n내 직업이 안전한지 지금 바로 확인해보세요!",
+    "tags": [
+      "AI대체직업",
+      "2026년트렌드",
+      "직업미래",
+      "GPT5",
+      "인공지능"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026트렌드",
+      "#직업의미래",
+      "#인공지능",
+      "#쇼츠"
+    ]
+  }
+}

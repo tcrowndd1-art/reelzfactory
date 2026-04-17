@@ -1,0 +1,108 @@
+{
+  "title": "매일 마시는 커피, 90%는 이 시간을 모릅니다",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "매일 아침 커피, 절대 이렇게 마시지 마세요.",
+      "imagePrompt": "[NO_CHARACTER] a steaming coffee cup with a large red prohibition sign over it. whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders.",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "절대"
+      ],
+      "transition": "cut",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "한국인 90%가 아침에 눈 뜨자마자 찾는데요. 30초만 주세요. 당신의 하루를 망치는 최악의 습관일 수 있습니다.",
+      "imagePrompt": "[CHARACTER] a sleepy cartoon character at a desk, a clock showing 7 AM is visible. a giant hand offers a coffee cup. whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders.",
+      "durationEstimate": 5.5,
+      "subtitleEmphasis": [
+        "90%",
+        "최악의 습관"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "물론 커피가 뇌 기능에 좋은 건 팩트입니다. 하버드 연구에선 알츠하이머 위험을 60%나 낮출 수 있다고도 하죠.",
+      "imagePrompt": "[NO_CHARACTER] a simple icon of a human brain with a glowing lightbulb inside. then, a bar graph appears showing a dramatic drop, labeled 'Alzheimer's Risk -60%'. whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders.",
+      "durationEstimate": 6,
+      "subtitleEmphasis": [
+        "팩트",
+        "60%"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 4,
+      "type": "twist_personal",
+      "text": "근데 진짜 문제는 '타이밍'입니다. 솔직히 저도 이걸 몰랐을 땐, 일어나자마자 커피부터 찾았어요. 이게 스트레스 호르몬인 '코르티솔'을 교란시켜서, 오히려 하루 종일 더 피곤하게 만들 수 있습니다.",
+      "imagePrompt": "[CHARACTER] a cartoon character pointing at a clock showing 8:00 AM while drinking coffee. then show a chaotic, messy graph line labeled 'Cortisol' going up and down wildly. whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders.",
+      "durationEstimate": 8.5,
+      "subtitleEmphasis": [
+        "타이밍",
+        "코르티솔"
+      ],
+      "transition": "fade",
+      "ctaType": null,
+      "hasPersonalTake": true
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "이 영상을 본 사람은 두 부류로 나뉩니다. 아침 습관을 바꾸는 사람과, 그냥 넘기는 사람.",
+      "imagePrompt": "[CHARACTER] a cartoon character stands at a crossroads. one path is labeled 'CHANGE', the other 'IGNORE'. the character looks at the viewer with a questioning expression. whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders.",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "바꾸는 사람"
+      ],
+      "transition": "cut",
+      "ctaType": "D",
+      "hasPersonalTake": false
+    }
+  ],
+  "metadata": {
+    "title": "매일 마시는 커피, 90%가 잘못 알고 있는 사실 ☕",
+    "headline": {
+      "line1": "아침 커피",
+      "line2": "최악의 시간"
+    },
+    "description": "매일 아침 커피를 마시는 당신, 혹시 잘못된 시간에 마시고 있지는 않나요?\n90%가 모르는 커피 마시기 최적의 타이밍과 최악의 타이밍.\n스트레스 호르몬인 코르티솔 수치와 커피의 관계를 알려드립니다.\n이 영상을 보고 나면 당신의 아침 루틴이 바뀔지도 모릅니다.\n건강한 커피 습관으로 활기찬 하루를 시작해 보세요.\n\n#커피 #건강상식 #아침루틴",
+    "tags": [
+      "커피",
+      "건강",
+      "아침습관",
+      "코르티솔",
+      "만성피로",
+      "자기계발",
+      "coffee",
+      "health",
+      "morning routine",
+      "cortisol",
+      "productivity",
+      "건강정보"
+    ],
+    "hashtags": [
+      "#커피",
+      "#건강",
+      "#모닝루틴",
+      "#코르티솔",
+      "#자기계발",
+      "#건강꿀팁"
+    ],
+    "thumbnail": {
+      "text": "아침 커피, 최악의 시간",
+      "imagePrompt": "dramatic close-up of a clock showing 8:00 AM next to a coffee cup with a huge red X mark over it. high contrast, bold colors, centered subject, emotionally charged, no text overlay."
+    }
+  }
+}

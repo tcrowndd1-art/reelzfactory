@@ -1,0 +1,100 @@
+{
+  "title": "아무도 안 알려주는 진짜 꿀팁 모음",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "왜 아무도 이걸 학교에서 안 가르쳐줬지?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, close-up of a shocked young person face with wide eyes, dramatic lighting, vibrant colors, Korean student aesthetic",
+      "durationEstimate": 3.5,
+      "subtitleEmphasis": [
+        "아무도",
+        "학교"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "우리가 매일 쓰는 것들, 사실 완전 비효율적으로 쓰고 있었음 ㄹㅇ",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, overhead flat lay of everyday objects smartphone wallet keys scattered on a minimalist desk, soft natural lighting, modern aesthetic",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "비효율적",
+        "ㄹㅇ"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "예를 들어 스마트폰 배터리, 충전 습관 하나로 수명이 2배 늘어남",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, close-up of a smartphone charging cable plugged in with glowing battery icon, dark background with neon blue light accents, tech aesthetic",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "배터리",
+        "2배"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "text": "20~80% 사이만 충전해. 100% 꽉 채우는 거 진짜 최악이거든",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, smartphone screen displaying battery percentage at 80 percent with a bold graphic overlay, vibrant yellow and black color scheme, close-up macro shot",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "20~80%",
+        "최악"
+      ],
+      "transition": "zoom_out"
+    },
+    {
+      "id": 5,
+      "type": "content",
+      "text": "이런 꿀팁들 진작 알았으면 돈이랑 시간 얼마나 아꼈을까 진짜",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, young Korean person sitting at a cafe looking thoughtful with coffee cup, warm golden hour lighting, candid lifestyle photography",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "꿀팁",
+        "아꼈을까"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "더 충격적인 꿀팁 보고 싶으면 구독 눌러. 다음 편은 진짜 레전드임",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, energetic young Korean YouTuber pointing directly at camera with a big smile, bold subscribe button graphic overlay, bright studio lighting with colorful background",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "구독",
+        "레전드"
+      ],
+      "transition": "zoom_in"
+    }
+  ],
+  "metadata": {
+    "title": "아무도 안 알려준 스마트폰 꿀팁 ㄹㅇ 레전드 🔥 #Shorts",
+    "description": "학교에서도 부모님도 절대 안 알려주는 실생활 꿀팁!\n오늘부터 바로 써먹을 수 있는 스마트폰 배터리 꿀팁 대공개.\n구독하면 매주 이런 꿀팁 받아볼 수 있음 ㄹㅇ",
+    "tags": [
+      "꿀팁",
+      "스마트폰",
+      "생활꿀팁",
+      "유용한정보",
+      "쇼츠",
+      "Z세대",
+      "배터리수명",
+      "알아두면좋은것들"
+    ],
+    "hashtags": [
+      "#꿀팁",
+      "#스마트폰꿀팁",
+      "#생활꿀팁",
+      "#Shorts",
+      "#유용한정보",
+      "#알고리즘"
+    ]
+  }
+}

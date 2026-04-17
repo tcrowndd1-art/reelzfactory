@@ -1,0 +1,106 @@
+{
+  "title": "바나나로 이해하는 금융 버블 🍌",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "바나나 하나가 1억이 된다면 당신은 살 건가요?",
+      "imagePrompt": "[CHARACTER] a shocked cartoon youtuber character holding a single banana with a huge price tag showing '100,000,000 won', eyes wide open, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "바나나",
+        "1억"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "explain",
+      "text": "금융 버블이란 자산 가격이 실제 가치를 훨씬 초과해서 폭등하는 현상이에요.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a banana with two price tags side by side, one showing 'real value 500 won' and another showing 'bubble price 100,000,000 won', large gap highlighted with red arrow, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "금융 버블",
+        "폭등"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "example",
+      "text": "모두가 바나나 값이 오를 거라 믿으면, 진짜로 오르기 시작해요. 이게 버블의 시작!",
+      "imagePrompt": "[NO_CHARACTER] a series of cartoon people forming a queue to buy bananas, with an upward price chart next to stacked bananas, crowd excitement shown with sparkle icons, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5.5,
+      "subtitleEmphasis": [
+        "믿으면",
+        "버블의 시작"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "type": "explain",
+      "text": "근데 어느 순간 아무도 안 사요. 가격이 너무 비싸거나, 다들 겁이 나서.",
+      "imagePrompt": "[CHARACTER] a cartoon character crossing arms refusing to buy a banana, price chart showing a sharp peak then sudden drop, red downward arrow, worried face emoji floating nearby, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "아무도 안 사요",
+        "겁"
+      ],
+      "transition": "shake"
+    },
+    {
+      "id": 5,
+      "type": "climax",
+      "text": "그리고 펑! 버블 붕괴. 바나나 가격은 다시 500원. 늦게 산 사람만 폭망.",
+      "imagePrompt": "[NO_CHARACTER] a large bubble with a banana inside it bursting with a 'POP!' effect, broken banana pieces flying, downward crashing chart with red arrow, crying face icon on the side, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "버블 붕괴",
+        "폭망"
+      ],
+      "transition": "zoom_out"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "실제 역사 속 버블 사건들, 다음 영상에서 터뜨려드릴게요 🍌 구독 눌러요!",
+      "imagePrompt": "[CHARACTER] a cheerful cartoon youtuber character giving thumbs up, surrounded by floating banana icons and a subscribe button graphic, small preview thumbnail hint in corner, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "구독",
+        "다음 영상"
+      ],
+      "transition": "zoom_in"
+    }
+  ],
+  "metadata": {
+    "title": "바나나로 5분 만에 이해하는 금융 버블 🍌💥",
+    "description": "금융 버블이 뭔지 어렵게 배울 필요 없어요.\n바나나 하나로 완전히 이해할 수 있거든요 🍌\n\n자산 가격이 실제 가치를 벗어나 폭등하다가 한순간에 붕괴하는 것, 그게 바로 버블이에요.\n튤립 버블, 닷컴 버블, 코인 버블... 역사는 반복됩니다.\n다음 영상에서 실제 버블 사건들을 낱낱이 파헤쳐드릴게요!\n\n#금융버블 #경제공부 #재테크기초 #투자상식 #쇼츠",
+    "tags": [
+      "금융버블",
+      "경제공부",
+      "버블붕괴",
+      "재테크",
+      "투자기초",
+      "경제상식",
+      "주식버블",
+      "코인버블",
+      "닷컴버블",
+      "튤립버블",
+      "financial bubble",
+      "economy explained",
+      "investing basics",
+      "bubble economy",
+      "경제쇼츠"
+    ],
+    "hashtags": [
+      "#금융버블",
+      "#경제공부",
+      "#재테크기초",
+      "#투자상식",
+      "#경제쇼츠"
+    ]
+  }
+}

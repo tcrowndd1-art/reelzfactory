@@ -1,0 +1,98 @@
+{
+  "title": "당신이 몰랐던 충격적인 사실 🤯",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 이거 알고 있었어? 대부분 모르더라고 😳",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - close-up of a shocked young Korean person covering their mouth with both hands, eyes wide open, dramatic studio lighting, vibrant colors, ultra realistic",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "충격적",
+        "모르더라고"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "우리가 매일 당연하게 하는 행동들... 사실 완전 잘못된 거야 🚨",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - overhead flat lay of everyday items like smartphone, coffee cup, earphones scattered on a white desk, dramatic side lighting, bold shadows, modern aesthetic",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "당연하게",
+        "잘못된"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "예를 들어 하루 8시간 수면? 사실 개인마다 달라. 7시간이 더 최적인 사람도 있거든 💤",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - person sleeping peacefully in a dark minimalist bedroom, soft blue moonlight streaming through window, cozy atmosphere, shallow depth of field, ultra realistic",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "8시간",
+        "7시간"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "text": "그리고 물 하루 2리터? 체중이랑 활동량에 따라 다르다고 진짜로 💧",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - crystal clear water splashing from a glass bottle in slow motion, black background, water droplets frozen in air, studio lighting, macro photography style",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "2리터",
+        "활동량"
+      ],
+      "transition": "zoom_out"
+    },
+    {
+      "id": 5,
+      "type": "content",
+      "text": "상식이라고 믿었던 것들이 사실은 마케팅이나 오해에서 시작된 경우 진짜 많아 😤",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - neon lit billboard advertisements in a busy city street at night, reflections on wet pavement, cyberpunk aesthetic, wide angle shot, motion blur on passing cars",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "마케팅",
+        "오해"
+      ],
+      "transition": "slide_right"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "더 충격적인 거 알고 싶으면 구독 눌러 🔔 다음 편 더 쎄거 들고 온다",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - young energetic Korean YouTuber pointing directly at camera with confident smile, colorful gradient background, dynamic lighting, studio setup, engaging eye contact",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "구독",
+        "다음 편"
+      ],
+      "transition": "zoom_in"
+    }
+  ],
+  "metadata": {
+    "title": "우리가 평생 잘못 알고 살았던 상식들 🤯 | 충격주의",
+    "description": "당연하다고 믿었던 상식들이 사실 틀렸다면? 수면, 수분 섭취 등 일상 속 오해들을 팩폭합니다.\n알고 나면 절대 예전으로 못 돌아가는 정보들만 모았어요.\n구독하고 다음 편도 놓치지 마세요 🔔",
+    "tags": [
+      "상식",
+      "충격팩트",
+      "일상정보",
+      "Z세대",
+      "유익한영상",
+      "쇼츠"
+    ],
+    "hashtags": [
+      "#충격팩트",
+      "#상식파괴",
+      "#몰랐던사실",
+      "#유튜브쇼츠",
+      "#일상정보",
+      "#팩폭"
+    ]
+  }
+}

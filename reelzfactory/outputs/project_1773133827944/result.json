@@ -1,0 +1,53 @@
+{
+  "topic": "쇼츠 쇼핑 바이럴 광고 제품 영상 터지는 방법",
+  "title": "쇼츠 쇼핑 광고 영상 터지는 법 🔥",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773133827944\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 43.333333333333336,
+  "metadata": {
+    "title": "🔥 쇼츠 쇼핑 광고 영상 터지는 공식 3단계",
+    "headline": {
+      "line1": "광고 영상",
+      "line2": "이렇게 해야 터진다"
+    },
+    "description": "쇼핑 쇼츠 영상을 올려도 조회수가 안 나오는 이유가 있습니다.\n바이럴 터진 영상에는 공통된 3단계 공식이 있었어요.\n'문제 장면 → 제품 등장 → 전후 비교' 이 순서만 지켜도 결과가 달라질 수 있습니다.\n기능 설명에 집중할수록 시청자는 이탈하는 경향이 있어요.\n이 영상 하나로 쇼핑 광고 쇼츠 전략이 바뀔 수 있습니다.\n\n#쇼츠광고 #쇼핑영상 #바이럴마케팅 #유튜브쇼츠 #숏폼전략",
+    "tags": [
+      "쇼츠광고",
+      "쇼핑영상",
+      "바이럴마케팅",
+      "유튜브쇼츠",
+      "숏폼전략",
+      "제품영상",
+      "광고공식",
+      "조회수올리기",
+      "viral shorts",
+      "shopping ads",
+      "short form marketing",
+      "product video",
+      "YouTube Shorts strategy",
+      "content marketing",
+      "reels tips"
+    ],
+    "hashtags": [
+      "#쇼츠광고",
+      "#바이럴마케팅",
+      "#유튜브쇼츠",
+      "#쇼핑영상",
+      "#숏폼전략",
+      "#조회수올리기",
+      "#제품영상공식"
+    ],
+    "thumbnail": {
+      "text": "쇼핑 광고 터지는 공식",
+      "imagePrompt": "a cartoon phone screen split into before and after: left side shows 0 views with a sad face, right side shows 800K views with an explosion burst, dramatic high contrast red and white color scheme, bold clean illustration, centered composition, no text overlay, whiteboard animation style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}

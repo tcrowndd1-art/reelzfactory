@@ -1,0 +1,57 @@
+﻿{
+  "character_id": "acerola_c_v1",
+  "product_id": "acerola_c",
+  "character_name": "아세로라봇",
+  "master_base_prompt": "A cute anthropomorphic Nutrilite Acerola C supplement bottle character with red-orange cap, robotic arms and legs, friendly round eyes, holding a glowing acerola cherry, clean white lab background, 3D render style, Pixar quality, vibrant warm colors --ar 9:16",
+  "master_style_suffix": "cinematic lighting, soft shadows, 8k, 3D animation style, consistent color grading, clean background, subtle rim light",
+  "negative_prompt": "missing cap, different clothes, human face, realistic human, blurry texture, hair, skin, low quality, watermark, text overlay, deformed, dark mood, horror style",
+  "reference_images": {
+    "front": {
+      "file": "reference/front.png",
+      "description": "정면 전신, 배경 있음, 메인 레퍼런스"
+    },
+    "clean_front": {
+      "file": "reference/clean_front.png",
+      "description": "흰배경 정면 응시, 클린샷, Kling Elements 보조용"
+    },
+    "side": {
+      "file": "reference/side.png",
+      "description": "옆모습만, 캐릭터 형태 참조용"
+    }
+  },
+  "action_images": {
+    "cta": {
+      "file": "actions/action_cta.png",
+      "description": "손가락 아래 가리키며 정면 응시, CTA 씬 전용"
+    }
+  },
+  "missing_images_todo": [
+    "actions/action_hook.png - 놀란 표정 (필요)",
+    "actions/action_solution.png - 자신감 포즈 (필요)",
+    "actions/action_proof.png - 엄지척 (필요)",
+    "reference/detail.png - 얼굴 클로즈업 (있으면 좋음)"
+  ],
+  "scene_action_prompts": {
+    "hook": "surprised expression, eyes wide open, holding a glowing acerola cherry",
+    "problem": "worried expression, looking at tired person silhouette",
+    "agitate": "shocked expression, hands on head, showing oxidative stress",
+    "solution": "confident smile, holding up the Acerola C bottle proudly, chest out",
+    "proof": "thumbs up, nodding, surrounded by farm imagery",
+    "cta": "pointing down with one hand, inviting expression"
+  },
+  "kling_elements_config": {
+    "max_images": 4,
+    "primary_reference": "reference/front.png",
+    "reference_images": [
+      "reference/front.png",
+      "reference/clean_front.png",
+      "reference/side.png"
+    ],
+    "notes": "Kling Elements에 3장 전송. front가 메인, clean_front가 색감/디테일 보조, side가 형태 보조"
+  },
+  "flux_config": {
+    "reference_image": "reference/clean_front.png",
+    "reference_strength": 0.85,
+    "notes": "Flux 이미지 생성 시 클린샷을 레퍼런스로 사용 (배경 간섭 최소화)"
+  }
+}

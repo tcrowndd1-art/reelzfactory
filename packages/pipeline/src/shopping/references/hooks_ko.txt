@@ -1,0 +1,100 @@
+### 📂 [파일 1] hooks_Master_30.txt (언어별 후킹 30선)
+###어디까지나 구조를 이해 하고 참조 스크립트입니다.
+1.구조는 레시피고, 후킹 소재는 재료야. 레시피는 같아도 재료가 다르면 다른 음식이 나와.
+2.쇼츠는 구매 완결 도구가 아니라 욕구 점화 도구야. 15초가 하는 일은 딱 하나 — '이거 뭐지? 더 알고 싶다'는 상태로 만드는 것.
+3.목적:** 4060세대의 가장 큰 결핍인 '건강(통증), 금전적 손실, 소외감(호구 잡힘)'을 자극하여 3초 안에 스크롤을 멈추게 함.
+
+#한국Korea샘플 응용
+건강/통증 (10개)
+"무릎 꿇고 청소하는 엄마를 본 적 있나요? 눈물 납니다."
+"의사가 '수술해야 한다'고 했는데, 이거 쓰고 3주 만에 걸었습니다."
+"매일 아침 목이 뻣뻣하다면, 이건 경고 신호입니다."
+"허리 띠는 느낌? 당장 이 자세 바꾸세요."
+"60대 부모님이 계단을 두려워하신다면, 이것부터 바꾸세요."
+"손목 터널증후군, 예방은 가능합니다. 이 방법 모르시면 후회해요."
+"잠자리에서 2시간마다 깬다면, 이 필터를 의심하세요."
+"3만 원짜리 약 먹는데, 이거 하나 바꾸고 5천 원으로 줄었습니다."
+"내 돈 내산 10년 차 주부가 후회하는 딱 1가지."
+"피부과 갈 돈, 이거 하나로 90% 줄었습니다."
+금전/손해 (10개) 11. "이거 매달 구독료 내시는 분, 1년에 48만 원 손해보고 있습니다." 12. "전기세 7만 원 나왔는데, 이거 하나 바꾸고 2만 원으로 줄었습니다." 13. "홈쇼핑에서도 못 본 가격. 여기서만 확인 가능합니다." 14. "비싼 거 사고 후회 중인 분, 이거 보세요." 15. "이웃집은 이미 이거 쓰고 있습니다. 우리 집만 모르는 거예요." 16. "이 가격 언제까지인지 모릅니다. 지금 프로필 링크에서 확인해보세요." 17. "매년 버리는 식재료, 연간 100만 원. 이제 그만." 18. "의사 비용 20만 원 vs 이거 3만 원. 선택은 당신이." 19. "요즘 물가에 이 가격? 잠깐 뜯어보고 깜짝 놀랐습니다." 20. "이거 알면 바보 된 느낌. 지난 5년 낭비한 돈 생각하니 속상해요."
+
+소외/FOMO (10개) 21. "나만 모르면 바보 되는 2026년 주방 필수템." 22. "2026년인데 아직도 이거 안 쓰신다고요?" 23. "요즘 주부들 다 이거 쓰는데, 당신만 모르는 거예요." 24. "이거 모르면 2026년에 뒤처집니다. 진짜예요." 25. "내 친구들 다 이거 샀는데, 나만 안 샀더니 창피했어요." 26. "인스타에서 핫한 이 제품, 여기서만 특가로." 27. "이거 보고도 안 사면, 진짜 손해 보는 거예요." 28. "유튜브에서 난리 난 이 제품, 드디어 입고됐습니다." 29. "이게 뭐길래 주부 커뮤니티에서 난리인지 보세요." 30. "지금 안 사면 다음 달 가격 올라갑니다. 정말이에요.
+------------------------------------------------------
+🇺🇸 미국 (30개) - 핵심 감정: 시간낭비/분노/효율
+시간/효율 (10개)
+
+"Stop ruining your back with outdated cleaning methods."
+"You're losing 10 hours a week to this outdated habit."
+"Can you really afford to waste 3 hours every single day?"
+"This old way of working is stealing your weekends."
+"Stop sacrificing family time for housework."
+"Your current routine is costing you 520 hours a year."
+"Why spend 2 hours when this does it in 20 minutes?"
+"This manual process is draining your energy daily."
+"Reclaim your evenings with this one simple switch."
+"Stop letting household chores dominate your life."
+비용/대안 (10개) 11. "Stop overpaying for brand names that drain your wallet." 12. "You're throwing away $200/month on overpriced alternatives." 13. "That $300 gadget? This does the same for $29.99." 14. "Why pay premium when this outperforms for 1/10 the price?" 15. "Your wallet is bleeding. Here's the band-aid." 16. "This price mistake won't last long. Check the link now." 17. "Big brands don't want you to know about this alternative." 18. "I saved $2,400 last year by switching to this." 19. "Same quality, 1/3 the price. Math checks out." 20. "Stop funding their marketing budget. Get the real deal."
+
+FOMO/긴급 (10개) 21. "If you don't know this by 2026, you're living wrong." 22. "Your neighbors already switched. You're the last one." 23. "This deal disappears when inventory hits zero." 24. "Thousands are already using this. Join them or fall behind." 25. "The secret tool productivity gurus don't want you to know." 26. "Limited batch just dropped. Link in bio before it's gone." 27. "You're either using this, or you're falling behind." 28. "This viral gadget is finally back in stock." 29. "Stop watching others win while you wait." 30. "Last chance at this price. Don't say I didn't warn you."
+
+
+----------------------------------------------
+🇧🇷 브라질 (30개) - 핵심 감정: 박탈감+흥분/가족/축제
+가족/감정 (10개)
+
+"Vi minha mãe limpar de joelhos... e decidi mudar isso hoje."
+"Sua mãe também merece descansar, não acha?"
+"Pare de ver sua família sofrer com tarefas pesadas."
+"Seu pai trabalhou duro demais pra continuar assim."
+"Dê para sua família o conforto que ela merece."
+"Ninguém merece passar dor para ter casa limpa."
+"Sua esposa está cansada? Isso vai mudar tudo."
+"Chega de ver quem você ama sofrer com trabalho braçal."
+"Transforme a vida da sua família com um clique."
+"Dê tempo de qualidade para quem você ama."
+경제/손해 (10개) 11. "Você está jogando R$ 2.000 no lixo todo ano." 12. "Pare de pagar preço de rico quando tem alternativa." 13. "Essa loja famosa cobra 3x mais por isso aqui." 14. "Seu dinheiro está indo embora todo mês. Pare agora." 15. "Economize R$ 500 no primeiro ano. Garantido." 16. "Esse preço não vai durar. Corra antes que acabe." 17. "As grandes empresas não querem que você saiba disso." 18. "Por que pagar mais quando você pode pagar menos?" 19. "Seu salário merece respeito. Pare de desperdiçar." 20. "Investimento que se paga em 3 meses. Depois é lucro."
+
+FOMO/열정 (10개) 21. "Se você não tem isso em 2026, está perdendo." 22. "Seus vizinhos já estão usando. Você está ficando pra trás." 23. "Essa oferta some quando o estoque acabar." 24. "Milhares já compraram. Você vai ficar de fora?" 25. "O segredo que as blogueiras não contam." 26. "Lote limitado acabou de chegar. Link na bio." 27. "Ou você usa isso, ou fica pra trás na vida." 28. "Esse produto viral finalmente voltou ao estoque." 29. "Pare de assistir os outros vencerem enquanto você espera." 30. "Última chance nesse preço. Não diga que não avisei."
+
+
+
+----------------------------------------------------
+🇯🇵 일본 (30개) - 핵심 감정: 폐끼침/조화/미니멀
+배려/조화 (10개)
+
+"膝をついて掃除する母親を見たことがありますか？胸が痛みます。"
+"家族に負担をかけずに、快適な生活を送りたい。"
+"誰もが無理なく家事を済ませられる方法。"
+"自分も、大切な人も、無理をしないで済む工夫。"
+"隣人に迷惑をかけずに、静かに楽しく掃除。"
+"一人暮らしの高齢の親が、無理なく掃除できる方法。"
+"家族みんなが楽に使える、配慮のある設計。"
+"周りに気を使わず、自分のペースで家事をこなす。"
+"共同生活でも、誰にも負担をかけないスマートな方法。"
+"大切な人に、無理をさせない愛情の形。"
+비효율/손해 (10개) 11. "毎月このサブスクに払っている方、年間48万円損をしています。" 12. "電気代が高いとお悩みの方、この一台で2万円削減。" 13. "高級店で買うと3倍のお値段。同じものがここに。" 14. "食品ロスで年間10万円捨てていませんか？" 15. "無駄な出費を削減し、大切なことに使う。" 16. "この価格はいつまでか分かりません。今すぐ確認を。" 17. "大手メーカーが隠したい、賢い選択肢。" 18. "無理な買い物をやめて、賢く節約する方法。" 19. "コスパを重視する日本人に支持されています。" 20. "この投資は3ヶ月で回収。その後は純粋な節約。"
+
+FOMO/정돈 (10개) 21. "知らないと損をする2026年のキッチン必須アイテム。" 22. "2026年もこれなし？時代遅れになってしまいます。" 23. "みんながもう使っているのに、あなただけ知らない。" 24. "在庫がなくなり次第、この価格は終了します。" 25. "SNSで話題のこの商品、やっと入荷しました。" 26. "今買わないと、次は高い価格で買うことになります。" 27. "効率的な主婦たちはみんなこれを使っています。" 28. "品切れ前に、今すぐチェックを。" 29. "在庫残りわずか。お早めにどうぞ。" 30. "この価格で手に入るのは、今だけかもしれません。"
+
+-------------------------------------------------------------
+
+🇩🇪 독일 (30개) - 핵심 감정: 비효율/논리/근거
+비효율/논리 (10개)
+
+"Haben Sie Ihre Mutter beim Putzen auf Knien gesehen? Unlogisch."
+"10 Stunden pro Woche für Haushalt? Das ist ineffizient."
+"Manuelle Prozesse kosten Sie 520 Stunden im Jahr."
+"Warum Zeit verschwenden, wenn es intelligenter geht?"
+"Dieser alte Weg der Arbeit raubt Ihnen das Wochenende."
+"Ihre aktuelle Routine ist suboptimal. Hier ist die Lösung."
+"Zeit ist Geld. Diese Methode spart beides."
+"Warum komplex, wenn es auch einfach geht?"
+"Rückenschmerzen durch ineffizientes Putzen? Unnötig."
+"Optimieren Sie Ihren Haushalt mit einem Klick."
+경제/분석 (10개) 11. "Sie verlieren 2.000€ pro Jahr mit diesem Abo." 12. "Warum Premium zahlen, wenn Alternative besser ist?" 13. "Das 300€-Gerät? Dieses kostet 29,99€ und ist besser." 14. "Ihre Wallet blutet. Hier ist der Verband." 15. "Dieser Preisfehler wird nicht lange halten." 16. "Große Marken wollen nicht, dass Sie das wissen." 17. "Ich habe 2.400€ gespart. Nachweisbar." 18. "Gleiche Qualität, 1/3 des Preises. Mathematik stimmt." 19. "Hören Sie auf, ihre Marketingbudgets zu finanzieren." 20. "ROI in 3 Monaten. Danach reiner Gewinn."
+
+FOMO/효율 (10개) 21. "Wenn Sie das 2026 nicht nutzen, leben Sie falsch." 22. "Ihre Nachbarn sind schon umgestiegen. Sie sind der Letzte." 23. "Dieses Angebot verschwindet bei Null-Lager." 24. "Tausende nutzen das schon. Schließen Sie sich an." 25. "Das Geheimwerkzeug der Produktivitätsgurus." 26. "Limitierte Charge soeben eingetroffen. Link in Bio." 27. "Entweder Sie nutzen das, oder Sie fallen zurück." 28. "Dieses virale Gadget ist endlich wieder auf Lager." 29. "Hören Sie auf, anderen beim Gewinnen zuzusehen." 30. "Letzte Chance zu diesem Preis. Nicht sagen, ich hätte nicht gewarnt."
+
+
+
+

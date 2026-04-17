@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "매일 커피를 마시는데 왜 오후만 되면 피곤할까요?",
+      "imagePrompt": "A person looking tired and sluggish at an office desk in the afternoon light.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "인공적인 각성 대신, 식물에서 온 진짜 비타민C로 활력을 채워주세요.",
+      "imagePrompt": "Close-up shot of the Nutrilite Vitamin C bottle next to fresh, vibrant acerola cherries.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "이거 한 통이면 온 가족 항산화 관리 끝! 지금 바로 프로필 링크를 확인하세요.",
+      "imagePrompt": "A hand taking one vitamin tablet from the large 300-count Nutrilite bottle.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "매일 커피를 마시는데 왜 오후만 되면 피곤할까요?",
+  "cta": "지금 바로 프로필 링크를 확인하세요.",
+  "hashtags": [
+    "#비타민C추천",
+    "#뉴트리라이트",
+    "#아세로라C",
+    "#피로회복템",
+    "#영양제추천"
+  ],
+  "title": "커피로도 안 풀리는 피로, 2초 만에 해결하는 법",
+  "structure": "QA"
+}

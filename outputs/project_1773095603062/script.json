@@ -1,0 +1,104 @@
+{
+  "title": "지금 당장 멈춰야 할 혈당 습관 3가지",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "밥 먹고 나서 왜 이렇게 졸린 거예요?",
+      "imagePrompt": "[CHARACTER] a cartoon character sitting at a desk after a meal, eyes half-closed, drooping head, food tray in front, question mark floating above head, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "왜",
+        "졸린"
+      ],
+      "transition": "cut",
+      "ctaType": null
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "식후 졸음, 피로, 집중력 저하... 혈당 스파이크 때문일 수 있어요. 대부분은 자기가 혈당 문제가 있는지도 모르는 경우가 많다고 알려져 있어요.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a blood sugar graph with a sharp spike and steep drop, small icons of a sleepy face, brain with X mark, and lightning bolt with X mark placed along the curve, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 9,
+      "subtitleEmphasis": [
+        "혈당 스파이크",
+        "모르는"
+      ],
+      "transition": "fade",
+      "ctaType": null
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "근데 식습관 3가지만 바꿔도 혈당이 안정될 수 있다는 연구가 있어요. 약 없이요.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of three numbered icons: 1) a fork with vegetables, 2) a walking shoe with motion lines, 3) a water glass with droplets, arranged horizontally on white background, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 8,
+      "subtitleEmphasis": [
+        "3가지",
+        "약 없이"
+      ],
+      "transition": "slide",
+      "ctaType": null
+    },
+    {
+      "id": 4,
+      "type": "twist",
+      "text": "첫째, 밥보다 채소를 먼저 먹는 것. 혈당 상승 속도가 낮아질 수 있다고 알려져 있어요. 둘째, 식후 10분 걷기. 근육이 포도당을 흡수하는 경향이 있거든요. 셋째, 흰쌀밥을 잡곡으로 바꾸는 것. 혈당 반응이 달라질 수 있어요.",
+      "imagePrompt": "[NO_CHARACTER] a three-panel whiteboard illustration: left panel shows a salad bowl with an upward arrow crossed out, center panel shows a cartoon shoe with a small clock showing 10 minutes, right panel shows a comparison of white rice bowl versus mixed grain rice bowl with a checkmark on mixed grain, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 14,
+      "subtitleEmphasis": [
+        "채소 먼저",
+        "10분 걷기",
+        "잡곡"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "이거 모르고 매일 흰밥부터 먹는 사람... 주변에 분명 있을 거예요.",
+      "imagePrompt": "[CHARACTER] a cartoon character looking sideways with a knowing expression, a white rice bowl in front with a subtle warning symbol, another shadowy figure in the background eating without awareness, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 6,
+      "subtitleEmphasis": [
+        "모르고",
+        "흰밥부터"
+      ],
+      "transition": "fade",
+      "ctaType": "B"
+    }
+  ],
+  "metadata": {
+    "title": "밥 먹고 졸린 이유 따로 있었다 😳 혈당 습관 3가지",
+    "description": "식후 졸음과 피로가 반복된다면 혈당 스파이크를 의심해볼 수 있어요.\n채소 먼저 먹기, 식후 걷기, 잡곡 전환 — 이 3가지 습관이 혈당 안정에 도움이 될 수 있다는 보고가 있습니다.\n약 없이 일상에서 실천 가능한 방법을 정리했어요.\n혈당 관리가 왜 중요한지, 지금 바로 확인해보세요.\n\n#혈당관리 #식후혈당 #혈당스파이크 #건강습관 #다이어트",
+    "tags": [
+      "혈당관리",
+      "식후혈당",
+      "혈당스파이크",
+      "건강습관",
+      "식이요법",
+      "혈당낮추는법",
+      "잡곡밥",
+      "blood sugar",
+      "blood sugar spike",
+      "healthy eating",
+      "glucose control",
+      "diet tips",
+      "wellness",
+      "health shorts",
+      "nutrition"
+    ],
+    "hashtags": [
+      "#혈당관리",
+      "#혈당스파이크",
+      "#건강습관",
+      "#식후혈당",
+      "#healthylifestyle"
+    ],
+    "thumbnail": {
+      "text": "밥 먹고 졸린 진짜 이유",
+      "imagePrompt": "a dramatic close-up illustration of a blood sugar graph with a massive spike and crash, bold red and white high contrast colors, a sleepy cartoon face below the graph, centered subject, no text overlay, high contrast, eye-catching, whiteboard animation style"
+    }
+  }
+}

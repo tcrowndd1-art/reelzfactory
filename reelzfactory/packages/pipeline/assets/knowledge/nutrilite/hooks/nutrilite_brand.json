@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-12",
+  "hooks": {
+    "brand_trust": [
+      {"hook": "90년 전부터 이 비타민만 고집한 부자들의 비밀.", "nutrilite_usp": "역사", "target_product": "전 제품", "ctr_grade": "A", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "농장부터 식탁까지, 추적 안 되는 영양제는 당장 버리세요.", "nutrilite_usp": "농장", "target_product": "전 제품", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [15], "claims_safe": true},
+      {"hook": "올림픽 국가대표들이 매일 먹는 영양제, 드디어 공개합니다.", "nutrilite_usp": "NSF", "target_product": "전 제품", "ctr_grade": "A", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "건강기능식품 세계 1위, 90년 된 이 브랜드 모르면 손해입니다.", "nutrilite_usp": "역사", "target_product": "전 제품", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "유기농 농장에서 갓 딴 영양소, 캡슐에 통째로 넣었습니다.", "nutrilite_usp": "농장", "target_product": "더블엑스", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "도핑 테스트도 통과한 0.01% 국가대표 비타민의 정체.", "nutrilite_usp": "NSF", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "어디서 온 지도 모르는 원료, 제발 그만 돈 주고 사 드세요.", "nutrilite_usp": "농장", "target_product": "전 제품", "ctr_grade": "A", "controversy_potential": "high", "suitable_length": [15], "claims_safe": true},
+      {"hook": "1934년부터 깐깐하게 지켜온 최초 유기농 비타민의 진실.", "nutrilite_usp": "역사", "target_product": "전 제품", "ctr_grade": "C", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "씨앗부터 다른 90년 유기농 고집, 이거 알면 다른 거 못 먹습니다.", "nutrilite_usp": "농장", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [30], "claims_safe": true},
+      {"hook": "내 몸에 들어가는 건데, 국가대표급 인증 마크 확인하셨나요?", "nutrilite_usp": "NSF", "target_product": "전 제품", "ctr_grade": "B", "controversy_potential": "medium", "suitable_length": [15], "claims_safe": true}
+    ],
+    "tech_differentiation": [
+      {"hook": "흡수 안 되는 오메가3, 비싼 돈 낭비하고 계신 겁니다.", "nutrilite_usp": "아쿠아셀", "target_product": "뉴트리 마린 오메가3", "ctr_grade": "A", "controversy_potential": "high", "suitable_length": [15], "claims_safe": true},
+      {"hook": "4배 더 쫙 흡수되는 오메가3, 쪼개는 독자 기술이 다릅니다.", "nutrilite_usp": "아쿠아셀", "target_product": "뉴트리 마린 오메가3", "ctr_grade": "A", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "합성 비타민 백날 먹어도 소용없는 진짜 이유 알려드립니다.", "nutrilite_usp": "파이토칼라", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "high", "suitable_length": [30], "claims_safe": true},
+      {"hook": "식물 고유의 색깔이 살려낸 20가지 찐 영양소 섭취법.", "nutrilite_usp": "파이토칼라", "target_product": "더블엑스", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "칼슘만 먹으면 뼈 튼튼해진다고요? 최악의 착각입니다.", "nutrilite_usp": "2:1비율", "target_product": "칼맥 디", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [15], "claims_safe": true},
+      {"hook": "칼슘과 마그네슘 2대1 황금비율 모르면 흡수 하나도 안 됩니다.", "nutrilite_usp": "2:1비율", "target_product": "칼맥 디", "ctr_grade": "A", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "아이슬란드 심해 칼슘, 흡수율 끝판왕 황금비율 공개합니다.", "nutrilite_usp": "2:1비율", "target_product": "칼맥 디", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "자연이 만든 파이토칼라, 화학 합성 영양제랑 차원이 다릅니다.", "nutrilite_usp": "파이토칼라", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [30], "claims_safe": true},
+      {"hook": "나이 들수록 부족해지는 영양, 4배 흡수 오메가3로 꽉 채우세요.", "nutrilite_usp": "아쿠아셀", "target_product": "뉴트리 마린 오메가3", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "비싼 돈 주고 산 비타민, 진짜 식물 영양소인지 당장 확인하세요.", "nutrilite_usp": "파이토칼라", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [15], "claims_safe": true}
+    ],
+    "competitor_comparison": [
+      {"hook": "성분표만 보지 마세요. 어디서 자란 원료인지가 진짜입니다.", "nutrilite_usp": "농장", "target_product": "전 제품", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "싼맛에 산 대용량 오메가3, 당장 쓰레기통에 버리세요.", "nutrilite_usp": "아쿠아셀", "target_product": "뉴트리 마린 오메가3", "ctr_grade": "A", "controversy_potential": "high", "suitable_length": [15], "claims_safe": true},
+      {"hook": "흡수율 꽝인 싸구려 칼슘제, 몸에 돌만 쌓이는 꼴입니다.", "nutrilite_usp": "2:1비율", "target_product": "칼맥 디", "ctr_grade": "A", "controversy_potential": "high", "suitable_length": [15], "claims_safe": true},
+      {"hook": "아무리 쉬어도 찌뿌둥하다면? 20가지 식물 영양소로 바꾸세요.", "nutrilite_usp": "파이토칼라", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "화학 공장에서 찍어낸 비타민, 밭에서 기른 비타민. 당신의 선택은?", "nutrilite_usp": "농장", "target_product": "더블엑스", "ctr_grade": "B", "controversy_potential": "medium", "suitable_length": [30], "claims_safe": true},
+      {"hook": "광고만 번지르르한 신생 영양제? 90년 전세계 1위는 다릅니다.", "nutrilite_usp": "역사", "target_product": "전 제품", "ctr_grade": "A", "controversy_potential": "high", "suitable_length": [15], "claims_safe": true},
+      {"hook": "건강 챙긴다고 아무 영양제나 드세요? 국가대표급을 드셔야죠.", "nutrilite_usp": "NSF", "target_product": "전 제품", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [30], "claims_safe": true},
+      {"hook": "목넘김만 아픈 캡슐은 그만! 미세 입자로 4배 흡수시키세요.", "nutrilite_usp": "아쿠아셀", "target_product": "뉴트리 마린 오메가3", "ctr_grade": "B", "controversy_potential": "low", "suitable_length": [15], "claims_safe": true},
+      {"hook": "나이 들수록 약해지는 뼈, 비타민D랑 마그네슘 없으면 말짱 꽝입니다.", "nutrilite_usp": "2:1비율", "target_product": "칼맥 디", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [30], "claims_safe": true},
+      {"hook": "이것저것 10알씩 먹지 마세요. 흡수율 계산된 딱 1알이면 끝납니다.", "nutrilite_usp": "아쿠아셀", "target_product": "더블엑스", "ctr_grade": "A", "controversy_potential": "medium", "suitable_length": [15], "claims_safe": true}
+    ]
+  }
+}

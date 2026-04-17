@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "매일 비타민C 챙겨 먹는데 왜 계속 피곤할까요? 혹시 아무거나 드시고 계신가요?",
+      "imagePrompt": "A person's hand dropping a few generic white vitamin pills onto a dark, moody tabletop. The lighting is dim to convey fatigue. 4K, commercial product photography.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "정답은 바로 원료. 인공 비타민이 아닌, 직접 기른 아세로라 체리의 비타민C는 흡수율부터 다릅니다.",
+      "imagePrompt": "Extreme close-up macro shot of the Nutrilite Vitamin C tablet, with fresh, vibrant acerola cherries scattered beautifully around it on a clean white background. 4K, realistic.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "아침에 눈 뜨는 게 달라질 거예요. 진짜 비타민C로 활력을 채워보세요. 구매는 프로필 링크 확인!",
+      "imagePrompt": "A bright, sunlit morning scene. The Nutrilite Vitamin C bottle stands next to a glass of water on a clean, wooden bedside table. Lifestyle shot, 4K quality.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "매일 비타민C 챙겨 먹는데 왜 계속 피곤할까요?",
+  "cta": "진짜 비타민C로 활력을 채워보세요. 구매는 프로필 링크 확인!",
+  "hashtags": [
+    "#비타민C추천",
+    "#뉴트리라이트",
+    "#피로회복",
+    "#영양제",
+    "#아세로라C"
+  ],
+  "title": "매일 먹는 비타민C, 효과 없는 이유 알려드림",
+  "structure": "QA"
+}

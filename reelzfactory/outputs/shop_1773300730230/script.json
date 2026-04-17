@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "매일 아침 일어나는 게 전쟁이신가요? 더 이상은 그럴 필요 없어요.",
+      "imagePrompt": "A dimly lit bedroom scene focusing on a digital alarm clock showing 7:00 AM. A hand tiredly reaches out to hit the snooze button. The overall mood is groggy and low-energy. 4K quality, realistic, commercial photography style.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "하루 한 알, 상큼한 비타민C로 내 몸의 에너지를 가득 채워주세요.",
+      "imagePrompt": "Macro shot of a single, vibrant yellow Nutri Light Vitamin C tablet being dropped into a clear glass of water. It fizzes energetically, with bright bubbles rising to the surface. Clean white background, 4K quality.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "활기찬 하루의 시작, 지금 바로 프로필 링크에서 만나보세요!",
+      "imagePrompt": "A bright, sunlit kitchen counter with a glass of the finished, sparkling orange vitamin drink next to a healthy breakfast bowl of fruits and yogurt. The atmosphere is fresh, clean, and full of morning energy. No human faces. 4K.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "매일 아침 일어나는 게 전쟁이신가요? 더 이상은 그럴 필요 없어요.",
+  "cta": "지금 바로 프로필 링크에서 만나보세요!",
+  "hashtags": [
+    "#비타민C",
+    "#영양제추천",
+    "#피로회복",
+    "#활력충전",
+    "#직장인필수템"
+  ],
+  "title": "피곤한 당신을 위한 아침 필수템, 이거 하나면 끝!",
+  "structure": "AIDA"
+}

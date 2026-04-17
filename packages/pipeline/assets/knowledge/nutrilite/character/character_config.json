@@ -1,0 +1,27 @@
+{
+  "character_id": "nutrilite_bot_v1",
+  "character_name": "뉴트리봇",
+  "master_base_prompt": "A cute anthropomorphic Nutrilite supplement bottle character with navy blue cap/bandana, robotic arms and legs, friendly round eyes, clean white lab background, 3D render style, Pixar quality, vibrant colors --ar 9:16",
+  "master_style_suffix": "cinematic lighting, soft shadows, 8k, 3D animation style, consistent color grading, clean background, subtle rim light",
+  "negative_prompt": "missing cap, different clothes, human face, realistic human, blurry texture, hair, skin, low quality, watermark, text overlay, deformed, dark mood, horror style",
+  "scene_action_prompts": {
+    "hook": "surprised expression, eyes wide open, holding a glowing object",
+    "problem": "worried expression, looking at something concerning, slight head tilt",
+    "agitate": "shocked expression, hands on head, dramatic pose",
+    "solution": "confident smile, holding up the product proudly, chest out",
+    "proof": "thumbs up, nodding, satisfied expression",
+    "cta": "pointing down with one hand, waving with the other, inviting expression"
+  },
+  "kling_elements_config": {
+    "max_images": 4,
+    "reference_images": [
+      "reference/front.png",
+      "reference/side.png",
+      "reference/detail.png"
+    ]
+  },
+  "flux_config": {
+    "reference_image": "reference/front.png",
+    "reference_strength": 0.85
+  }
+}

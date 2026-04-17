@@ -1,0 +1,112 @@
+{
+  "title": "Por que sua barriga dói depois de comer muito rápido? 🍔 #animação #shorts #engraçado",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "Uau! Que lanche incrível hoje, hein?",
+      "imagePrompt": "[CHARACTER] a cheerful cartoon character holding a giant burger with wide excited eyes, steam rising from the food, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 2.5,
+      "subtitleEmphasis": [
+        "Uau!",
+        "incrível"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "Cara, tá apertado aqui dentro... Ele nem mastigou direito, jogou tudo de uma vez! Agora o estômago tá sobrecarregado tentando processar esse monte de comida.",
+      "imagePrompt": "[CHARACTER] cartoon stomach character with an overwhelmed stressed face, surrounded by chunks of food falling rapidly from above, sweat drops around the stomach, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 12,
+      "subtitleEmphasis": [
+        "apertado",
+        "sobrecarregado",
+        "processar"
+      ],
+      "transition": "cut",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "Doutor, minha barriga tá doendo tanto que não consigo nem me mexer. O que tá acontecendo comigo?",
+      "imagePrompt": "[CHARACTER] a cartoon character bent over holding their stomach in pain, sitting in a doctor's office chair, doctor cartoon character with stethoscope leaning forward with a concerned expression, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 10,
+      "subtitleEmphasis": [
+        "doendo",
+        "não consigo",
+        "acontecendo"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 4,
+      "type": "core_personal",
+      "text": "Olha, eu já passei por isso e sei bem como dói. Quando você come rápido demais, o estômago se expande de repente — pesquisas mostram que pode levar até 20 minutos para o cérebro receber o sinal de saciedade. Nesse tempo, você já comeu o dobro do necessário.",
+      "imagePrompt": "[CHARACTER] a cartoon doctor character pointing at a diagram showing a brain connected to a stomach with a clock showing 20 minutes, arrows indicating delayed signal transmission, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 14,
+      "subtitleEmphasis": [
+        "20 minutos",
+        "sinal de saciedade",
+        "dobro"
+      ],
+      "transition": "fade",
+      "ctaType": null,
+      "hasPersonalTake": true
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "Você precisa desacelerar na hora de comer. Seu estômago tá pedindo socorro — e tem uma coisa ainda pior que isso acontecendo por baixo dos panos...",
+      "imagePrompt": "[CHARACTER] cartoon doctor character wagging a finger with a serious expression, next to a cartoon stomach waving a tiny white flag in surrender, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 8,
+      "subtitleEmphasis": [
+        "desacelerar",
+        "pedindo socorro",
+        "ainda pior"
+      ],
+      "transition": "zoom_out",
+      "ctaType": "A",
+      "hasPersonalTake": false
+    }
+  ],
+  "metadata": {
+    "title": "😨 Por que a barriga dói depois de comer rápido? #shorts",
+    "description": "Você já sentiu aquela dor horrível na barriga depois de comer muito rápido?\nIsso não é só desconforto — seu estômago pode estar sofrendo de verdade.\n\nNeste vídeo, explicamos de forma simples e animada o que acontece lá dentro quando você devora a comida sem mastigar.\n\nO cérebro leva até 20 minutos para registrar que você está satisfeito — e nesse intervalo, o estrago já foi feito.\n\nAssista até o fim e descubra o que seu estômago quer te dizer! 🍔😵\n\n#dordebarriga #comerrapido #saúde #animação #curiosidades",
+    "tags": [
+      "dor de barriga",
+      "comer rápido",
+      "digestão",
+      "saúde",
+      "estômago",
+      "animação",
+      "curiosidades",
+      "stomach pain",
+      "eating too fast",
+      "digestion",
+      "health",
+      "animation",
+      "funny shorts",
+      "body facts",
+      "wellness"
+    ],
+    "hashtags": [
+      "#dordebarriga",
+      "#saúde",
+      "#animação",
+      "#shorts",
+      "#curiosidades"
+    ],
+    "thumbnail": {
+      "text": "Por que a barriga dói? 😨",
+      "imagePrompt": "dramatic close-up of a cartoon stomach character with a panicked expression, red warning signs around it, sweat drops, bold high contrast colors, centered subject, white background, no text overlay, simple clean illustration style"
+    }
+  }
+}

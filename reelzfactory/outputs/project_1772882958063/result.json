@@ -1,0 +1,43 @@
+{
+  "topic": "Financial Bubbles Explained with Bananas",
+  "title": "바나나로 이해하는 금융 버블 🍌",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772882958063\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 39.2,
+  "metadata": {
+    "title": "바나나로 5분 만에 이해하는 금융 버블 🍌💥",
+    "description": "금융 버블이 뭔지 어렵게 배울 필요 없어요.\n바나나 하나로 완전히 이해할 수 있거든요 🍌\n\n자산 가격이 실제 가치를 벗어나 폭등하다가 한순간에 붕괴하는 것, 그게 바로 버블이에요.\n튤립 버블, 닷컴 버블, 코인 버블... 역사는 반복됩니다.\n다음 영상에서 실제 버블 사건들을 낱낱이 파헤쳐드릴게요!\n\n#금융버블 #경제공부 #재테크기초 #투자상식 #쇼츠",
+    "tags": [
+      "금융버블",
+      "경제공부",
+      "버블붕괴",
+      "재테크",
+      "투자기초",
+      "경제상식",
+      "주식버블",
+      "코인버블",
+      "닷컴버블",
+      "튤립버블",
+      "financial bubble",
+      "economy explained",
+      "investing basics",
+      "bubble economy",
+      "경제쇼츠"
+    ],
+    "hashtags": [
+      "#금융버블",
+      "#경제공부",
+      "#재테크기초",
+      "#투자상식",
+      "#경제쇼츠"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

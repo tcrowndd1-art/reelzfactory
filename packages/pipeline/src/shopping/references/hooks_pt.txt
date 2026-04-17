@@ -1,0 +1,14 @@
+"Vi minha mãe limpar de joelhos... e decidi mudar isso hoje."
+"Sua mãe também merece descansar, não acha?"
+"Pare de ver sua família sofrer com tarefas pesadas."
+"Seu pai trabalhou duro demais pra continuar assim."
+"Dê para sua família o conforto que ela merece."
+"Ninguém merece passar dor para ter casa limpa."
+"Sua esposa está cansada? Isso vai mudar tudo."
+"Chega de ver quem você ama sofrer com trabalho braçal."
+"Transforme a vida da sua família com um clique."
+"Dê tempo de qualidade para quem você ama."
+경제/손해 (10개) 11. "Você está jogando R$ 2.000 no lixo todo ano." 12. "Pare de pagar preço de rico quando tem alternativa." 13. "Essa loja famosa cobra 3x mais por isso aqui." 14. "Seu dinheiro está indo embora todo mês. Pare agora." 15. "Economize R$ 500 no primeiro ano. Garantido." 16. "Esse preço não vai durar. Corra antes que acabe." 17. "As grandes empresas não querem que você saiba disso." 18. "Por que pagar mais quando você pode pagar menos?" 19. "Seu salário merece respeito. Pare de desperdiçar." 20. "Investimento que se paga em 3 meses. Depois é lucro."
+
+FOMO/열정 (10개) 21. "Se você não tem isso em 2026, está perdendo." 22. "Seus vizinhos já estão usando. Você está ficando pra trás." 23. "Essa oferta some quando o estoque acabar." 24. "Milhares já compraram. Você vai ficar de fora?" 25. "O segredo que as blogueiras não contam." 26. "Lote limitado acabou de chegar. Link na bio." 27. "Ou você usa isso, ou fica pra trás na vida." 28. "Esse produto viral finalmente voltou ao estoque." 29. "Pare de assistir os outros vencerem enquanto você espera." 30. "Última chance nesse preço. Não diga que não avisei."
+

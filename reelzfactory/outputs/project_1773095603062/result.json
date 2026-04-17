@@ -1,0 +1,47 @@
+{
+  "topic": "벤치마킹 기반 자동 주제",
+  "title": "지금 당장 멈춰야 할 혈당 습관 3가지",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773095603062\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 38.63333333333333,
+  "metadata": {
+    "title": "밥 먹고 졸린 이유 따로 있었다 😳 혈당 습관 3가지",
+    "description": "식후 졸음과 피로가 반복된다면 혈당 스파이크를 의심해볼 수 있어요.\n채소 먼저 먹기, 식후 걷기, 잡곡 전환 — 이 3가지 습관이 혈당 안정에 도움이 될 수 있다는 보고가 있습니다.\n약 없이 일상에서 실천 가능한 방법을 정리했어요.\n혈당 관리가 왜 중요한지, 지금 바로 확인해보세요.\n\n#혈당관리 #식후혈당 #혈당스파이크 #건강습관 #다이어트",
+    "tags": [
+      "혈당관리",
+      "식후혈당",
+      "혈당스파이크",
+      "건강습관",
+      "식이요법",
+      "혈당낮추는법",
+      "잡곡밥",
+      "blood sugar",
+      "blood sugar spike",
+      "healthy eating",
+      "glucose control",
+      "diet tips",
+      "wellness",
+      "health shorts",
+      "nutrition"
+    ],
+    "hashtags": [
+      "#혈당관리",
+      "#혈당스파이크",
+      "#건강습관",
+      "#식후혈당",
+      "#healthylifestyle"
+    ],
+    "thumbnail": {
+      "text": "밥 먹고 졸린 진짜 이유",
+      "imagePrompt": "a dramatic close-up illustration of a blood sugar graph with a massive spike and crash, bold red and white high contrast colors, a sleepy cartoon face below the graph, centered subject, no text overlay, high contrast, eye-catching, whiteboard animation style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}

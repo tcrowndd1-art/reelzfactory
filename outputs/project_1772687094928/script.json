@@ -1,0 +1,94 @@
+{
+  "title": "당신이 몰랐던 충격적인 사실 🤯",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 이거 진짜 아무도 안 알려줬잖아요?! 😱",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - close-up of a shocked young Korean person covering their mouth with both hands, eyes wide open, dramatic studio lighting, vibrant background",
+      "durationEstimate": 3.5,
+      "subtitleEmphasis": [
+        "아무도",
+        "안 알려줬잖아요"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "우리가 매일 당연하게 쓰는 것들... 사실 다 거짓말이었어요.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - surreal flat lay of everyday objects like smartphone, coffee cup, wallet glowing with a mysterious red warning light, dark moody background",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "거짓말"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "예를 들면, 하루 8잔 물 마시라는 거? 근거 없음 ㅋㅋ",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - eight glasses of water lined up on a table with a big red X stamp overlaid, dramatic side lighting, minimalist aesthetic",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "근거 없음"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "text": "우리 뇌는 10%밖에 안 쓴다고요? 완전 뇌피셜이에요 😂",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - glowing human brain with 100% neon light bar indicator, dark background, futuristic medical visualization, vibrant purple and blue tones",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "뇌피셜"
+      ],
+      "transition": "zoom_out"
+    },
+    {
+      "id": 5,
+      "type": "content",
+      "text": "상식인 줄 알았던 것들, 알고 보면 전부 마케팅이에요.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - shadowy corporate figures pulling puppet strings over a crowd of people, dramatic top-down angle, high contrast noir lighting",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "마케팅"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "더 충격적인 거 알고 싶으면 구독 누르세요. 다음 편은 진짜 레전드 🔥",
+      "imagePrompt": "cinematic, high quality, detailed, 4k - bright neon subscribe button glowing intensely against a dark background, sparks and light flares, energetic dynamic composition",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "구독",
+        "레전드"
+      ],
+      "transition": "zoom_in"
+    }
+  ],
+  "metadata": {
+    "title": "우리가 평생 속아온 상식들 🤯 | 충격주의",
+    "description": "당신이 당연하다고 믿었던 상식들, 사실 근거가 없었습니다.\n마케팅과 루머가 만들어낸 가짜 상식들을 낱낱이 파헤쳐드려요.\n다음 편도 준비 중이니 구독하고 기다려주세요!",
+    "tags": [
+      "상식",
+      "충격",
+      "팩트",
+      "쇼츠",
+      "흥미로운사실",
+      "Z세대",
+      "유익한영상"
+    ],
+    "hashtags": [
+      "#충격주의",
+      "#몰랐던사실",
+      "#쇼츠",
+      "#상식파괴",
+      "#팩트폭격"
+    ]
+  }
+}

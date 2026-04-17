@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "단 한 번의 선택으로 우리 가족의 아침이 달라질 수 있다면 어떠세요?",
+      "imagePrompt": "A sleek, white Nutrilite Vitamin C bottle standing on a clean, minimalist kitchen counter with soft morning light streaming in. 4K, commercial product photography.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "강력한 항산화 작용으로 지친 몸에 활력을 가득 채워주는 습관.",
+      "imagePrompt": "A single Nutrilite Vitamin C tablet dropping into a clear glass of water, fizzing and creating a vibrant orange color. Fresh orange slices are arranged neatly beside the glass. 4K, realistic.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "이제 매일 아침, 간편하게 건강을 챙기세요. 프로필 링크에서 확인!",
+      "imagePrompt": "A beautiful breakfast setting with a glass of the vibrant orange vitamin water, a small bowl of yogurt with berries, and the Nutrilite bottle in the soft-focused background. 4K, lifestyle shot.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "단 한 번의 선택으로 우리 가족의 아침이 달라져요.",
+  "cta": "프로필 링크에서 지금 바로 확인하세요!",
+  "hashtags": [
+    "#뉴트리라이트",
+    "#비타민C",
+    "#활력충전",
+    "#건강습관",
+    "#영양제추천"
+  ],
+  "title": "매일 아침 피곤하다면? 3초 투자로 활력 찾는 비법 공개!",
+  "structure": "AIDA"
+}

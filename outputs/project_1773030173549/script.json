@@ -1,0 +1,122 @@
+{
+  "title": "하루 만에 7조 원 매도한 투자자의 비밀",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "하루 만에 7조 원을 팔아치운 투자자가 있습니다. 근데 그 사람... 손해 본 게 아니에요.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a massive stack of coins with '7조' label and a bold downward arrow, surrounded by shocked expression icons and dollar signs on white background, whiteboard animation style, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "7조 원",
+        "손해 본 게 아니에요"
+      ],
+      "transition": "cut",
+      "ctaType": null
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "2024년 워런 버핏, 애플 주식 절반을 단 하루 만에 정리했습니다. 전 세계 시장이 흔들렸어요. 근데 버핏은 웃고 있었습니다.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a large apple logo with a scissors cutting it in half, a stock chart dropping on one side and a rising cash pile on the other, whiteboard animation style, white background, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "애플 주식 절반",
+        "단 하루 만에",
+        "버핏은 웃고 있었습니다"
+      ],
+      "transition": "slide",
+      "ctaType": null
+    },
+    {
+      "id": 3,
+      "type": "promise",
+      "text": "30초만 주세요. 버핏이 왜 팔았는지, 그리고 그 패턴이 지금 시장에서 뭘 의미하는지 알게 됩니다.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a stopwatch showing 30 seconds next to a rising bar chart with a question mark transforming into a lightbulb, whiteboard animation style, white background, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "30초만",
+        "지금 시장"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null
+    },
+    {
+      "id": 4,
+      "type": "core",
+      "text": "버핏이 현금 비중을 역대 최고인 38%까지 끌어올린 건 딱 두 번이에요. 2000년 닷컴 버블 직전. 그리고 지금.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a two-bar comparison chart labeled '2000' and '2024' both showing 38% cash ratio highlighted in bold, with a bubble icon next to the 2000 bar and a question mark next to the 2024 bar, whiteboard animation style, white background, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 6,
+      "subtitleEmphasis": [
+        "38%",
+        "닷컴 버블 직전",
+        "지금"
+      ],
+      "transition": "cut",
+      "ctaType": null
+    },
+    {
+      "id": 5,
+      "type": "twist",
+      "text": "그런데 진짜 문제는 따로 있어요. 버핏이 판다고 시장이 무조건 빠지진 않습니다. 2016년에도 같은 패턴이 나왔는데... 그 다음 해 S&P500은 오히려 올랐어요. 즉, 이건 '위험 신호'가 아니라 '버핏만의 리스크 관리 공식'일 가능성이 있습니다.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a split screen — left side shows a falling arrow labeled 'panic' with a red cross, right side shows a rising arrow labeled '2016 S&P +19%' with a green checkmark, a large question mark in the center, whiteboard animation style, white background, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 8,
+      "subtitleEmphasis": [
+        "무조건 빠지진 않습니다",
+        "리스크 관리 공식",
+        "가능성이 있습니다"
+      ],
+      "transition": "zoom_out",
+      "ctaType": null
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "이거 모르고 버핏 따라서 전부 팔아버린 사람... 여러분 주변에 분명 있을 겁니다.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a person silhouette with an empty wallet and a shocked face looking at a rising stock chart they just sold, whiteboard animation style, white background, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "전부 팔아버린 사람",
+        "여러분 주변에"
+      ],
+      "transition": "fade",
+      "ctaType": "B"
+    }
+  ],
+  "metadata": {
+    "title": "💸 하루 7조 매도한 버핏의 진짜 속셈",
+    "description": "워런 버핏이 단 하루 만에 7조 원어치 애플 주식을 정리했습니다.\n현금 비중 38% — 이 숫자가 마지막으로 나왔던 건 닷컴 버블 직전이었어요.\n근데 이게 무조건 폭락 신호일까요?\n2016년 동일 패턴 이후 시장은 오히려 올랐다는 데이터가 있습니다.\n버핏의 매도 패턴과 그 역사적 흐름을 분석했습니다.\n\n#버핏 #애플주식 #투자전략 #주식매도 #트레이딩",
+    "tags": [
+      "버핏",
+      "애플주식",
+      "주식매도",
+      "트레이딩",
+      "매매",
+      "차트",
+      "코인",
+      "선물",
+      "투자전략",
+      "리스크관리",
+      "trading",
+      "forex",
+      "crypto",
+      "chart",
+      "futures",
+      "Warren Buffett",
+      "stock market",
+      "investment"
+    ],
+    "hashtags": [
+      "#버핏",
+      "#트레이딩",
+      "#주식투자",
+      "#애플주식",
+      "#투자전략"
+    ],
+    "thumbnail": {
+      "text": "버핏이 7조 판 이유",
+      "imagePrompt": "dramatic close-up illustration of a massive pile of gold coins with a bold downward arrow and the number 7 trillion in large font, high contrast black and yellow color scheme, shocked eye icon in corner, centered subject, whiteboard animation style, white background, no text overlay, full frame"
+    }
+  }
+}

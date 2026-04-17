@@ -1,0 +1,73 @@
+{
+  "title": "야, 너 지금 이거 보고 있잖아 👀",
+  "totalScenes": 4,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 너 지금 스크롤 멈춘 거 맞지?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, extreme close-up of a human eye reflecting a glowing smartphone screen in a dark room, dramatic lighting, hyper-realistic",
+      "durationEstimate": 3.5,
+      "subtitleEmphasis": [
+        "스크롤 멈춘"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "사실 'Hey' 한 마디가 대화의 70%를 결정해.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, two young Gen-Z people texting on smartphones, neon-lit urban background, speech bubbles with 'hey' floating in the air, vibrant colors, night scene",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "70%",
+        "결정"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "첫 마디 하나로 상대방 마음이 열리거나 닫혀. 진짜로.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, symbolic split-screen of an open glowing door versus a slammed shut door, dramatic cinematic lighting, moody atmosphere, photorealistic",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "열리거나",
+        "닫혀"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "type": "cta",
+      "text": "다음 편엔 진짜 먹히는 첫 마디 알려줌. 구독하고 기다려.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, confident young Korean YouTuber pointing directly at camera with a smirk, bold subscribe button glowing in background, dynamic studio lighting, 4k sharp focus",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "구독",
+        "기다려"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "'Hey' 한 마디가 대화의 70%를 결정한다고? 😳 #shorts",
+    "description": "스크롤 멈춘 너, 잘 왔어.\n첫 마디 하나가 상대방의 마음을 열기도, 닫기도 해.\n다음 편에서 진짜 먹히는 첫 마디 공개할게. 구독 필수 👇",
+    "tags": [
+      "첫인상",
+      "대화법",
+      "소통",
+      "Z세대",
+      "인간관계",
+      "쇼츠"
+    ],
+    "hashtags": [
+      "#shorts",
+      "#대화법",
+      "#첫인상",
+      "#소통",
+      "#Z세대",
+      "#인간관계"
+    ]
+  }
+}

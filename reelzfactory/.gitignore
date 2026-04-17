@@ -1,0 +1,10 @@
+node_modules/
+.env
+dist/
+.turbo/
+*.mp4
+*.mp3
+*.wav
+.DS_Store
+out/
+.next/

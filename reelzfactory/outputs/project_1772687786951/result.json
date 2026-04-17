@@ -1,0 +1,36 @@
+{
+  "title": "아무도 안 알려주는 진짜 꿀팁 모음",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772687786951\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 31.733333333333334,
+  "metadata": {
+    "title": "아무도 안 알려준 스마트폰 꿀팁 ㄹㅇ 레전드 🔥 #Shorts",
+    "description": "학교에서도 부모님도 절대 안 알려주는 실생활 꿀팁!\n오늘부터 바로 써먹을 수 있는 스마트폰 배터리 꿀팁 대공개.\n구독하면 매주 이런 꿀팁 받아볼 수 있음 ㄹㅇ",
+    "tags": [
+      "꿀팁",
+      "스마트폰",
+      "생활꿀팁",
+      "유용한정보",
+      "쇼츠",
+      "Z세대",
+      "배터리수명",
+      "알아두면좋은것들"
+    ],
+    "hashtags": [
+      "#꿀팁",
+      "#스마트폰꿀팁",
+      "#생활꿀팁",
+      "#Shorts",
+      "#유용한정보",
+      "#알고리즘"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Edge TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

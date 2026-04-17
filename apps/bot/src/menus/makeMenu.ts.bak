@@ -1,0 +1,381 @@
+import { Context, Markup } from 'telegraf';
+import { getOrCreateUser, getUserChannels, createProduction, trackFeature } from '../../../../packages/shared/supabase';
+import { runFullPipeline } from '../../../../packages/pipeline/src/fullPipeline';
+import { uploadToYoutube } from '../../../../packages/pipeline/src/upload/uploadYoutube';
+
+const CATEGORIES = [
+  { id: 'invest', emoji: '�Y'�', name: '�^��z�' },
+  { id: 'trading', emoji: '�Y"^', name: '�S��^이�"�' },
+  { id: 'psychology', emoji: '�Y��', name: '�<�리' },
+  { id: 'health', emoji: '�Y'�', name: '건�.' },
+  { id: 'economy', emoji: '�Y"S', name: '경�o' },
+  { id: 'ai_trend', emoji: '�Y�-', name: 'AI�S��O�"o' },
+  { id: 'travel', emoji: '�o^️', name: '문�T"/�-��-?' },
+  { id: 'quotes', emoji: '�Y'�', name: '�.�-�' },
+  { id: 'old_tales', emoji: '�Y"-', name: '�.��<�' },
+];
+
+
+// �~��f� �o�z' �"인 �"�?�
+export async function showMakeMenu(ctx: Context) {
+  const buttons = [
+    [Markup.button.callback('�o�️ 주�o 직�' �z.력', 'make_custom')],
+    [Markup.button.callback('�Y", 카�.O고리�-��"o �"��f�', 'make_category')],
+    [Markup.button.callback('�Y"� �<o리�^ �f��"�', 'make_series')],
+    [Markup.button.callback('�Y"S �S��O�"o �"�"�', 'make_trend')],
+    [Markup.button.callback('⏰ �z��T �S��?�"', 'make_schedule')],
+    [Markup.button.callback('�Y"T �"인 �"�?�', 'menu_main')],
+  ];
+
+  await ctx.editMessageText(
+    '�YZ� *�~��f� �o�z'*\n\n�-��-� 방�<��o��o �~��f��" �O�"��O�s"?',
+    { parse_mode: 'Markdown', ...Markup.inlineKeyboard(buttons) }
+  );
+}
+
+// 카�.O고리 �"��f�
+export async function showCategoryMenu(ctx: Context) {
+  const rows = [];
+  for (let i = 0; i < CATEGORIES.length; i += 2) {
+    const row = [
+      Markup.button.callback(
+        `${CATEGORIES[i].emoji} ${CATEGORIES[i].name}`,
+        `cat_${CATEGORIES[i].id}`
+      ),
+    ];
+    if (CATEGORIES[i + 1]) {
+      row.push(
+        Markup.button.callback(
+          `${CATEGORIES[i + 1].emoji} ${CATEGORIES[i + 1].name}`,
+          `cat_${CATEGORIES[i + 1].id}`
+        )
+      );
+    }
+    rows.push(row);
+  }
+  rows.push([Markup.button.callback('�Y"T �~��f� �o�z'', 'menu_make')]);
+
+  await ctx.editMessageText(
+    '�Y", *카�.O고리 �"��f�*\n\n�-��-� 주�o�~ �~��f��" �O�"��O�s"?',
+    { parse_mode: 'Markdown', ...Markup.inlineKeyboard(rows) }
+  );
+}
+
+// 카�.O고리 �"��f� �>" �?' 주�o �z��T �f��"� or 직�' �z.력
+export async function handleCategorySelect(ctx: Context, categoryId: string) {
+  const category = CATEGORIES.find(c => c.id === categoryId);
+  if (!category) return;
+
+  const buttons = [
+    [Markup.button.callback('�YZ� AI 주�o �"�o', `cat_auto_${categoryId}`)],
+    [Markup.button.callback('�o�️ 직�' �z.력', `cat_manual_${categoryId}`)],
+    [Markup.button.callback('�Y"T 카�.O고리', 'make_category')],
+  ];
+
+  await ctx.editMessageText(
+    `${category.emoji} *${category.name}* 카�.O고리\n\nAI�? 주�o를 �"�o�.��O�s", 직�' �z.력�.��O�s"?`,
+    { parse_mode: 'Markdown', ...Markup.inlineKeyboard(buttons) }
+  );
+}
+
+// 주�o �z.력 �O?기 �f��fo �?리
+const waitingForTopic = new Map<number, { category?: string; channelId?: string }>();
+const suggestedTopicCache = new Map<number, string[]>();
+
+export function setWaitingForTopic(userId: number, data: { category?: string; channelId?: string }) {
+  waitingForTopic.set(userId, data);
+}
+
+export function getWaitingForTopic(userId: number) {
+  return waitingForTopic.get(userId);
+}
+
+export function clearWaitingForTopic(userId: number) {
+  waitingForTopic.delete(userId);
+}
+
+// 직�' �z.력 모�"o
+export async function handleManualTopic(ctx: Context, categoryId: string) {
+  const userId = ctx.from?.id;
+  if (!userId) return;
+
+  const category = CATEGORIES.find(c => c.id === categoryId);
+  setWaitingForTopic(userId, { category: categoryId });
+
+  await ctx.editMessageText(
+    `�o�️ *주�o를 �z.력�.�주�"��s"*\n\n` +
+    `카�.O고리: ${category?.emoji} ${category?.name}\n\n` +
+    `�~^�<o:\n` +
+    `�?� "�"�S��"인 2026 �.~�~기 �"망"\n` +
+    `�?� "AI�? �"꾸�S" 미�z~ 직�-. TOP 5"\n` +
+    `�?� "매일 �."침 5�" 루�<��o��o 인�f� �"꾸기"\n\n` +
+    `�Y'� �."�z~�-� 주�o를 �z.력�.~�"��s":`,
+    { parse_mode: 'Markdown' }
+  );
+}
+
+// AI 주�o �z��T �"�o
+export async function handleAutoTopic(ctx: Context, categoryId: string) {
+  const category = CATEGORIES.find(c => c.id === categoryId);
+
+  await ctx.editMessageText(`�YZ� ${category?.emoji} ${category?.name} 주�o �f��"� �'...`);
+
+  // TODO: AI�o 주�o 3�o �"�o (OpenRouter)
+  suggestedTopicCache.set(ctx.from!.id, suggestedTopics);
+  const buttons = suggestedTopics.map((topic, i) =>
+    [Markup.button.callback(`${i + 1}️�f� ${topic}`, `stopic_${categoryId}_${i}`)]
+   );
+
+  buttons.push([Markup.button.callback('�YZ� �<��<o �"�o', `cat_auto_${categoryId}`)]);
+  buttons.push([Markup.button.callback('�o�️ 직�' �z.력', `cat_manual_${categoryId}`)]);
+  buttons.push([Markup.button.callback('�Y"T 카�.O고리', 'make_category')]);
+
+  await ctx.editMessageText(
+    `�YZ� *${category?.emoji} ${category?.name} �"�o 주�o*\n\n�"��f��.~�"��s":`,
+    { parse_mode: 'Markdown', ...Markup.inlineKeyboard(buttons) }
+  );
+}
+
+// �f~�"O 주�o (�,~�'�-� AI�o 교체)
+function getSampleTopics(categoryId: string): string[] {
+  const topics: Record<string, string[]> = {
+    invest: ['�"�S��"인 2026 �.~�~기 폭�"� �<o�,~리�~�', '�>O�O �"�.�이 �?�^ �,��S" 주�<� 3�?�?', '20�O?�-� 1�-� 모�o��S" �~"�<�적 방�.'],
+    trading: ['이 �O��"� �,~�~�면 무조건 매�^~�.~�"��s"', '�?��^ 못�.~�S" �,��zO�~ 공�?�점 3�?�?', '�S��~�.'�o��o 일 50�O�>� �"�S" 루�<�'],
+    psychology: ['�"�공�.~�S" �,��zO�~ �."침 루�<� �"�?', '�^�.^�" 이기�S" 5�^ �.�T', '�?�z��"��~ �,�고방�<� vs �?�,o�.o �,�고방�<�'],
+    health: ['매일 이�f�O �.~면 10�,� �S�-��"�<�', '�~�,��"�이 �^�O? �.^ 먹�S" �O�<� 5�?�?', '�z� 못 �z��S" �,��zO이 꼭 �.��.� �.� �f'],
+    economy: ['2026�." �?�T�,� �O?폭락 �~��<�?', '�^리 인�.~�? �<��<� �?��z��-� 미�~�S" �~��-�', '�.o국 경�o �o"기�"��~ �"�<�'],
+    ai_trend: ['ChatGPT �O?체�.� AI �"��z��-^�<�', 'AI�o �>" 500�O�>� �"�S" �~"�<�적 방�.', '2026�." �,�라�^ 직�-. vs �o��S" 직�-.'],
+    travel: ['인�f��f� 보�z� 국�,� �-��-?�? TOP 3', '10�O�>��o��o �-��,~�S" �T�,��." �-��-?', '�~"�?인�O �."�S" 일본 �^��? �>�''],
+    quotes: ['�<��O��.� �.O 꼭 �"��-��.� �.� �.�-�', '�^�-� �O?�.o �?�z��"��~ �.o�^�""', '인�f��" �"꾸�S" �.o 문�z�'],
+    old_tales: ['조�"��<o�O? �?�z� 무�"o�s� 복�^~극', '�T.�" �?�인 �o�z� �,�기꾼 이�.�기', '조�"� �o고�~ 미�S��"�리 �,�건'],
+  };
+  return topics[categoryId] || ['AI �S��O�"o �o�<� �"�"�', '�^ �~�S" �.보 모�O', '�.O�."�'�면 �"�모�z^�S" �?�<�'];
+}
+
+// �~��f� �f��"� �<��-?
+export async function executeVideoGeneration(ctx: Context, topic: string, category?: string) {
+  const telegramId = ctx.from?.id;
+  if (!telegramId) return;
+
+  try {
+    const user = await getOrCreateUser(telegramId);
+
+    // �>"�" �o�.o 체크
+    if (user.monthly_video_count >= user.monthly_video_limit) {
+      await ctx.reply(
+        `�s�️ 이�^ �<� �~��f� �o�z' �.o�"�-� �"�<��-^�S��<^�<�.\n\n` +
+        `�Y"S ${user.monthly_video_count}/${user.monthly_video_limit}�o �,��s�\n` +
+        `�Y'Z �"O�zo �-.그�^이�"o�o �" �Z�? �~��f��" �O�"��-�보�"��s"!`,
+        Markup.inlineKeyboard([
+          [Markup.button.callback('�Y'Z �"O�zo �-.그�^이�"o', 'settings_plan')],
+          [Markup.button.callback('�Y"T �"인 �"�?�', 'menu_main')],
+        ])
+      );
+      return;
+    }
+
+    // �""�o�.�.~ 기록 �f��"�
+    const production = await createProduction({
+      user_id: user.id,
+      topic,
+      category: category || 'general',
+      status: 'scripting',
+    });
+
+    await trackFeature(user.id, 'make_video', { topic, category });
+
+    const statusMsg = await ctx.reply(
+      `�YZ� *�~��f� �o�z' �<o�z'!*\n\n` +
+      `�Y"O 주�o: ${topic}\n` +
+      `�Y", 카�.O고리: ${category || '일�~'}\n` +
+      `⏱️ �~^�f� �?O�s": 3-5�"\n\n` +
+      `�Y"� 1/5 �O?본 �f��"� �'...`,
+      { parse_mode: 'Markdown' }
+    );
+
+    // �OO이�""라인 �<��-?
+        const result = await runFullPipeline({
+      topic,
+      category: category || 'default',
+      userId: String(ctx.from?.id || ''),
+      stylePresetName: 'whiteboard',
+    });
+
+
+    await ctx.telegram.editMessageText(
+      ctx.chat!.id, statusMsg.message_id, undefined,
+      `�YZ� *�~��f� �o�z' �'*\n\n�Y"O ${topic}\n\n` +
+      `�o. 1/5 �O?본 �f��"� �T"�O\n` +
+      `�o. 2/5 이미�? �f��"� �T"�O\n` +
+      `�o. 3/5 �O�"� �f��"� �T"�O\n` +
+      `�o. 4/5 �O�"링 �T"�O\n` +
+      `�Y"� 5/5 YouTube �-.�o�"o �'...`,
+      { parse_mode: 'Markdown' }
+    );
+
+    // YouTube �-.�o�"o
+         // AI�? �f��"��.o metadata �To�s� (�o목/�"��./�fo그 �z��T �o적�T")
+    const metadata = result.metadata;
+    const ytCategoryId = (await import('../../../../packages/pipeline/src/upload/uploadYoutube')).getYoutubeCategoryId(category || 'general');
+
+    const optimizedTitle = metadata?.title || topic;
+    const optimizedDescription = [
+      metadata?.description || `${topic}�-� �O?�.o �~��f��z.�<^�<�.`,
+      '',
+      metadata?.hashtags?.join(' ') || '',
+      '',
+      '�Y"" 구�.과 �<�."�s" �?�f��"o려�s"!',
+    ].join('\n');
+    const optimizedTags = [
+      ...(metadata?.tags || []),
+      ...(metadata?.hashtags?.map(h => h.replace('#', '')) || []),
+      topic,
+    ].slice(0, 30);
+
+    const uploadResult = await uploadToYoutube({
+      videoPath: result.videoPath,
+      title: optimizedTitle.substring(0, 100),
+      description: optimizedDescription,
+      tags: optimizedTags,
+      privacyStatus: 'unlisted',
+      categoryId: ytCategoryId,
+    });
+
+
+    if (uploadResult.success) {
+      // DB �-.데이�S�
+      const { updateProduction } = await import('../../../../packages/shared/supabase');
+      await updateProduction(production.id, {
+        status: 'review',
+        youtube_video_id: uploadResult.videoId,
+        youtube_url: uploadResult.videoUrl,
+        video_path: result.videoPath,
+      });
+
+      await ctx.telegram.editMessageText(
+        ctx.chat!.id, statusMsg.message_id, undefined,
+        `�o. *�~��f� �o�z' �T"�O!*\n\n` +
+        `�Y"O 주�o: ${topic}\n` +
+        `�Y"- 미리보기: ${uploadResult.videoUrl}\n` +
+        `�Y"' �f��fo: �"공�o(Unlisted)\n\n` +
+        `�T.인 �>" 공�o �o�-?�.~�"��s" �Y'?`,
+        {
+          parse_mode: 'Markdown',
+          ...Markup.inlineKeyboard([
+            [Markup.button.url('�-�️ 미리보기', uploadResult.videoUrl!)],
+            [Markup.button.callback('�o. 공�o �o�-?', `publish_now_${production.id}`)],
+            [Markup.button.callback('⏰ �~^�.� �o�-?', `publish_schedule_${production.id}`)],
+            [Markup.button.callback('�Y"" 리�"이크', `remake_${production.id}`)],
+            [Markup.button.callback('�Y-'️ �,��o', `delete_${production.id}`)],
+          ]),
+        }
+      );
+    } else {
+      await updateProduction(production.id, {
+        status: 'failed',
+        error_message: uploadResult.error,
+      });
+
+      await ctx.telegram.editMessageText(
+        ctx.chat!.id, statusMsg.message_id, undefined,
+        `�s�️ �~��f� �f��"��? �T"�O�-^�?�O �-.�o�"o �<��O�\n\n�~��~: ${uploadResult.error}`,
+        {
+          ...Markup.inlineKeyboard([
+            [Markup.button.callback('�Y"" �<��<o �<o�"', `retry_upload_${production.id}`)],
+            [Markup.button.callback('�Y"T �"인 �"�?�', 'menu_main')],
+          ]),
+        }
+      );
+    }
+
+  } catch (error: any) {
+    console.error('Video generation error:', error);
+    await ctx.reply(
+      `�O �~��f� �f��"� �<��O�: ${error.message}`,
+      Markup.inlineKeyboard([
+        [Markup.button.callback('�Y"" �<��<o �<o�"', 'menu_make')],
+        [Markup.button.callback('�Y"T �"인 �"�?�', 'menu_main')],
+      ])
+    );
+  }
+}
+// ============================================================
+// �S��O�"o �"�"� �"�?�
+// ============================================================
+export async function showTrendMenu(ctx: Context) {
+  const buttons = CATEGORIES.map((cat) => [
+    Markup.button.callback(`${cat.emoji} ${cat.name}`, `trend_${cat.id}`),
+  ]);
+  buttons.push([Markup.button.callback('�Y"T �O�."�?기', 'menu_make')]);
+
+  await ctx.editMessageText(
+    '�Y"S *�S��O�"o �"�"�*\n\n�-��-� 카�.O고리�~ �S��O�"o를 �"�"��.��O�s"?',
+    { parse_mode: 'Markdown', ...Markup.inlineKeyboard(buttons) }
+  );
+}
+
+export async function handleTrendAnalysis(ctx: Context, category: string) {
+  const { runTrendAnalysis } = await import('../services/trendSearch');
+
+  const catInfo = CATEGORIES.find((c) => c.id === category);
+  const catName = catInfo ? `${catInfo.emoji} ${catInfo.name}` : category;
+
+  await ctx.editMessageText(
+    `�Y"S *${catName} �S��O�"o �"�"� �'...*\n\n⏳ 인기 �~��f� �?�f? + AI �,��>O�"o �"�o �'\n�.� 10-15�^ �?O�s"`,
+    { parse_mode: 'Markdown' }
+  );
+
+  try {
+    const analysis = await runTrendAnalysis(category);
+
+    if (analysis.suggestedTopics.length === 0) {
+      await ctx.editMessageText(
+        `�Y"S *${catName} �S��O�"o �"�"� 결과*\n\n�Y~. �S��O�"o 데이�"��? �?족�.��<^�<�.\n�<�른 카�.O고리를 �<o�"�.�보�"��s".`,
+        {
+          parse_mode: 'Markdown',
+          ...Markup.inlineKeyboard([
+            [Markup.button.callback('�Y"T 카�.O고리 �"��f�', 'make_trend')],
+            [Markup.button.callback('�Y"T �"인 �"�?�', 'menu_main')],
+          ]),
+        }
+      );
+      return;
+    }
+
+    const keywordText = analysis.extractedKeywords.slice(0, 8).join(', ');
+    const topVideoText = analysis.topVideos
+      .slice(0, 3)
+      .map((v, i) => `${i + 1}. ${v.title}`)
+      .join('\n');
+
+    const topicButtons = analysis.suggestedTopics.map((topic, i) => [
+      Markup.button.callback(`${i + 1}. ${topic.substring(0, 40)}`, `trend_topic_${category}_${i}`),
+    ]);
+    topicButtons.push([Markup.button.callback('�Y"T 카�.O고리 �"��f�', 'make_trend')]);
+
+    // �?��"��" �z"�<o �?�z� (�"��.~)
+    (ctx as any).session = (ctx as any).session || {};
+    (ctx as any).session.trendTopics = analysis.suggestedTopics;
+
+    await ctx.editMessageText(
+      `�Y"S *${catName} �S��O�"o �"�"� �T"�O!*\n\n` +
+      `�Y"� *인기 �~��f� TOP 3:*\n${topVideoText}\n\n` +
+      `�Y"' *�"�o �,��>O�"o:* ${keywordText}\n\n` +
+      `�Y'� *�"�o �?��"� (�"��f��.~면 �"�o �o�z'):*`,
+      { parse_mode: 'Markdown', ...Markup.inlineKeyboard(topicButtons) }
+    );
+  } catch (error: any) {
+    await ctx.editMessageText(
+      `�O �S��O�"o �"�"� �<��O�: ${error.message}`,
+      {
+        parse_mode: 'Markdown',
+        ...Markup.inlineKeyboard([
+          [Markup.button.callback('�Y"" �<��<o �<o�"', 'make_trend')],
+          [Markup.button.callback('�Y"T �"인 �"�?�', 'menu_main')],
+        ]),
+      }
+    );
+  }
+}
+export { CATEGORIES, suggestedTopicCache };
+

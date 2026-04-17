@@ -1,0 +1,111 @@
+{
+  "title": "이란 전쟁이 세계 경제에 미치는 영향 분석",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "이란에서 전쟁 나면 당신 지갑이 제일 먼저 털린다?!",
+      "imagePrompt": "[CHARACTER] a shocked cartoon YouTuber character pointing at a wallet being emptied with coins flying out, map of Middle East in background, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "지갑",
+        "털린다"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "이란은 전 세계 원유 공급의 4%를 담당해. 근데 호르무즈 해협이 막히면 20%가 증발함.",
+      "imagePrompt": "[NO_CHARACTER] a simple map showing Strait of Hormuz with oil tankers blocked, red X mark over the strait, percentage labels '4%' and '20%' with oil barrel icons, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "호르무즈 해협",
+        "20%"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "유가가 폭등하면? 물가 상승, 금리 인상, 경기침체 콤보로 직빵으로 온다고.",
+      "imagePrompt": "[NO_CHARACTER] a chain reaction diagram showing oil barrel with upward arrow leading to price tag inflation icon, then interest rate rising graph, then recession downward arrow, all connected with bold arrows, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "유가 폭등",
+        "콤보"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "text": "한국은 원유 100% 수입국. 환율까지 튀면 우리 경제는 진짜 이중 펀치 맞는 거야.",
+      "imagePrompt": "[CHARACTER] a cartoon character getting hit by two boxing gloves labeled '유가' and '환율', Korean flag visible, shocked expression, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "100% 수입국",
+        "이중 펀치"
+      ],
+      "transition": "shake"
+    },
+    {
+      "id": 5,
+      "type": "content",
+      "text": "반대로 방산주, 금, 원자재는 폭등 가능성. 위기가 기회가 되는 순간이지.",
+      "imagePrompt": "[NO_CHARACTER] a split screen showing rockets and defense equipment stocks going up with green arrows on left side, and gold bars with upward chart on right side, dollar signs floating around, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "방산주",
+        "폭등"
+      ],
+      "transition": "zoom_out"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "이란 전쟁 시나리오별 투자 전략, 다음 영상에서 다 알려줄게. 구독 눌러야 놓치지 않음.",
+      "imagePrompt": "[CHARACTER] a confident cartoon YouTuber character pointing at subscribe button with bell icon and thumbs up, speech bubble saying '다음 영상 예고!', whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "투자 전략",
+        "구독"
+      ],
+      "transition": "zoom_in"
+    }
+  ],
+  "metadata": {
+    "title": "⚠️ 이란 전쟁 터지면 당신 지갑 먼저 털린다 (경제 충격 분석)",
+    "description": "이란 전쟁이 실제로 발생하면 세계 경제에 어떤 충격이 올까요?\n호르무즈 해협 봉쇄 시 글로벌 원유 공급 20%가 사라지고, 유가 폭등 → 인플레이션 → 금리 인상 → 경기침체로 이어지는 연쇄 충격을 분석했습니다.\n\n원유 100% 수입국인 한국은 유가 상승과 환율 급등이 동시에 덮치는 이중 위기에 노출됩니다.\n반면 방산주, 금, 원자재 등 위기 속 수혜 자산도 존재합니다.\n\n지금 구독하면 다음 영상에서 시나리오별 투자 전략까지 공개합니다!\n\n#이란전쟁 #세계경제 #유가폭등 #경제뉴스 #경기침체",
+    "tags": [
+      "이란전쟁",
+      "세계경제",
+      "유가폭등",
+      "경제뉴스",
+      "경기침체",
+      "인플레이션",
+      "환율",
+      "금리",
+      "호르무즈해협",
+      "원자재",
+      "방산주",
+      "경제전망",
+      "물가",
+      "Iran war economy",
+      "oil price surge",
+      "global economy crisis",
+      "경제",
+      "금융위기"
+    ],
+    "hashtags": [
+      "#이란전쟁",
+      "#세계경제",
+      "#유가폭등",
+      "#경제뉴스",
+      "#경기침체",
+      "#인플레이션",
+      "#경제전망"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "topic": "부자의 가난 체럼 우리가 진짜 가난한 이유",
+  "title": "부자가 가난처럼 사는 진짜 이유",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773022896636\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 83.4,
+  "metadata": {
+    "title": "💸 월 1000만 원 버는데 왜 항상 가난할까? | 심리학이 밝힌 진짜 이유",
+    "description": "수입이 늘어도 통장이 비는 이유, 단순히 씀씀이 문제가 아닙니다.\n행동경제학의 '소득 앵커링' 심리가 당신의 돈을 조용히 갉아먹고 있어요.\n부자처럼 보이려다 진짜 부자가 되지 못하는 함정, 지금 확인하세요.\n복권 당첨자 70%가 5년 내 파산하는 이유도 여기 있습니다.\n오늘부터 소비 기준 하나만 바꿔도 인생이 달라질 수 있습니다.\n\n#심리학 #돈관리 #부자마인드 #습관 #경제심리",
+    "tags": [
+      "심리학",
+      "돈관리",
+      "부자습관",
+      "소비심리",
+      "멘탈",
+      "습관",
+      "자존감",
+      "행동경제학",
+      "인생조언",
+      "psychology",
+      "mindset",
+      "money habits",
+      "motivation",
+      "self-esteem",
+      "habit",
+      "behavioral economics"
+    ],
+    "hashtags": [
+      "#심리학",
+      "#돈관리",
+      "#부자마인드",
+      "#습관",
+      "#mindset"
+    ],
+    "thumbnail": {
+      "text": "돈 벌수록 왜 가난해?",
+      "imagePrompt": "a cartoon character with shocked expression holding an overflowing money bag in one hand and an empty wallet in the other, dramatic high contrast black and white illustration, bold thick outlines, centered subject, dynamic lighting, no text overlay, whiteboard animation style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

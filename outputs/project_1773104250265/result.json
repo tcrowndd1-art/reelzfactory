@@ -1,0 +1,47 @@
+{
+  "topic": "벤치마킹 기반 자동 주제",
+  "title": "Por que sua barriga dói depois de comer muito rápido? 🍔 #animação #shorts #engraçado",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773104250265\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 48.6,
+  "metadata": {
+    "title": "😨 Por que a barriga dói depois de comer rápido? #shorts",
+    "description": "Você já sentiu aquela dor horrível na barriga depois de comer muito rápido?\nIsso não é só desconforto — seu estômago pode estar sofrendo de verdade.\n\nNeste vídeo, explicamos de forma simples e animada o que acontece lá dentro quando você devora a comida sem mastigar.\n\nO cérebro leva até 20 minutos para registrar que você está satisfeito — e nesse intervalo, o estrago já foi feito.\n\nAssista até o fim e descubra o que seu estômago quer te dizer! 🍔😵\n\n#dordebarriga #comerrapido #saúde #animação #curiosidades",
+    "tags": [
+      "dor de barriga",
+      "comer rápido",
+      "digestão",
+      "saúde",
+      "estômago",
+      "animação",
+      "curiosidades",
+      "stomach pain",
+      "eating too fast",
+      "digestion",
+      "health",
+      "animation",
+      "funny shorts",
+      "body facts",
+      "wellness"
+    ],
+    "hashtags": [
+      "#dordebarriga",
+      "#saúde",
+      "#animação",
+      "#shorts",
+      "#curiosidades"
+    ],
+    "thumbnail": {
+      "text": "Por que a barriga dói? 😨",
+      "imagePrompt": "dramatic close-up of a cartoon stomach character with a panicked expression, red warning signs around it, sweat drops, bold high contrast colors, centered subject, white background, no text overlay, simple clean illustration style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}

@@ -1,0 +1,24 @@
+﻿{
+  "character_id": "omega3_marine_v1",
+  "product_id": "omega3_marine",
+  "character_name": "오메가봇",
+  "master_base_prompt": "A cute anthropomorphic Nutrilite supplement bottle character with blue cap, holding fish oil capsule, ocean blue accent colors, robotic arms and legs, friendly round eyes, clean white lab background, 3D render style, Pixar quality, vibrant colors --ar 9:16",
+  "master_style_suffix": "cinematic lighting, soft shadows, 8k, 3D animation style, consistent color grading, clean background, subtle rim light",
+  "negative_prompt": "missing cap, different clothes, human face, realistic human, blurry texture, hair, skin, low quality, watermark, text overlay, deformed, dark mood, horror style",
+  "scene_action_prompts": {
+    "hook": "surprised expression, eyes wide open, holding a glowing object",
+    "problem": "worried expression, looking at something concerning",
+    "agitate": "shocked expression, hands on head, dramatic pose",
+    "solution": "confident smile, holding up the product proudly",
+    "proof": "thumbs up, nodding, satisfied expression",
+    "cta": "pointing down with one hand, waving with the other"
+  },
+  "kling_elements_config": {
+    "max_images": 4,
+    "reference_images": ["reference/front.png", "reference/side.png", "reference/detail.png"]
+  },
+  "flux_config": {
+    "reference_image": "reference/front.png",
+    "reference_strength": 0.85
+  }
+}

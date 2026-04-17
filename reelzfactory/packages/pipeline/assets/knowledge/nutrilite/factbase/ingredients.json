@@ -1,0 +1,123 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-12",
+  "ingredients": [
+    {
+      "name": "마그네슘",
+      "name_en": "Magnesium",
+      "korean_deficiency_rate": "44.6%",
+      "deficiency_source": "2021 국민건강영양조사 제8기 3차년도",
+      "deficiency_detail": "12-29세에서 60% 이상 부족",
+      "functions": ["골격/치아 구성", "신경흥분 전달", "근육 이완/수축", "에너지 생산"],
+      "deficiency_symptoms": ["근육 경련", "눈꺼풀 떨림", "손발 저림", "근육통"],
+      "scientific_references": [{"author": "S Kang et al.", "year": 2019, "finding": "식물영양소 포함 종합비타민/미네랄 보충이 활성산소 제거에 도움", "journal": "Nutrients 11"}],
+      "absorption_tips": ["신체 움직임이 근막 내 수분 순환 촉진"],
+      "cautions": ["확인 필요"],
+      "related_products": ["cal_mag_d", "double_x"]
+    },
+    {
+      "name": "아연",
+      "name_en": "Zinc",
+      "korean_deficiency_rate": "27.2%",
+      "deficiency_source": "2021 국민건강영양조사",
+      "deficiency_detail": "20-40대 30% 이상 부족",
+      "functions": ["효소 구성", "면역 기능 유지", "세포 분열", "단백질 합성"],
+      "deficiency_symptoms": ["면역 기능 장애", "성장 및 발육 지연"],
+      "scientific_references": [{"author": "Koo JO, Kim BH et al.", "year": 2022, "finding": "아연의 면역/세포분열 역할 규명", "journal": "Advanced Nutrition"}],
+      "absorption_tips": ["비타민 B6와 함께 섭취 시 시너지"],
+      "cautions": ["과잉 섭취 시 구리 흡수 저해, 소화기계 장애"],
+      "related_products": ["double_x"]
+    },
+    {
+      "name": "비타민 D",
+      "name_en": "Vitamin D",
+      "korean_deficiency_rate": "충분섭취량 대비 31.4%",
+      "deficiency_source": "2020 국민건강영양조사",
+      "deficiency_detail": "전 연령대 50% 미만, 65세 이상 20% 미만",
+      "functions": ["소장 칼슘/인 흡수", "신장 칼슘 재흡수", "뼈 형성/유지", "면역/세포 성장"],
+      "deficiency_symptoms": ["근골격계 질환/골다공증 위험 증가", "만성 피로/면역력 저하"],
+      "scientific_references": [{"author": "Fletcher RH, Fairfield KM", "year": 2002, "finding": "성인 만성 질환 예방 위한 비타민 임상 연구", "journal": "JAMA"}],
+      "absorption_tips": ["칼슘, 마그네슘과 함께 섭취 시 뼈 건강 시너지"],
+      "cautions": ["확인 필요"],
+      "related_products": ["cal_mag_d"]
+    },
+    {
+      "name": "비타민 E",
+      "name_en": "Vitamin E",
+      "korean_deficiency_rate": "충분섭취량 대비 56.8%",
+      "deficiency_source": "2020 국민건강영양조사",
+      "deficiency_detail": "65세 이상 노인층 섭취 수준 가장 낮음",
+      "functions": ["지용성 항산화", "유리라디칼 연쇄반응 차단", "세포 산화 손상 보호", "오메가3 산패 방지"],
+      "deficiency_symptoms": ["세포 노화 가속", "항산화 방어력 저하"],
+      "scientific_references": [{"author": "Harman D", "year": 1956, "finding": "유해 산소 기초 노화 이론", "journal": "J Gerontol"}],
+      "absorption_tips": ["오메가3 등 지질과 함께 섭취"],
+      "cautions": ["동물성 지방 섭취 잦은 사람에게 권장"],
+      "related_products": ["omega3_marine", "salmon_omega3", "double_x"]
+    },
+    {
+      "name": "비타민 B3 나이아신",
+      "name_en": "Niacin",
+      "korean_deficiency_rate": "확인 필요",
+      "deficiency_source": null,
+      "deficiency_detail": null,
+      "functions": ["에너지 대사/생성", "세포 내 에너지 활력"],
+      "deficiency_symptoms": ["만성 피로", "무기력증", "에너지 대사 저하"],
+      "scientific_references": [{"author": "Abram Hoffer", "year": null, "finding": "나이아신 고용량 요법 치유 효과", "journal": "분자교정의학"}],
+      "absorption_tips": ["다른 비타민 B군 복합체와 함께 섭취"],
+      "cautions": ["과량 복용 시 안면 홍조, 메스꺼움, 간 기능 수치 상승"],
+      "related_products": ["double_x", "milk_thistle_ex"]
+    },
+    {
+      "name": "오메가-3 EPA DHA",
+      "name_en": "Omega-3 EPA DHA",
+      "korean_deficiency_rate": "확인 필요",
+      "deficiency_source": null,
+      "deficiency_detail": null,
+      "functions": ["혈중 중성지질/혈행 개선", "두뇌/망막 구성", "건조한 눈 개선"],
+      "deficiency_symptoms": ["혈액 순환 저하", "안구 건조/피로감", "기억력 감퇴"],
+      "scientific_references": [{"author": "American Heart Association", "year": null, "finding": "심장 보호 위해 오메가3 섭취 권장", "journal": "AHA Guidelines"}],
+      "absorption_tips": ["아쿠아셀 공법 적용 제품 섭취 시 일반 대비 약 4배 흡수율"],
+      "cautions": ["혈액 응고 억제제 복용 중이거나 출혈성 질환 시 전문가 상담"],
+      "related_products": ["omega3_marine", "salmon_omega3", "omega3_balance", "b_dha_blend"]
+    },
+    {
+      "name": "단백질",
+      "name_en": "Protein",
+      "korean_deficiency_rate": "확인 필요",
+      "deficiency_source": null,
+      "deficiency_detail": null,
+      "functions": ["근육/결합조직 구성", "효소/호르몬/항체 구성", "체내 대사/세포 유지"],
+      "deficiency_symptoms": ["세포 재생 속도 저하", "면역력/기초대사량 감소", "쉬운 피로감", "거친 피부/잘 부러지는 손톱"],
+      "scientific_references": [],
+      "absorption_tips": ["가수분해 단백질 형태가 소화/흡수에 유리"],
+      "cautions": ["동물성 단백질 섭취 시 유당불내증 주의"],
+      "related_products": ["phyto_protein"]
+    },
+    {
+      "name": "프로바이오틱스",
+      "name_en": "Probiotics",
+      "korean_deficiency_rate": "확인 필요",
+      "deficiency_source": null,
+      "deficiency_detail": null,
+      "functions": ["유익균 증식/유해균 억제", "배변활동 원활", "장 건강"],
+      "deficiency_symptoms": ["소화 불량", "배변 불규칙", "장내 가스"],
+      "scientific_references": [{"author": "다수 SCI급 논문", "year": null, "finding": "HN019 NCFM BL-04 균주 장내 생존력 입증", "journal": "Various"}],
+      "absorption_tips": ["프리바이오틱스와 함께 신바이오틱스 형태 섭취"],
+      "cautions": ["과다 복용 시 복부 팽만감/설사", "중증 면역억제 환자 패혈증 위험"],
+      "related_products": []
+    },
+    {
+      "name": "코엔자임 Q10",
+      "name_en": "CoQ10",
+      "korean_deficiency_rate": "확인 필요",
+      "deficiency_source": null,
+      "deficiency_detail": null,
+      "functions": ["미토콘드리아 에너지 생성", "항산화 작용", "높은 혈압 감소"],
+      "deficiency_symptoms": ["심장 펌프질 저하", "만성 피로", "혈액 순환 문제"],
+      "scientific_references": [{"author": "Q-Symbio", "year": 2014, "finding": "심부전 환자 코큐텐 병용 시 심장 사망률 43% 감소", "journal": "JACC Heart Failure"}],
+      "absorption_tips": ["확인 필요"],
+      "cautions": ["혈압 관련 질병 치료 중 의사 상담"],
+      "related_products": []
+    }
+  ]
+}

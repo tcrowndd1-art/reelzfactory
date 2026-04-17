@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "혹시 주변 사람 눈치 보느라 피곤한 티도 못 내고 있나요?",
+      "imagePrompt": "A dimly lit office desk at night, covered with scattered papers and an empty coffee mug, symbolizing exhaustion. No people. Realistic, 4K quality.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "커피로 버티는 것도 한계. 오후만 되면 방전되는 기분, 정말 지겹죠?",
+      "imagePrompt": "Close-up on a smartphone screen showing a calendar full of appointments, with a low battery icon flashing in the corner. Minimalist, commercial photography style.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "이제 하루 한 알로 간편하게 활력을 충전하세요. 프로필 링크에서 확인!",
+      "imagePrompt": "A single Nutri Lite Vitamin C tablet sits next to a fresh glass of water on a bright, clean kitchen counter in the morning sun. The product bottle is visible in the background. Lifestyle shot, 4K.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "혹시 주변 사람 눈치 보느라 피곤한 티도 못 내고 있나요?",
+  "cta": "프로필 링크에서 활력 넘치는 하루를 시작하세요!",
+  "hashtags": [
+    "#비타민C",
+    "#피로회복",
+    "#영양제추천",
+    "#뉴트리라이트",
+    "#직장인필수템"
+  ],
+  "title": "매일 피곤에 지친 사람들을 위한 15초 해결책",
+  "structure": "PAS"
+}

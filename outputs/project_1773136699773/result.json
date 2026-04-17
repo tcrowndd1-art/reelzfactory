@@ -1,0 +1,53 @@
+{
+  "topic": "커피 매일 마시면 몸에 일어나는 변화",
+  "title": "커피 매일 마시면 몸에 일어나는 변화 ☕",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773136699773\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 54.366666666666674,
+  "metadata": {
+    "title": "☕ 커피 매일 마시면 몸에 생기는 변화 (알면 후회함)",
+    "headline": {
+      "line1": "매일 커피",
+      "line2": "몸에 무슨 일이?"
+    },
+    "description": "하루 1~3잔 커피, 한국 성인 평균이에요.\n근데 카페인이 몸에 어떤 신호를 보내는지 아는 사람은 많지 않아요.\n집중력 향상부터 수면 방해까지, 커피의 두 얼굴을 정리했습니다.\n특히 오후 커피 마시는 분들은 반드시 보세요.\n카페인 반감기 5~6시간, 이 숫자 하나가 수면의 질을 바꿀 수 있어요.\n\n#커피 #카페인 #수면건강 #건강정보 #쇼츠",
+    "tags": [
+      "커피",
+      "카페인",
+      "수면건강",
+      "건강정보",
+      "커피효능",
+      "커피부작용",
+      "카페인반감기",
+      "집중력",
+      "당뇨예방",
+      "coffee",
+      "caffeine",
+      "sleep quality",
+      "health tips",
+      "daily coffee",
+      "wellness"
+    ],
+    "hashtags": [
+      "#커피",
+      "#카페인",
+      "#수면건강",
+      "#건강정보",
+      "#쇼츠건강",
+      "#카페인반감기",
+      "#건강습관"
+    ],
+    "thumbnail": {
+      "text": "커피 매일 마시면 생기는 일",
+      "imagePrompt": "a dramatic split illustration, left side shows a glowing energetic cartoon character holding a coffee cup with sparks of focus energy, right side shows the same character lying awake in bed at night looking exhausted, bold high contrast black and white tones with red accent on the coffee cup, centered composition, no text overlay, whiteboard animation style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}

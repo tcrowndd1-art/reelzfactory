@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-12",
+  "risk_notes": {
+    "shadowban": "대량 생성 시 동일 AI 보이스/이미지는 중복 컨텐츠로 분류될 수 있음. 영상마다 고유 노이즈/필터 적용 필요",
+    "medical_misinformation": "과격한 성분 표현은 플랫폼 가이드라인에 걸려 계정 폐쇄 원인. 의학적 확언 대신 데이터 기반 질문 형식 사용",
+    "vanity_metrics": "조회수만 높고 전환 없는 허수 데이터 주의. 댓글/저장/공유 비율 추적 필수"
+  },
+  "frameworks": [
+    {
+      "name": "일론 머스크의 생체 최적화",
+      "tone": "CEO/기술 권위",
+      "structure": "역순 PAS (Solution first)",
+      "duration_target": 15,
+      "sample_script": "흡수율 90% 이상. 일반 영양제가 소변으로 버려질 때, 이건 세포로 직접 꽂힙니다. 리포좀 기술의 정점, 아직도 가루로 드시나요?",
+      "visual_notes": "1초-현미경 리포좀 입자 침투 CG / 8초-기존 가루 비타민 물에 안녹는 대비샷 / 15초-활력 넘치는 CEO 눈동자 클로즈업",
+      "hook": "흡수율 90% 이상, 일반 영양제는 소변으로 버려집니다"
+    },
+    {
+      "name": "마크 저커버그의 알고리즘 점유",
+      "tone": "논쟁 유발/데이터 기반",
+      "structure": "QA (Paradox)",
+      "duration_target": 30,
+      "sample_script": "의사들이 영양제 추천 안 하는 이유? 진짜는 본인들만 먹기 때문입니다. 논문 데이터로 증명된 상위 1%의 노화 방지 루틴, 댓글에 링크 남겨둘 테니 직접 판단하세요.",
+      "visual_notes": "1초-가운 입은 전문가 비밀스러운 모습 / 15초-해외 의학 논문 캡처 빠르게 / 30초-댓글 유도 자막",
+      "hook": "의사들이 영양제 추천 안 하는 진짜 이유"
+    },
+    {
+      "name": "제프 베이조스의 고객 집착",
+      "tone": "AIDA 가치 중심",
+      "structure": "AIDA (Value-Driven)",
+      "duration_target": 45,
+      "sample_script": "3개월 뒤 당신의 아침이 바뀝니다. 영양제 한 알에 담긴 공학적 설계, 500개 이상의 실제 리뷰가 증명하는 삶의 질 변화를 느껴보세요. 지금 첫 달 무료 체험으로 리스크를 제거하십시오.",
+      "visual_notes": "1초-침대에서 가볍게 일어나는 1인칭 / 20초-별점 5개 리뷰 스크롤 / 45초-무료 체험 버튼 강조",
+      "hook": "3개월 뒤 당신의 아침이 달라집니다"
+    }
+  ],
+  "category_hooks": [
+    {"type": "fear", "hook": "매일 먹는 영양제가 당신의 간 수치를 올리고 있다면?", "ctr_grade": "A", "controversy": "high", "length": 15},
+    {"type": "curiosity", "hook": "실리콘밸리 천재들이 밥보다 먼저 챙기는 이것의 정체", "ctr_grade": "A", "controversy": "medium", "length": 30},
+    {"type": "result", "hook": "커피 없이 오후 3시를 버티는 유일한 방법", "ctr_grade": "A", "controversy": "low", "length": 15},
+    {"type": "exclusivity", "hook": "특허권 때문에 곧 사라질지도 모르는 역대급 성분 조합", "ctr_grade": "B", "controversy": "high", "length": 45}
+  ],
+  "monetization_pipeline": {
+    "step_1": "Shorts로 도파민 후킹 (인지)",
+    "step_2": "댓글/링크로 뉴스레터 구독 또는 무료 가이드북 배포 (DB 수집)",
+    "step_3": "수집된 메일로 고단가 영양제/멤버십 솔루션 자동 발송 (수익)"
+  }
+}

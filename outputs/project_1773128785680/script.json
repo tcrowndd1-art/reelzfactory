@@ -1,0 +1,115 @@
+{
+  "title": "Por que seu estômago ronca tanto na hora errada? 👀 #shorts #animação #saúde",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "Uau! Você comeu muito hoje, hein?",
+      "imagePrompt": "[CHARACTER] a cheerful cartoon character with wide eyes pointing at a bloated round belly with a surprised expression, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 2.5,
+      "subtitleEmphasis": [
+        "Uau!",
+        "comeu muito"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "Nunca vi essa barriga antes. Bem cheia. Bem redonda. Parece que tem vida própria lá dentro...",
+      "imagePrompt": "[CHARACTER] two cartoon characters, one with a very round bulging stomach, the other leaning in to examine it with a magnifying glass, both with exaggerated expressions, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 7,
+      "subtitleEmphasis": [
+        "vida própria",
+        "lá dentro"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "Cara, tá ficando apertado aqui dentro. Gás preso, bactérias fermentando, pressão subindo... Eu preciso de espaço! GRRR!",
+      "imagePrompt": "[CHARACTER] a cartoon depiction of the inside of a stomach with tiny bubble characters pushing against the stomach walls in panic, arrows showing gas pressure building up, dramatic cracks appearing on the walls, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 10,
+      "subtitleEmphasis": [
+        "Gás preso",
+        "fermentando",
+        "pressão",
+        "GRRR"
+      ],
+      "transition": "cut",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 4,
+      "type": "core_personal",
+      "text": "Doutor, minha barriga tá roncando tanto que todo mundo na reunião olhou pra mim. Quase morri de vergonha! Honestamente, eu já passei por isso e é o pior. Pesquisas indicam que o ronco estomacal pode ser até 80 decibéis — mais alto que uma conversa normal.",
+      "imagePrompt": "[CHARACTER] a cartoon character sitting in a doctor's office with a bright red embarrassed face, stomach visibly rumbling with sound waves coming out, a doctor with a clipboard looking very serious, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 14,
+      "subtitleEmphasis": [
+        "80 decibéis",
+        "vergonha",
+        "ronco estomacal"
+      ],
+      "transition": "fade",
+      "ctaType": null,
+      "hasPersonalTake": true
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "Você tem excesso de gás intestinal. E... tem um cheirinho aqui também.",
+      "imagePrompt": "[CHARACTER] a cartoon doctor pinching their nose with one hand while holding a medical chart in the other, the patient character shrinking into the chair from embarrassment, small stink cloud floating nearby, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "gás intestinal",
+        "cheirinho"
+      ],
+      "transition": "zoom_out",
+      "ctaType": "B",
+      "hasPersonalTake": false
+    }
+  ],
+  "metadata": {
+    "title": "👀 Por que sua barriga ronca na hora ERRADA? #shorts #saúde #animação",
+    "headline": {
+      "line1": "BARRIGA RONCA",
+      "line2": "na pior hora"
+    },
+    "description": "Já passou pela situação constrangedora de estar em silêncio total e sua barriga resolver falar mais alto que você? 😅\n\nNesse vídeo você vai entender o que pode estar acontecendo lá dentro — gases, fermentação e pressão intestinal — de um jeito simples e bem-humorado.\n\nEstudos indicam que o ronco estomacal (borborigmo) pode atingir até 80 decibéis em alguns casos, e está relacionado à fermentação bacteriana e ao movimento de gases no intestino.\n\nSe isso acontece com frequência, pode ser sinal de algo que vale a pena investigar com um profissional de saúde.\n\nAssiste até o final — tem um detalhe constrangedor que você não vai esquecer. 😂\n\n#barrigaronca #saúdeintestinal #gases #saúde #animação",
+    "tags": [
+      "barriga ronca",
+      "gases intestinais",
+      "saúde digestiva",
+      "borborigmo",
+      "por que a barriga ronca",
+      "saúde",
+      "animação",
+      "shorts saúde",
+      "intestino",
+      "digestão",
+      "stomach growling",
+      "intestinal gas",
+      "digestive health",
+      "health animation",
+      "funny health shorts"
+    ],
+    "hashtags": [
+      "#barrigaronca",
+      "#saúdeintestinal",
+      "#animação",
+      "#shorts",
+      "#saúde"
+    ],
+    "thumbnail": {
+      "text": "Barriga falou mais alto",
+      "imagePrompt": "cartoon character with extremely round bloated stomach, bright red embarrassed face, sound waves shooting out from belly, dramatic high contrast yellow and white background, bold black outlines, centered subject, no text overlay, whiteboard animation style"
+    }
+  }
+}

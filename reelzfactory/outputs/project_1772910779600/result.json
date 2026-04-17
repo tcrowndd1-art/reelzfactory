@@ -1,0 +1,45 @@
+{
+  "topic": "\"바나나로 5분 만에 이해하는 금융 버블\"",
+  "title": "바나나로 금융 버블 이해하기",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772910779600\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 35.3,
+  "metadata": {
+    "title": "🍌 바나나로 5분 만에 이해하는 금융 버블의 진실",
+    "description": "금융 버블이 뭔지 어렵게 설명하는 거 이제 그만!\n바나나 하나로 버블의 시작부터 붕괴까지 완벽하게 이해해 보세요.\n\n닷컴 버블, 부동산 버블, 코인 버블… 사실 전부 같은 패턴입니다.\n이 영상 하나로 버블의 본질을 꿰뚫어 보는 눈을 키워드세요!\n\n다음 영상에서는 버블을 미리 감지하고 탈출하는 법을 공개합니다. 구독 필수!\n\n#금융버블 #경제공부 #투자기초 #코인버블 #부동산버블",
+    "tags": [
+      "금융버블",
+      "경제공부",
+      "투자기초",
+      "버블경제",
+      "코인버블",
+      "부동산버블",
+      "닷컴버블",
+      "경제상식",
+      "재테크입문",
+      "주식공부",
+      "financial bubble",
+      "economics explained",
+      "investment basics",
+      "bubble economy",
+      "crypto bubble"
+    ],
+    "hashtags": [
+      "#금융버블",
+      "#경제공부",
+      "#투자기초",
+      "#재테크",
+      "#경제상식",
+      "#코인",
+      "#주식공부"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

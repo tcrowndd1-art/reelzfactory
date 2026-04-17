@@ -1,0 +1,106 @@
+{
+  "title": "혈당 스파이크, 이렇게 막을 수 있다 🩸",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "밥 먹고 나서 왜 이렇게 졸리죠?",
+      "imagePrompt": "[CHARACTER] a cartoon character sitting at a desk looking extremely drowsy after eating, head drooping, food on table, question mark above head, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "왜",
+        "졸리죠"
+      ],
+      "transition": "cut",
+      "ctaType": null
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "사실 대부분의 사람들이 혈당이 급격히 오르고 내리는 걸 반복하면서 살고 있어요. 근데 본인은 전혀 모르죠.",
+      "imagePrompt": "[NO_CHARACTER] a simple graph showing a sharp spike and rapid drop in blood sugar levels, with a red danger zone highlighted at the peak, bold arrow pointing upward then crashing down, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 9,
+      "subtitleEmphasis": [
+        "혈당",
+        "급격히",
+        "전혀 모르죠"
+      ],
+      "transition": "slide",
+      "ctaType": null
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "혈당 스파이크가 반복되면 만성 피로, 집중력 저하, 체중 증가로 이어질 수 있다는 연구가 있어요. 근데 식사 순서 하나만 바꿔도 달라질 수 있거든요.",
+      "imagePrompt": "[NO_CHARACTER] three simple icons in a row: a tired face, a foggy brain, and a weighing scale going up, connected by arrows, then a fork and knife with a reorder symbol showing vegetables first then carbs, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 10,
+      "subtitleEmphasis": [
+        "만성 피로",
+        "식사 순서",
+        "달라질 수 있거든요"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null
+    },
+    {
+      "id": 4,
+      "type": "twist",
+      "text": "채소 먼저, 단백질 다음, 탄수화물 마지막. 이 순서로 먹으면 혈당이 훨씬 완만하게 오른다는 보고가 있어요. 밥을 줄이는 게 아니라 순서를 바꾸는 거예요.",
+      "imagePrompt": "[NO_CHARACTER] three plates arranged in sequence with numbered labels: 1 - a plate of vegetables (broccoli, lettuce), 2 - a plate of protein (egg, chicken), 3 - a plate of rice and bread, with a smooth gentle curve graph below contrasting with a sharp spike graph crossed out, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 11,
+      "subtitleEmphasis": [
+        "채소 먼저",
+        "탄수화물 마지막",
+        "순서를 바꾸는 거예요"
+      ],
+      "transition": "slide",
+      "ctaType": null
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "이거 모르고 오늘도 밥부터 먹은 사람... 주변에 분명 있을 겁니다.",
+      "imagePrompt": "[CHARACTER] a cartoon character looking knowingly at the camera with a slight smirk, pointing finger outward toward viewer, small rice bowl icon crossed out with an arrow showing vegetables icon first, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "모르고",
+        "밥부터 먹은 사람"
+      ],
+      "transition": "zoom_out",
+      "ctaType": "B"
+    }
+  ],
+  "metadata": {
+    "title": "밥 먹고 졸린 이유 따로 있었다 🩸 혈당 스파이크 막는 법",
+    "description": "밥 먹고 나서 왜 이렇게 피곤하고 졸릴까요?\n혈당 스파이크가 반복되면 만성 피로, 집중력 저하, 체중 증가로 이어질 수 있다는 연구가 있습니다.\n놀랍게도 식사 순서 하나만 바꿔도 혈당 반응이 달라질 수 있어요.\n채소 → 단백질 → 탄수화물 순서, 오늘부터 시도해볼 수 있습니다.\n다이어트나 건강 관리에 관심 있다면 꼭 알아두세요.\n\n#혈당스파이크 #식사순서 #혈당관리 #건강습관 #다이어트",
+    "tags": [
+      "혈당스파이크",
+      "혈당관리",
+      "식사순서",
+      "건강습관",
+      "만성피로",
+      "다이어트",
+      "혈당",
+      "건강",
+      "blood sugar",
+      "blood sugar spike",
+      "meal order",
+      "health tips",
+      "diet",
+      "wellness",
+      "glucose"
+    ],
+    "hashtags": [
+      "#혈당스파이크",
+      "#식사순서",
+      "#혈당관리",
+      "#건강습관",
+      "#다이어트"
+    ],
+    "thumbnail": {
+      "text": "밥 먹고 졸린 진짜 이유",
+      "imagePrompt": "a dramatic split image showing a sharp blood sugar spike graph on the left in red versus a smooth gentle curve on the right in green, bold high contrast colors, centered composition, no text overlay, clean illustration style, white background"
+    }
+  }
+}

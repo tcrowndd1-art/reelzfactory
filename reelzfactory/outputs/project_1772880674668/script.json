@@ -1,0 +1,108 @@
+{
+  "title": "브라질 인플루언서 되기",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "브라질에서 팔로워 10만? 한국인도 가능해요!",
+      "imagePrompt": "[CHARACTER] a cartoon character with wide surprised eyes holding a phone showing '100K followers' notification, whiteboard animation style, white background, simple clean illustration, black outlines, confetti and stars around the phone screen",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "브라질",
+        "한국인도 가능"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "브라질은 인스타·틱톡 사용자 세계 3위! 시장이 미쳤어요.",
+      "imagePrompt": "[NO_CHARACTER] a simple world map highlighting Brazil in bright green with social media icons Instagram and TikTok floating above it, bold number '3rd' badge, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "세계 3위",
+        "시장"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "포르투갈어 몰라도 OK! 외국인 콘텐츠가 오히려 더 잘 터져요.",
+      "imagePrompt": "[CHARACTER] a cartoon foreigner character holding a flag and a megaphone with sparkles and rising bar chart next to them, whiteboard animation style, white background, simple clean illustration, black outlines, speech bubble with heart eyes emoji",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "포르투갈어 몰라도",
+        "더 잘 터져"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "text": "핵심 전략 3가지! 릴스 매일 올리기, 현지 트렌드 반응, 브라질 댓글 달기.",
+      "imagePrompt": "[NO_CHARACTER] three numbered icons: 1) a calendar with a video play button, 2) a trending arrow with Brazilian carnival hat, 3) a speech bubble with Portuguese text 'Que incrível!', whiteboard animation style, white background, simple clean illustration, black outlines, bold numbers 1 2 3",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "3가지",
+        "현지 트렌드"
+      ],
+      "transition": "slide_up"
+    },
+    {
+      "id": 5,
+      "type": "content",
+      "text": "브라질 인플루언서 수익은 한국보다 브랜드 협찬이 2배 더 많아요!",
+      "imagePrompt": "[NO_CHARACTER] two bar charts side by side comparing Korea and Brazil brand sponsorship revenue, Brazil bar is twice as tall with a dollar sign and green upward arrow, whiteboard animation style, white background, simple clean illustration, black outlines, labels 'KR' and 'BR'",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "수익",
+        "2배"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "다음 편엔 브라질 팔로워 모으는 꿀팁 공개! 구독하고 놓치지 마요 🔔",
+      "imagePrompt": "[CHARACTER] a cartoon character pointing at a glowing subscribe bell button with excited expression, whiteboard animation style, white background, simple clean illustration, black outlines, animated sparkles and 'SUBSCRIBE' text in bold",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "꿀팁",
+        "구독"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "🇧🇷 브라질 인플루언서? 한국인도 팔로워 10만 가능한 이유",
+    "description": "브라질 SNS 시장, 알고 보면 한국인에게 완전 유리해요!\n포르투갈어 한 마디 못해도 외국인 콘텐츠가 오히려 더 잘 터지는 이유 알려드립니다.\n\n인스타그램·틱톡 사용자 세계 3위 브라질에서 인플루언서로 성장하는 핵심 전략 3가지 공개!\n브라질 브랜드 협찬 시장은 한국보다 2배 크다는 사실, 알고 계셨나요?\n\n지금 구독하고 다음 편 브라질 팔로워 모으기 꿀팁도 놓치지 마세요 🔔\n\n#브라질인플루언서 #해외SNS #틱톡성장 #인스타그램전략 #브라질마케팅",
+    "tags": [
+      "브라질 인플루언서",
+      "브라질 SNS",
+      "해외 인플루언서",
+      "틱톡 성장",
+      "인스타그램 팔로워",
+      "브라질 마케팅",
+      "콘텐츠 크리에이터",
+      "릴스 전략",
+      "SNS 수익화",
+      "포르투갈어",
+      "Brazil influencer",
+      "Brazil TikTok",
+      "Instagram growth",
+      "social media Brazil",
+      "content creator tips"
+    ],
+    "hashtags": [
+      "#브라질인플루언서",
+      "#해외SNS전략",
+      "#틱톡성장법",
+      "#인스타그램팔로워늘리기",
+      "#콘텐츠크리에이터",
+      "#브라질마케팅",
+      "#SNS수익화"
+    ]
+  }
+}

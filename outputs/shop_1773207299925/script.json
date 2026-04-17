@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "자도 자도 피곤한 이유? 99%는 우리 몸을 늙게 만드는 '이것' 때문입니다.",
+      "imagePrompt": "A single wilted plant in a pot on a stark, grey desk, next to a half-empty, cold cup of coffee. The lighting is dim and bluish, conveying a sense of exhaustion. 4K, realistic, commercial photography style.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "커피, 에너지 드링크에 돈 쓰지 마세요. 활성산소를 못 잡으면 밑 빠진 독에 물 붓기입니다.",
+      "imagePrompt": "A conceptual image of water being poured into a beautiful glass jar that has a visible crack at the bottom, with water leaking out. The background is dark to emphasize the futility. 4K, realistic, product photography.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "매일 아세로라 체리 45개를 먹을 수 없다면, 이 항산화 비타민C 한 알로 끝내세요. 지금 프로필 링크 확인!",
+      "imagePrompt": "A bottle of Nutrilite Vitamin C standing elegantly on a clean white marble surface, surrounded by a pile of fresh, vibrant red acerola cherries. Bright, natural morning light. 4K quality, commercial lifestyle shot.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "자도 자도 피곤한 이유? 99%는 우리 몸을 늙게 만드는 '이것' 때문입니다.",
+  "cta": "지금 프로필 링크 확인!",
+  "hashtags": [
+    "#비타민C추천",
+    "#뉴트리라이트",
+    "#피로회복",
+    "#항산화영양제",
+    "#만성피로"
+  ],
+  "title": "자도자도 피곤하다면? 99%는 이게 부족해서 그래요",
+  "structure": "PAS"
+}

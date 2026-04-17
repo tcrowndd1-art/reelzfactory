@@ -1,0 +1,106 @@
+{
+  "title": "비트코인 구매 시점",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "비트코인 언제 사야 해? 솔직히 아무도 몰라요.",
+      "imagePrompt": "[CHARACTER] a cartoon YouTuber character with wide shocked eyes pointing at a volatile Bitcoin price chart with big question marks, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "언제",
+        "아무도 몰라"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "근데 역사적으로 보면 패턴이 있거든요.",
+      "imagePrompt": "[NO_CHARACTER] a simple timeline chart showing Bitcoin halving cycles with repeating wave patterns and upward trend, labeled '반감기 사이클', whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 3.5,
+      "subtitleEmphasis": [
+        "패턴"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "반감기 직후 6~12개월이 역대 최고 상승 구간이었어요.",
+      "imagePrompt": "[NO_CHARACTER] a bar graph showing Bitcoin price surges after each halving event in 2012, 2016, 2020 with green upward arrows and percentage labels like '+1000%', whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "반감기",
+        "최고 상승"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "text": "공포 지수 '극단적 공포' 뜰 때가 진짜 매수 타이밍이에요.",
+      "imagePrompt": "[NO_CHARACTER] a simple Fear and Greed Index meter showing the needle pointing to 'Extreme Fear' zone in red, with a shopping cart icon and downward price arrow nearby, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "극단적 공포",
+        "매수 타이밍"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 5,
+      "type": "content",
+      "text": "근데 진짜 꿀팁? 한 번에 사지 말고 분할 매수하세요.",
+      "imagePrompt": "[CHARACTER] a cartoon character splitting a large Bitcoin coin into 4 smaller pieces with a calendar showing different dates, coins being placed step by step, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "분할 매수"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "다음 영상엔 비트코인 팔아야 할 타이밍 알려드릴게요. 구독 눌러요!",
+      "imagePrompt": "[CHARACTER] a cartoon YouTuber character giving a thumbs up with a subscribe button icon and a teaser card showing a Bitcoin sell signal chart, whiteboard animation style, white background, simple clean illustration, black outlines",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "구독",
+        "팔아야 할 타이밍"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "📈 비트코인 지금 사도 돼? 타이밍 공식 공개",
+    "description": "비트코인 구매 시점, 사실 공식이 있습니다.\n반감기 사이클과 공포 지수만 알아도 남들보다 한 발 앞설 수 있어요.\n\n✅ 반감기 이후 6~12개월 = 역대 최고 상승 구간\n✅ 공포탐욕지수 '극단적 공포' = 매수 신호\n✅ 분할 매수로 리스크 최소화\n\n비트코인 투자 전 꼭 알아야 할 타이밍 전략을 쉽고 빠르게 정리했습니다.\n\n#비트코인 #비트코인매수타이밍 #코인투자 #반감기 #공포탐욕지수",
+    "tags": [
+      "비트코인",
+      "비트코인 매수 타이밍",
+      "비트코인 구매 시점",
+      "코인 투자",
+      "반감기",
+      "공포탐욕지수",
+      "분할매수",
+      "비트코인 투자 방법",
+      "암호화폐",
+      "Bitcoin",
+      "Bitcoin buy timing",
+      "crypto investment",
+      "Bitcoin halving",
+      "fear and greed index",
+      "DCA strategy"
+    ],
+    "hashtags": [
+      "#비트코인",
+      "#코인투자",
+      "#반감기",
+      "#비트코인타이밍",
+      "#암호화폐",
+      "#Bitcoin",
+      "#재테크"
+    ]
+  }
+}

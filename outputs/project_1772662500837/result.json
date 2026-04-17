@@ -1,0 +1,35 @@
+{
+  "topic": "hey",
+  "title": "야, 너 지금 이거 보고 있잖아 👀",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772662500837\\video\\shorts.mp4",
+  "totalScenes": 4,
+  "totalDuration": 18.133333333333333,
+  "metadata": {
+    "title": "'Hey' 한 마디가 대화의 70%를 결정한다고? 😳 #shorts",
+    "description": "스크롤 멈춘 너, 잘 왔어.\n첫 마디 하나가 상대방의 마음을 열기도, 닫기도 해.\n다음 편에서 진짜 먹히는 첫 마디 공개할게. 구독 필수 👇",
+    "tags": [
+      "첫인상",
+      "대화법",
+      "소통",
+      "Z세대",
+      "인간관계",
+      "쇼츠"
+    ],
+    "hashtags": [
+      "#shorts",
+      "#대화법",
+      "#첫인상",
+      "#소통",
+      "#Z세대",
+      "#인간관계"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.16",
+    "voice": "$0 (Edge TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.17"
+  }
+}

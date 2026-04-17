@@ -1,0 +1,73 @@
+{
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "totalScenes": 4,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 지금 니 직업 AI가 대신할 수 있거든?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a shocked young Korean person staring at a glowing AI robot sitting at an office desk, dramatic lighting, close-up face expression, neon blue tones",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "AI",
+        "대신할"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "main",
+      "text": "2026년 대체 1위 텔레마케터, 2위 회계사, 3위 번역가, 4위 데이터 입력직, 5위 콘텐츠 작성자! 다 AI가 씹어먹는 중",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, futuristic split screen showing five different office jobs being replaced by holographic AI interfaces, each panel fading from human worker to AI robot, cool blue and orange contrast lighting",
+      "durationEstimate": 14,
+      "subtitleEmphasis": [
+        "대체 1위",
+        "씹어먹는"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "main",
+      "text": "근데 살아남는 직업도 있어. AI가 못 하는 공감 능력, 창의성, 현장 판단력 이 세 가지가 핵심이야",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a confident young Korean professional standing boldly in front of a transparent AI brain hologram, warm golden light on the human side versus cold blue light on the AI side, symbolic contrast",
+      "durationEstimate": 11,
+      "subtitleEmphasis": [
+        "공감 능력",
+        "창의성"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "type": "cta",
+      "text": "니 직업 안전한지 궁금하면 구독하고 다음 영상에서 확인해 ㅋ",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a charismatic young Korean YouTuber pointing directly at the camera with a smirk, bold subscribe button glowing in the background, vibrant studio lighting, energetic composition",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "구독",
+        "다음 영상"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 😱 내 직업은 안전할까?",
+    "description": "2026년, AI가 본격적으로 직업 시장을 뒤흔들기 시작합니다. 텔레마케터부터 콘텐츠 작성자까지, 생각보다 훨씬 많은 직업이 위기에 처해 있어요. 근데 반대로 살아남는 직업도 있다? 지금 바로 확인하세요.",
+    "tags": [
+      "AI대체직업",
+      "2026년트렌드",
+      "미래직업",
+      "인공지능",
+      "취업정보"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026트렌드",
+      "#미래직업",
+      "#인공지능",
+      "#쇼츠",
+      "#취준생필수시청"
+    ]
+  }
+}

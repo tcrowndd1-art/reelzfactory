@@ -1,0 +1,39 @@
+{
+  "topic": "2026년 AI가 대체할 직업 TOP 5",
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772561464045\\video\\shorts.mp4",
+  "totalScenes": 4,
+  "totalDuration": 35.93333333333334,
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 😨 지금 네 직업 괜찮아?",
+    "description": "2026년, AI가 실제로 대체할 가능성이 높은 직업 TOP 5를 솔직하게 정리했어요.\n콜센터부터 회계사까지, 생각보다 훨씬 가까운 이야기일 수 있습니다.\n다음 영상에서는 AI가 절대 대체 못 하는 직업도 공개 예정! 구독하고 확인하세요🔥",
+    "tags": [
+      "AI대체직업",
+      "2026AI",
+      "직업미래",
+      "인공지능",
+      "ChatGPT",
+      "미래직업",
+      "Z세대",
+      "커리어"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026년직업",
+      "#인공지능",
+      "#미래직업",
+      "#ChatGPT",
+      "#직업추천",
+      "#Z세대",
+      "#쇼츠"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.16",
+    "voice": "$0 (Edge TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.17"
+  }
+}

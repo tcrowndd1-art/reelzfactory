@@ -1,0 +1,188 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-12",
+  "products": [
+    {
+      "id": "double_x",
+      "name_kr": "더블엑스",
+      "name_en": "Double X",
+      "category": "비타민/미네랄",
+      "key_ingredients": [
+        {"name": "14가지 비타민", "amount": "비타민A 350RAE, 비타민C 100mg 등", "role": "항산화/에너지"},
+        {"name": "10가지 무기질", "amount": "칼슘 350mg, 마그네슘 110mg 등", "role": "뼈/신경/근육"},
+        {"name": "식물농축물", "amount": "20여 가지 혼합", "role": "파이토칼라 식물영양소"}
+      ],
+      "daily_dose": "1일 2회 (1회 골드팩 2정, 실버팩 2정, 그린팩 2정)",
+      "benefits": ["항산화 작용으로 세포 보호", "체내 에너지 생성", "뼈 형성 및 신경/근육 기능 유지"],
+      "target_audience": "불규칙한 식습관 성인, 청소년, 임산부 및 수유부",
+      "price_range_krw": "88000-91000",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["자사 농장 직접 재배 20여 가지 식물농축물", "파이토칼라 독자 포뮬러", "단순 비타민 아닌 식물 영양소 결합"]
+    },
+    {
+      "id": "omega3_marine",
+      "name_kr": "뉴트리 마린 오메가-3",
+      "name_en": "Nutri Marine Omega-3",
+      "category": "오메가",
+      "key_ingredients": [
+        {"name": "EPA 및 DHA 함유 유지", "amount": "고함량", "role": "혈행/중성지질"},
+        {"name": "비타민 E", "amount": "산화방지", "role": "항산화"},
+        {"name": "화이트 치아씨드", "amount": "부원료", "role": "보조"}
+      ],
+      "daily_dose": "1일 2회, 1회 2캡슐",
+      "benefits": ["혈행 건강", "혈중 중성지질 개선", "건조한 눈 개선", "기억력 개선"],
+      "target_audience": "혈관/중성지방 관리 필요자, 안구건조/기억력 감퇴 걱정",
+      "price_range_krw": "53000",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품", "Friend of the Sea"],
+      "hook_angles": ["아쿠아셀 공법 흡수율 4배", "먹이사슬 최하단 소형 어종 중금속 원천 차단", "4중 기능성"]
+    },
+    {
+      "id": "cal_mag_d",
+      "name_kr": "칼맥 디",
+      "name_en": "Cal Mag D",
+      "category": "미네랄",
+      "key_ingredients": [
+        {"name": "칼슘", "amount": "해조 및 굴껍질 추출 복합", "role": "뼈/치아 형성"},
+        {"name": "마그네슘", "amount": "칼슘과 2:1 비율", "role": "신경/근육"},
+        {"name": "활성형 비타민 D3", "amount": "1일 기준치 100%", "role": "칼슘 흡수 보조"}
+      ],
+      "daily_dose": "1일 2회, 1회 2정",
+      "benefits": ["뼈와 치아 형성", "신경과 근육 기능 유지", "골다공증 발생 위험 감소"],
+      "target_audience": "폐경기 전후 여성, 실내 생활 많은 직장인/청소년",
+      "price_range_krw": "82000",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품", "Nutricert"],
+      "hook_angles": ["아이슬란드 심해 청정 해조류 칼슘", "칼슘:마그네슘 2:1 황금 비율", "활성형 비타민D3"]
+    },
+    {
+      "id": "acerola_c",
+      "name_kr": "아세로라 C",
+      "name_en": "Acerola C",
+      "category": "비타민",
+      "key_ingredients": [
+        {"name": "비타민 C", "amount": "200mg/정", "role": "항산화"},
+        {"name": "굴껍질 분말", "amount": "부원료", "role": "보조"}
+      ],
+      "daily_dose": "1일 3회, 1회 1정",
+      "benefits": ["항산화 작용으로 세포 보호"],
+      "target_audience": "스트레스 많은 성인, 야외 활동 잦은 분",
+      "price_range_krw": "31000",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["합성 아닌 자사 농장 아세로라 체리 추출", "식물 본연의 생명력"]
+    },
+    {
+      "id": "salmon_omega3",
+      "name_kr": "새몬 오메가-3",
+      "name_en": "Salmon Omega-3",
+      "category": "오메가",
+      "key_ingredients": [
+        {"name": "연어유 및 소형어종 어유", "amount": "EPA/DHA 함유", "role": "혈행"},
+        {"name": "비타민 E", "amount": "산화방지", "role": "항산화"}
+      ],
+      "daily_dose": "제품 권장 섭취량에 따름",
+      "benefits": ["혈중 중성지질 개선", "혈행 개선"],
+      "target_audience": "중장년층, 동물성 지방 섭취 잦은 현대인",
+      "price_range_krw": null,
+      "rating": 4.51,
+      "review_count": 104,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["깊고 찬 바다 연어유", "비타민E 이중 산패 보호"]
+    },
+    {
+      "id": "omega3_balance",
+      "name_kr": "오메가-3 밸런스",
+      "name_en": "Omega-3 Balance",
+      "category": "오메가",
+      "key_ingredients": [
+        {"name": "EPA 및 DHA 함유 유지", "amount": "비율 최적화", "role": "혈행/중성지질"}
+      ],
+      "daily_dose": "제품 권장 섭취량에 따름",
+      "benefits": ["혈중 중성지질 개선", "혈행 개선"],
+      "target_audience": "온 가족, 갱년기 여성",
+      "price_range_krw": "96480",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["EPA/DHA 균형 배합", "360캡슐 대용량 온 가족용"]
+    },
+    {
+      "id": "gla_blend",
+      "name_kr": "지엘에이 블렌드",
+      "name_en": "GLA Blend",
+      "category": "기능성 지방산",
+      "key_ingredients": [
+        {"name": "감마리놀렌산", "amount": "제품 상세 참조", "role": "콜레스테롤/혈행/PMS/피부"}
+      ],
+      "daily_dose": "제품 권장 섭취량에 따름",
+      "benefits": ["혈중 콜레스테롤 개선", "혈행 개선", "월경 전 불편 상태 개선", "면역과민 피부 상태 개선"],
+      "target_audience": "PMS 고생 여성, 콜레스테롤/면역피부 관리",
+      "price_range_krw": null,
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["4중 기능성 특화 제제", "여성 월경 전 불편함 + 피부 동시 케어"]
+    },
+    {
+      "id": "b_dha_blend",
+      "name_kr": "비 디에이치에이 블렌드",
+      "name_en": "B-DHA Blend",
+      "category": "오메가",
+      "key_ingredients": [
+        {"name": "DHA", "amount": "두뇌/망막 구성", "role": "인지/시각"},
+        {"name": "베타카로틴", "amount": "시각 적응 보조", "role": "눈 건강"},
+        {"name": "빌베리/마리골드/오렌지 추출물", "amount": "부원료", "role": "보조"}
+      ],
+      "daily_dose": "1일 2회, 1회 2캡슐",
+      "benefits": ["어두운 곳 시각 적응", "피부와 점막 형성/기능 유지"],
+      "target_audience": "수험생, 13-18세 청소년, 시력 보호 필요 성장기",
+      "price_range_krw": "47000",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["DHA+베타카로틴 한번에", "청소년 퍼포먼스+건강 동시 지원"]
+    },
+    {
+      "id": "phyto_protein",
+      "name_kr": "뉴트리 파이토 푸로틴",
+      "name_en": "Nutri Phyto Protein",
+      "category": "단백질",
+      "key_ingredients": [
+        {"name": "순수 식물성 단백질", "amount": "대두/밀/완두콩 유래", "role": "조직 구성"},
+        {"name": "9가지 필수 아미노산", "amount": "아미노산 스코어 100", "role": "완전 단백질"}
+      ],
+      "daily_dose": "물이나 음료에 섞어 섭취",
+      "benefits": ["신체조직 구성", "효소/호르몬/항체 구성"],
+      "target_audience": "근력 저하 중장년층, 활동적 성인",
+      "price_range_krw": "85000",
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["100% 식물성 유당불내증 걱정 없음", "아미노산 스코어 100 완전 단백질"]
+    },
+    {
+      "id": "milk_thistle_ex",
+      "name_kr": "밀크씨슬 이엑스",
+      "name_en": "Milk Thistle EX",
+      "category": "간 건강",
+      "key_ingredients": [
+        {"name": "밀크씨슬 추출물", "amount": "간 건강", "role": "간 보호"},
+        {"name": "비타민 B군", "amount": "에너지 생성", "role": "피로 회복"}
+      ],
+      "daily_dose": "제품 권장 섭취량에 따름",
+      "benefits": ["간 건강 도움", "체내 에너지 생성"],
+      "target_audience": "회식/야근 많은 직장인, 3040세대",
+      "price_range_krw": null,
+      "rating": null,
+      "review_count": null,
+      "certifications": ["건강기능식품"],
+      "hook_angles": ["밀크씨슬+비타민B 시너지", "간 보호 넘어 피로 회복"]
+    }
+  ]
+}

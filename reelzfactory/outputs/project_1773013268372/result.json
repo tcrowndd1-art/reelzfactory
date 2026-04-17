@@ -1,0 +1,49 @@
+{
+  "topic": "1",
+  "title": "혈당 스파이크 막는 법, 90%가 순서를 틀립니다",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773013268372\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 26.46666666666667,
+  "metadata": {
+    "title": "밥 먹고 졸린 이유 따로 있었다 🍚⚡ 혈당 스파이크 즉시 차단법",
+    "description": "밥 먹고 나서 졸리고 무기력한 건 의지력 문제가 아닙니다.\n하버드 연구가 밝힌 식사 순서 하나만 바꿔도 혈당 스파이크를 73% 줄일 수 있습니다.\n채소 → 단백질 → 탄수화물, 이 순서를 지금 당장 실천해 보세요.\n달달한 음료가 이 공식을 망치는 이유도 꼭 확인하세요.\n오늘 점심부터 바로 적용 가능한 가장 쉬운 건강 습관입니다.\n\n※ 본 영상은 교육 목적이며 의학적 조언이 아닙니다. 증상 지속 시 전문가와 상담하세요.\n\n#혈당스파이크 #식사순서 #건강습관 #다이어트 #혈당관리",
+    "tags": [
+      "혈당스파이크",
+      "식사순서",
+      "혈당관리",
+      "건강습관",
+      "다이어트",
+      "식이섬유",
+      "밥먹고졸림",
+      "blood sugar spike",
+      "meal order",
+      "health tips",
+      "diet hack",
+      "wellness",
+      "nutrition",
+      "건강정보",
+      "쇼츠건강"
+    ],
+    "hashtags": [
+      "#혈당스파이크",
+      "#식사순서",
+      "#건강습관",
+      "#다이어트꿀팁",
+      "#혈당관리",
+      "#건강정보",
+      "#shorts"
+    ],
+    "thumbnail": {
+      "text": "식사 순서 틀리면 망합니다",
+      "imagePrompt": "a dramatic split illustration showing wrong eating order on left side with a skyrocketing blood sugar graph in red, and correct eating order vegetables-protein-carbs on right side with a flat calm graph in green, high contrast colors, bold simple icons, centered composition, whiteboard animation style, white background, no text overlay, full frame, no borders"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

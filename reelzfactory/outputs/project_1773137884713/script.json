@@ -1,0 +1,117 @@
+{
+  "title": "커피 매일 마시면 몸에 일어나는 변화",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "커피 매일 마시는 사람들... 지금 몸 안에서 이게 일어나고 있습니다.",
+      "imagePrompt": "[CHARACTER] a cartoon character with wide shocked eyes holding a coffee cup, steam rising dramatically, heartbeat line graph spiking wildly in background, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 2.5,
+      "subtitleEmphasis": [
+        "매일",
+        "지금 몸 안에서"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "하버드 공중보건대 연구에 따르면 하루 커피 3~4잔, 사망 위험이 최대 17% 낮아질 수 있다는 데이터가 있어요. 근데 동시에... 부작용도 생깁니다.",
+      "imagePrompt": "[NO_CHARACTER] a large bold number '17%' with a downward arrow, next to a simple bar chart comparing coffee drinkers vs non-drinkers, small coffee cup icon on left side, Harvard university building simple icon top right, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 7,
+      "subtitleEmphasis": [
+        "17%",
+        "사망 위험",
+        "부작용"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "첫째, 뇌가 카페인 없으면 작동을 거부하기 시작해요. 아데노신 수용체가 늘어나서 커피 없는 아침엔 두통이 오는 거예요. 둘째, 코르티솔이 솟구치는 오전 8~9시에 커피 마시면 내성만 빨리 쌓일 수 있어요. 커피 타이밍이 진짜 중요한 이유입니다.",
+      "imagePrompt": "[NO_CHARACTER] split panel illustration: left side shows a brain with receptor icons multiplying and a headache lightning bolt symbol, right side shows a clock pointing to 8-9am with a cortisol level arrow spiking upward and a coffee cup with a red warning icon, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 10,
+      "subtitleEmphasis": [
+        "아데노신 수용체",
+        "코르티솔",
+        "오전 8~9시",
+        "내성"
+      ],
+      "transition": "cut",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 4,
+      "type": "core_personal",
+      "text": "솔직히 나도 이 실수를 했어요. 매일 아침 일어나자마자 커피부터 마셨거든요. 근데 커피 시간을 오전 10시로 바꿨더니 오후 집중력이 체감상 확실히 달라졌어요. 실제로 코르티솔이 낮아지는 10시 이후가 카페인 효율이 더 높다는 연구 결과도 있습니다.",
+      "imagePrompt": "[CHARACTER] a cartoon character sitting at a desk, first panel showing them drinking coffee at 7am looking groggy, second panel showing them drinking coffee at 10am looking sharp and focused with a bright lightbulb above head, a clock showing both times with an arrow between them, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 9,
+      "subtitleEmphasis": [
+        "오전 10시",
+        "집중력",
+        "코르티솔",
+        "카페인 효율"
+      ],
+      "transition": "fade",
+      "ctaType": null,
+      "hasPersonalTake": true
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "근데 사실 커피보다 더 무서운 게 있어요. 커피에 타는 그것... 그건 다음에 얘기할게요.",
+      "imagePrompt": "[CHARACTER] a cartoon character leaning toward the viewer with a sly grin, holding a coffee cup, a large question mark floating next to a sugar packet and creamer bottle with a subtle danger icon, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "더 무서운 게",
+        "그것"
+      ],
+      "transition": "zoom_out",
+      "ctaType": "A",
+      "hasPersonalTake": false
+    }
+  ],
+  "metadata": {
+    "title": "☕ 커피 매일 마시면 몸에 생기는 일 (진짜 충격)",
+    "headline": {
+      "line1": "매일 커피",
+      "line2": "몸에 무슨 일이?"
+    },
+    "description": "매일 커피 마시는 사람이라면 꼭 알아야 할 정보\n하버드 연구 기반 카페인의 진짜 효과와 부작용\n뇌 수용체 변화부터 코르티솔 타이밍까지\n커피 마시는 시간 하나만 바꿔도 집중력이 달라질 수 있어요\n아는 사람만 챙기는 커피 마시는 법\n\n#커피 #카페인 #건강정보 #집중력 #하루루틴",
+    "tags": [
+      "커피",
+      "카페인",
+      "커피효능",
+      "커피부작용",
+      "집중력",
+      "건강정보",
+      "코르티솔",
+      "아침루틴",
+      "coffee",
+      "caffeine",
+      "health",
+      "focus",
+      "morning routine",
+      "wellness",
+      "brain health"
+    ],
+    "hashtags": [
+      "#커피",
+      "#카페인효과",
+      "#건강정보",
+      "#집중력향상",
+      "#아침루틴"
+    ],
+    "thumbnail": {
+      "text": "커피 매일 마시면 생기는 일",
+      "imagePrompt": "a dramatic close-up illustration of a human brain glowing with energy on one side and cracking on the other side, a large steaming coffee cup in the foreground, bold high contrast black and yellow colors, centered composition, no text overlay, dynamic lighting, simple bold graphic style"
+    }
+  }
+}

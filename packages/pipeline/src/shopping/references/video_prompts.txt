@@ -1,0 +1,154 @@
+📂 [파일 3] kling_visual_prompts_Master.txt (이미지→영상, 언어별 불필요)
+
+🎬 KLING 입력용 최종 명령어 템플릿
+Copy# {{PRODUCT_NAME}} - Visual Prompt for Kling AI
+
+## Scene 1 [0-3s]: Pain/Problem
+[Insert Scene 1 description from above]
+
+## Scene 2 [3-8s]: Product/Magic Moment
+[Insert Scene 2 description from above]
+
+## Scene 3 [8-12s]: Evidence/Proof
+[Insert Scene 3 description from above]
+
+## Scene 4 [12-15s]: CTA/Action
+[Insert Scene 4 description from above]
+
+## Technical Specifications:
+- Duration: 15 seconds
+- Aspect Ratio: 9:16 (vertical)
+- Style: Realistic, natural light, handheld feel
+- No faces, hands only
+- Natural home/work setting
+- Slight camera shake for authenticity
+- Color grading: warm natural tones (avoid cool blue studio look)
+
+## Post-Production Notes:
+- Add subtitles in target language after video generation
+- Add CTA text overlay in Scene 4
+- Add background music matching emotion curve
+- Add sound effects: water drops, button clicks, etc.
+
+
+
+---------------------------------------------------------------
+🎬 KLING 영상 생성 프롬프트 마스터 템플릿
+핵심 원칙:
+
+언어: 시각적 요소만 (언어는 자막으로 후처리)
+구조: 4-Scene (0-3s 고통, 3-8s 매직, 8-12s 증거, 12-15s CTA)
+금지: 얼굴 ❌, 손/팔/다리 ✅, AI 광고 느낌 ❌
+카테고리 1: 생활용품 (Home & Living)
+제품 A: 로봇청소기
+Scene 1 [0-3s]: 고통 극대화
+
+Extreme close-up of weathered hands (visible veins, slight tremor) gripping traditional cotton mop. POV from floor level showing knees on hard tile floor, red kneecap visible through thin pants. Natural window light from left creates dramatic shadow. Hand suddenly stops, drops mop. Sound visual: water droplet splash in slow motion with rainbow refraction. Color: warm beige with red accent on knee area.
+Scene 2 [3-8s]: 매직 모먼트
+
+Same hands now pressing single button on sleek white robot vacuum. Camera follows vacuum as it glides smoothly across floor, LED lights glowing blue. POV shot from vacuum's perspective showing dust being sucked in with visible airflow. Natural motion blur on wheels. Hands now relaxed on sofa armrest, holding TV remote. Robot visible in background cleaning autonomously.
+Scene 3 [8-12s]: 증거 제시
+
+Split-screen effect. Left: still image of Scene 1 (kneeling position). Right: same hands now relaxed on sofa armrest, holding TV remote. Robot visible in background cleaning. Time-lapse effect: calendar pages flipping showing 1 week later, same clean floor. Warm afternoon light from window.
+Scene 4 [12-15s]: CTA 액션
+
+Hand reaches toward camera (breaking fourth wall), index finger pointing down as if clicking link. Hand makes "OK" gesture. Text overlay placeholder (to be added in post): [DISCOUNT_TAG]. Hand then points to bottom of frame. Natural hand shadow on camera lens.
+제품 B: 진공포장기
+Scene 1 [0-3s]:
+
+Close-up of hand throwing wilted lettuce and brown-edged meat into trash can. Receipt visible showing high grocery bill. Hand gesture of frustration. Kitchen counter with messy shopping bags. Natural window light. Color: muted greens and browns (decay).
+Scene 2 [3-8s]:
+
+Same hand placing fresh vegetables and meat into vacuum bags. Pressing vacuum sealer button - machine hums, air visibly sucked out (plastic shrinking dramatically with visible suction lines). Sealed bags stacked neatly in refrigerator with organized shelves. Hands arranging with satisfaction.
+Scene 3 [8-12s]:
+
+Time-lapse effect: calendar pages flipping (7 days, 14 days). Same hand opening fridge, taking out still-fresh food. Cooking scene with sizzling pan. Steam rising pleasantly. Hands slicing fresh vegetables with ease. Color: vibrant greens and reds (freshness).
+Scene 4 [12-15s]:
+
+Hand holding calculator showing savings calculation. Hand making heart gesture. Hand pointing to bottom of frame. Text overlay placeholder: [SAVINGS_AMOUNT]. Hand then reaching toward camera.
+카테고리 2: 테크/가전 (Tech & Appliances)
+제품 C: 스마트워치
+Scene 1 [0-3s]:
+
+Hand holding torn expensive watch receipt (high price visible). Hand crumpling paper into ball with frustration. Expensive watch box visible on desk then closed with disappointment. Office desk background with coffee stains and sticky notes. Natural messy desk lighting.
+Scene 2 [3-8s]:
+
+Same hand unboxing affordable smartwatch. Quick cuts: heart rate sensor glowing green, waterproof test with water splash (droplets in slow motion), notification buzzing on wrist, battery icon filling up (15-day). Fast-paced editing style. Hands moving with purpose and satisfaction.
+Scene 3 [8-12s]:
+
+Wrist shot showing watch face with fitness tracking. Split screen: left side expensive watch (abandoned on desk), right side new watch (active on wrist with glowing screen). Hand tapping screen showing smooth interface. Hands comparing both watches.
+Scene 4 [12-15s]:
+
+Hand giving thumbs up, then pointing to bottom of frame. Hand making "get yours" gesture. Text overlay placeholder: [PRICE_COMPARISON]. Hand then moving toward camera as if clicking.
+제품 D: 무선 이어폰
+Scene 1 [0-3s]:
+
+Extreme close-up of tangled earphone cord in hand. Hand struggling to untangle with frustration. Tight knots visible. Natural desk background. Color: chaotic black lines against wood desk.
+Scene 2 [3-8s]:
+
+Same hand pulling out wireless earbuds from case. "Pop" visual effect as earbuds come out. Hand placing in ear. Immediate sense of freedom. Hands now free to move, gesture, work without restriction.
+Scene 3 [8-12s]:
+
+Split screen. Left: tangled cord restricting movement. Right: hands free, working on laptop, drinking coffee, gesturing freely. Sound visual: Bluetooth connection wave effect. Hands moving smoothly without restriction.
+Scene 4 [12-15s]:
+
+Hand making "wireless" gesture (fingers spread showing no strings). Hand pointing to bottom of frame. Text overlay placeholder: [FREEDOM_TAG]. Hand reaching toward camera.
+카테고리 3: 건강/뷰티 (Health & Beauty)
+제품 E: 비타민 샤워필터
+Scene 1 [0-3s]:
+
+Extreme close-up of showerhead with orange/rust stains. Water flowing out looks cloudy/brownish. Hand (with dry, flaky skin visible) reaching toward water then pulling back in hesitation. Bathroom mirror reflection shows steamy, unclear atmosphere. Color: orange/brown tint (contaminated).
+Scene 2 [3-8s]:
+
+Same hand unscrewing old showerhead (struggling slightly with rusted threads - authentic effort visible). Installing new vitamin C shower filter. First clean water drop falling - slow motion with rainbow light refraction. Water stream now clear and slightly bubbling with vitamin essence visible (subtle orange tint).
+Scene 3 [8-12s]:
+
+Split screen time-lapse. Left: hand before (dry, slight redness). Right: same hand after 2 weeks (smoother, healthier tone). Hand touching own forearm with satisfied motion. Steam now pleasant with subtle orange/lemon scent visual (wavy lines). Color: transition from dull to healthy pink.
+Scene 4 [12-15s]:
+
+Hand holding product package toward camera. Hand making "OK" gesture. Hand pointing to bottom of frame. Text overlay placeholder: [SKIN_IMPROVEMENT]. Hand then reaching toward camera.
+제품 F: 콜라겐/건강식품
+Scene 1 [0-3s]:
+
+Close-up of hand with visible wrinkles and age spots. Hand touching face with concern. Mirror reflection showing worry. Natural bathroom lighting. Color: muted, aging tones.
+Scene 2 [3-8s]:
+
+Same hand holding collagen powder/pills. Pouring into glass. Dissolving visual effect. Hand drinking. Close-up of collagen absorption visual (subtle glowing effect on skin).
+Scene 3 [8-12s]:
+
+Split screen. Left: hand before (wrinkled). Right: same hand after 2 weeks (smoother, more elastic). Time-lapse effect showing transformation. Hands flexing showing improved flexibility.
+Scene 4 [12-15s]:
+
+Hand showing "youthful" gesture. Hand making heart sign. Hand pointing to bottom of frame. Text overlay placeholder: [YOUTH_TAG]. Hand reaching toward camera with confidence.
+카테고리 4: 식품 (Food & Kitchen)
+제품 G: 자동 요리기/멀티쿠커
+Scene 1 [0-3s]:
+
+Messy kitchen with multiple pots and pans. Hands frantically stirring, checking, burning food. Smoke rising. Stressed hand movements. Color: chaotic, dark, smoky.
+Scene 2 [3-8s]:
+
+Same hand placing ingredients into single multi-cooker. Pressing button. Lid closing. "Steam release" visual. Hands now free, leaning against counter with coffee.
+Scene 3 [8-12s]:
+
+Split screen. Left: messy cooking process. Right: clean kitchen, perfect meal ready. Hands opening lid to reveal perfect stew/rice. Steam rising pleasantly. Hands serving food with satisfaction.
+Scene 4 [12-15s]:
+
+Hand making "delicious" gesture (kissing fingers). Hand pointing to bottom of frame. Text overlay placeholder: [EASY_COOKING]. Hand reaching toward camera.
+카테고리 5: 패션/액세서리 (Fashion & Accessories)
+제품 H: 경량 안경/블루라이트 차단
+Scene 1 [0-3s]:
+
+Close-up of tired eyes (no face, just eye area with dark circles). Hand rubbing eyes with fatigue. Computer screen glare visible in background. Blue light tint on everything. Color: cold blue, tiring.
+Scene 2 [3-8s]:
+
+Same hand putting on glasses. Immediate color shift from blue to warm yellow. Hands typing comfortably. Screen glare reduced. Hands moving with ease.
+Scene 3 [8-12s]:
+
+Split screen. Left: eye strain visual (red veins). Right: comfortable eyes. Time-lapse: end of workday, hands still comfortable. Hands showing no fatigue.
+Scene 4 [12-15s]:
+
+Hand adjusting glasses with satisfaction. Hand pointing to bottom of frame. Text overlay placeholder: [EYE_PROTECTION]. Hand reaching toward camera.
+
+---------------------------------------------------------------------
+
+

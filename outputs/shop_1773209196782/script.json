@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "아직도 비타민C, 그냥 삼키기만 하세요? 몸이 흡수도 못 하고 전부 배출될 수 있습니다.",
+      "imagePrompt": "A pile of generic white vitamin tablets being flushed down a toilet, symbolizing waste. Macro shot, dramatic lighting, no human faces, realistic, 4K quality.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "뉴트리라이트는 다릅니다. 아세로라 체리 농축물이 8시간 동안 서서히 흡수되어 하루 종일 활력을 지켜주죠.",
+      "imagePrompt": "A single Nutrilite Vitamin C tablet glowing softly, superimposed over a clock face with an arrow moving from 0 to 8 hours. Commercial product photography, dark background, 4K quality.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "버려지는 비타민은 이제 그만! 내 몸을 위한 현명한 선택, 지금 바로 프로필 링크에서 확인하세요.",
+      "imagePrompt": "A sleek Nutrilite Vitamin C bottle standing on a clean, bright kitchen counter, surrounded by fresh acerola cherries and a glass of water. Lifestyle shot, natural morning light, realistic, 4K quality.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "아직도 비타민C, 그냥 삼키기만 하세요?",
+  "cta": "지금 바로 프로필 링크에서 확인하세요.",
+  "hashtags": [
+    "#뉴트리라이트",
+    "#비타민C",
+    "#비타민추천",
+    "#영양제추천",
+    "#건강관리"
+  ],
+  "title": "당신이 먹는 비타민C, 90%는 그냥 버려집니다",
+  "structure": "AIDA"
+}

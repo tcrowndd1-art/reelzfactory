@@ -1,0 +1,116 @@
+{
+  "title": "쇼츠 쇼핑 광고 영상 터지는 법 🔥",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "제품 영상 올렸는데 조회수 0?\n그거 광고가 아니라 그냥 카탈로그예요.",
+      "imagePrompt": "[CHARACTER] a cartoon YouTuber character staring at a phone screen showing '0 views' with a shocked expression, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "조회수 0",
+        "카탈로그"
+      ],
+      "transition": "cut",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "바이럴 쇼핑 영상 분석했더니\n터진 영상엔 공통점이 있었어요.\n첫 1.5초 안에 '문제 장면'이 나왔습니다.",
+      "imagePrompt": "[NO_CHARACTER] a magnifying glass over a smartphone screen displaying three viral short video thumbnails with upward trending arrow graphs, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "1.5초",
+        "문제 장면"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "공식은 단 3단계예요.\n'문제 장면' → '제품 등장' → '극적인 전후 비교'.\n설명 많이 할수록 시청자는 스크롤합니다.",
+      "imagePrompt": "[NO_CHARACTER] three sequential panels left to right: panel one shows a messy problem icon, panel two shows a product box with a lightning bolt, panel three shows a before-and-after split comparison with a check mark, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 7,
+      "subtitleEmphasis": [
+        "3단계",
+        "전후 비교",
+        "스크롤"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 4,
+      "type": "core_personal",
+      "text": "솔직히 나도 이 실수를 했어요.\n처음엔 제품 기능을 30초 동안 설명했거든요.\n조회수 200도 안 됐습니다.\n3단계 공식으로 바꾼 영상은\n48시간 만에 80만 뷰가 나왔어요.",
+      "imagePrompt": "[CHARACTER] a cartoon YouTuber character facepalming next to a long scroll of text labeled 'features list', then an arrow pointing right to the same character celebrating with a phone showing '800,000 views', whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 8,
+      "subtitleEmphasis": [
+        "30초 설명",
+        "48시간",
+        "80만 뷰"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": true
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "이거 모르고 지금도 제품 기능만 읊는 사람...\n여러분 피드에 분명 있을 겁니다.",
+      "imagePrompt": "[CHARACTER] a cartoon YouTuber character pointing directly at the viewer with a knowing smirk, a thought bubble showing silhouettes of multiple people holding phones, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "제품 기능만",
+        "분명 있을 겁니다"
+      ],
+      "transition": "zoom_out",
+      "ctaType": "B",
+      "hasPersonalTake": false
+    }
+  ],
+  "metadata": {
+    "title": "🔥 쇼츠 쇼핑 광고 영상 터지는 공식 3단계",
+    "headline": {
+      "line1": "광고 영상",
+      "line2": "이렇게 해야 터진다"
+    },
+    "description": "쇼핑 쇼츠 영상을 올려도 조회수가 안 나오는 이유가 있습니다.\n바이럴 터진 영상에는 공통된 3단계 공식이 있었어요.\n'문제 장면 → 제품 등장 → 전후 비교' 이 순서만 지켜도 결과가 달라질 수 있습니다.\n기능 설명에 집중할수록 시청자는 이탈하는 경향이 있어요.\n이 영상 하나로 쇼핑 광고 쇼츠 전략이 바뀔 수 있습니다.\n\n#쇼츠광고 #쇼핑영상 #바이럴마케팅 #유튜브쇼츠 #숏폼전략",
+    "tags": [
+      "쇼츠광고",
+      "쇼핑영상",
+      "바이럴마케팅",
+      "유튜브쇼츠",
+      "숏폼전략",
+      "제품영상",
+      "광고공식",
+      "조회수올리기",
+      "viral shorts",
+      "shopping ads",
+      "short form marketing",
+      "product video",
+      "YouTube Shorts strategy",
+      "content marketing",
+      "reels tips"
+    ],
+    "hashtags": [
+      "#쇼츠광고",
+      "#바이럴마케팅",
+      "#유튜브쇼츠",
+      "#쇼핑영상",
+      "#숏폼전략",
+      "#조회수올리기",
+      "#제품영상공식"
+    ],
+    "thumbnail": {
+      "text": "쇼핑 광고 터지는 공식",
+      "imagePrompt": "a cartoon phone screen split into before and after: left side shows 0 views with a sad face, right side shows 800K views with an explosion burst, dramatic high contrast red and white color scheme, bold clean illustration, centered composition, no text overlay, whiteboard animation style"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic": "2026년 AI가 대체할 직업 TOP 5",
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772560086470\\video\\shorts.mp4",
+  "totalScenes": 4,
+  "totalDuration": 14,
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 💀 내 직업도 포함?",
+    "description": "GPT-5 시대, AI가 진짜로 대신할 직업 5가지를 솔직하게 정리했어요.\n콜센터, 번역가, 회계사… 생각보다 충격적인 리스트입니다.\n내 직업이 안전한지 지금 바로 확인해보세요!",
+    "tags": [
+      "AI대체직업",
+      "2026년트렌드",
+      "직업미래",
+      "GPT5",
+      "인공지능"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026트렌드",
+      "#직업의미래",
+      "#인공지능",
+      "#쇼츠"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.16",
+    "voice": "$0 (Edge TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.17"
+  }
+}

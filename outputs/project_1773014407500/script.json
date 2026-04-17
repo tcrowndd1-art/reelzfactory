@@ -1,0 +1,116 @@
+{
+  "title": "창피당한 후 오히려 강해지는 사람들의 비밀",
+  "totalScenes": 6,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "창피를 당한 뒤 무너진 사람과 더 강해진 사람. 차이는 딱 하나야.",
+      "imagePrompt": "[CHARACTER] a cartoon character split into two sides: left side crumbling/shrinking with cracks, right side standing tall with a confident grin, bold contrast, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "무너진 사람",
+        "더 강해진 사람",
+        "딱 하나"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "회의 중 틀린 말 했다가 전체 앞에서 지적당한 적 있어? 그 순간 뇌는 그 장면을 수백 번 반복 재생해. 심리학에선 이걸 '반추'라고 불러. 그리고 반추가 길어질수록 자존감은 바닥을 뚫어.",
+      "imagePrompt": "[CHARACTER] a cartoon character sitting alone with a thought bubble showing a replay symbol and the same embarrassing scene looping three times, stress lines around the head, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 6,
+      "subtitleEmphasis": [
+        "반추",
+        "수백 번 반복 재생",
+        "자존감은 바닥을 뚫어"
+      ],
+      "transition": "slide"
+    },
+    {
+      "id": 3,
+      "type": "promise",
+      "text": "30초만 줘. 창피가 너를 죽이는 이유, 그리고 그걸 무기로 바꾸는 법 알게 돼.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a stopwatch showing 30 seconds next to a broken chain turning into a sword, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3.5,
+      "subtitleEmphasis": [
+        "30초",
+        "무기로 바꾸는 법"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 4,
+      "type": "core",
+      "text": "창피의 진짜 정체는 뭘까? 연구에 따르면 수치심을 느낀 사람의 뇌는 물리적 고통과 같은 영역이 활성화돼. 진짜 아픈 거야. 근데 여기서 갈린다. 무너지는 사람은 '나는 형편없어'로 해석해. 강해지는 사람은 '내 행동이 틀렸어'로 해석해. 자기 자신을 공격하느냐, 행동을 수정하느냐. 이 한 문장이 인생을 갈라.",
+      "imagePrompt": "[NO_CHARACTER] a simple illustration of a forked road: left path labeled with a broken figure icon and downward arrow, right path labeled with a gear/settings icon and upward arrow, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 9,
+      "subtitleEmphasis": [
+        "물리적 고통",
+        "나는 형편없어",
+        "내 행동이 틀렸어",
+        "인생을 갈라"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 5,
+      "type": "twist",
+      "text": "근데 진짜 문제는 따로 있어. '한 번만 더 잘하면 괜찮아지겠지'라는 착각이야. 완벽해지려 할수록 실수가 더 무서워져. 그래서 강해지는 사람들은 반대로 해. 일부러 작은 실수를 복기하고, 그걸 소리 내서 말해. '나 오늘 이거 틀렸어. 다음엔 이렇게 한다.' 수치심을 혼자 삭이는 게 아니라, 언어로 꺼내는 순간 그 힘이 절반으로 줄어들거든.",
+      "imagePrompt": "[CHARACTER] a cartoon character confidently speaking out loud with a speech bubble showing a small mistake icon crossed out and replaced with a checkmark, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 10,
+      "subtitleEmphasis": [
+        "착각",
+        "소리 내서 말해",
+        "힘이 절반으로 줄어들어"
+      ],
+      "transition": "zoom_out"
+    },
+    {
+      "id": 6,
+      "type": "cta",
+      "text": "오늘부터 창피당한 순간, 이렇게 해봐. 첫째, 자신이 아닌 행동을 탓해. 둘째, 소리 내서 복기해. 셋째, 다음 행동 한 가지만 정해. 창피는 네가 성장하고 있다는 증거야. 이 영상, 자존감 때문에 힘든 사람한테 보내줘. 진심으로 도움 될 거야. 전문가 상담도 언제든 좋은 선택이야.",
+      "imagePrompt": "[CHARACTER] a cartoon character standing tall with a checklist of three items next to them, each item checked off with a bold checkmark, confident smile, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 9,
+      "subtitleEmphasis": [
+        "행동을 탓해",
+        "소리 내서 복기해",
+        "성장하고 있다는 증거"
+      ],
+      "transition": "fade"
+    }
+  ],
+  "metadata": {
+    "title": "창피당한 뒤 오히려 강해지는 사람의 비밀 🧠💥",
+    "description": "창피를 당하고 무너지는 사람 vs 더 강해지는 사람.\n그 차이는 딱 한 문장에서 갈립니다.\n\n수치심이 물리적 고통과 같은 뇌 반응을 일으킨다는 사실, 알고 계셨나요?\n오늘 영상에서 창피를 무기로 바꾸는 3단계 방법을 알려드립니다.\n\n자존감이 낮아서 힘드신 분들께 특히 도움이 될 수 있습니다.\n증상이 지속된다면 전문가 상담을 권장합니다.\n\n#자존감 #심리학 #멘탈관리 #자기계발 #mindset",
+    "tags": [
+      "자존감",
+      "심리학",
+      "멘탈",
+      "습관",
+      "인간관계",
+      "수치심 극복",
+      "자기계발",
+      "psychology",
+      "mindset",
+      "motivation",
+      "self-esteem",
+      "habit",
+      "confidence",
+      "mental health",
+      "self improvement"
+    ],
+    "hashtags": [
+      "#자존감",
+      "#심리학",
+      "#멘탈관리",
+      "#자기계발",
+      "#mindset"
+    ],
+    "thumbnail": {
+      "text": "창피 → 무기로 바꾸는 법",
+      "imagePrompt": "a cartoon character split in half: left side shrinking with cracks and dark shadows, right side glowing with a confident pose and upward arrow, dramatic high contrast lighting, bold black outlines, white background, centered composition, no text overlay, eye-catching illustration style"
+    }
+  }
+}

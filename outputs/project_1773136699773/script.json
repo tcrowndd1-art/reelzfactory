@@ -1,0 +1,121 @@
+{
+  "title": "커피 매일 마시면 몸에 일어나는 변화 ☕",
+  "totalScenes": 5,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "커피 매일 마시는 사람들\n지금 몸에서 이게 일어나고 있어요.\n알면 컵 내려놓게 됩니다.",
+      "imagePrompt": "[CHARACTER] a cartoon character with wide shocked eyes holding a coffee cup, steam rising dramatically, a bold warning symbol appearing next to the cup, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 3,
+      "subtitleEmphasis": [
+        "매일",
+        "이게 일어나고 있어요",
+        "컵 내려놓게"
+      ],
+      "transition": "zoom_in",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 2,
+      "type": "situation",
+      "text": "하루 1~3잔.\n한국 성인 평균 커피 섭취량입니다.\n근데 이게 몸에 어떤 신호를 보내는지\n아는 사람이 거의 없어요.",
+      "imagePrompt": "[NO_CHARACTER] a simple bar chart showing daily coffee consumption with 1 to 3 cups illustrated as coffee cup icons stacked vertically, a question mark floating above the chart, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "1~3잔",
+        "평균",
+        "아는 사람이 거의 없어요"
+      ],
+      "transition": "slide",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 3,
+      "type": "core",
+      "text": "먼저 좋은 것부터.\n카페인은 아데노신 수용체를 막아서\n졸음 신호 자체를 차단할 수 있어요.\n집중력이 올라가는 느낌, 진짜입니다.\n하버드 연구에서 하루 2잔이\n제2형 당뇨 위험을 낮출 수 있다는\n결과도 나온 적 있어요.",
+      "imagePrompt": "[NO_CHARACTER] a simple brain diagram with adenosine receptor illustrated as a lock, a coffee cup icon acting as a key blocking the lock, a green upward arrow labeled 'focus' appearing beside it, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 8,
+      "subtitleEmphasis": [
+        "아데노신",
+        "졸음 신호 차단",
+        "하버드",
+        "당뇨 위험"
+      ],
+      "transition": "fade",
+      "ctaType": null,
+      "hasPersonalTake": false
+    },
+    {
+      "id": 4,
+      "type": "core_personal",
+      "text": "근데 솔직히 나도 이 실수를 했어요.\n오후 3시 이후에도 커피를 마셨거든요.\n수면 연구에 따르면 카페인 반감기가\n약 5~6시간이라고 알려져 있어요.\n밤 11시에 자도 카페인이 절반은\n아직 몸에 남아 있다는 거예요.\n수면의 질이 떨어지는 게\n느껴질 수밖에 없었어요.",
+      "imagePrompt": "[CHARACTER] a cartoon character looking tired in bed with eyes half-open, a clock showing 11pm on the wall, a coffee cup icon with a '50%' label still glowing inside the character's body outline, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 9,
+      "subtitleEmphasis": [
+        "나도 이 실수를",
+        "반감기 5~6시간",
+        "절반은 남아",
+        "수면의 질"
+      ],
+      "transition": "cut",
+      "ctaType": null,
+      "hasPersonalTake": true
+    },
+    {
+      "id": 5,
+      "type": "cta",
+      "text": "이거 모르고\n매일 오후에 커피 마시는 사람...\n여러분 주변에 분명 있을 겁니다.",
+      "imagePrompt": "[CHARACTER] a cartoon character looking sideways with a knowing expression, surrounded by three silhouette figures each holding a coffee cup in the afternoon, a clock showing 3pm in the background, whiteboard animation style, white background, simple clean illustration, black outlines, full frame, centered composition, no borders",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "모르고",
+        "오후에 커피",
+        "주변에 분명"
+      ],
+      "transition": "zoom_out",
+      "ctaType": "B",
+      "hasPersonalTake": false
+    }
+  ],
+  "metadata": {
+    "title": "☕ 커피 매일 마시면 몸에 생기는 변화 (알면 후회함)",
+    "headline": {
+      "line1": "매일 커피",
+      "line2": "몸에 무슨 일이?"
+    },
+    "description": "하루 1~3잔 커피, 한국 성인 평균이에요.\n근데 카페인이 몸에 어떤 신호를 보내는지 아는 사람은 많지 않아요.\n집중력 향상부터 수면 방해까지, 커피의 두 얼굴을 정리했습니다.\n특히 오후 커피 마시는 분들은 반드시 보세요.\n카페인 반감기 5~6시간, 이 숫자 하나가 수면의 질을 바꿀 수 있어요.\n\n#커피 #카페인 #수면건강 #건강정보 #쇼츠",
+    "tags": [
+      "커피",
+      "카페인",
+      "수면건강",
+      "건강정보",
+      "커피효능",
+      "커피부작용",
+      "카페인반감기",
+      "집중력",
+      "당뇨예방",
+      "coffee",
+      "caffeine",
+      "sleep quality",
+      "health tips",
+      "daily coffee",
+      "wellness"
+    ],
+    "hashtags": [
+      "#커피",
+      "#카페인",
+      "#수면건강",
+      "#건강정보",
+      "#쇼츠건강",
+      "#카페인반감기",
+      "#건강습관"
+    ],
+    "thumbnail": {
+      "text": "커피 매일 마시면 생기는 일",
+      "imagePrompt": "a dramatic split illustration, left side shows a glowing energetic cartoon character holding a coffee cup with sparks of focus energy, right side shows the same character lying awake in bed at night looking exhausted, bold high contrast black and white tones with red accent on the coffee cup, centered composition, no text overlay, whiteboard animation style"
+    }
+  }
+}

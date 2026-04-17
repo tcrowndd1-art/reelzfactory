@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "아침마다 커피 수혈은 기본, 오후만 되면 늘 방전이었어요.",
+      "imagePrompt": "A tired person at an office desk, head in hands, empty coffee cups nearby.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "요즘은 점심 먹고 딱 한 알. 하루 종일 생기가 넘쳐요.",
+      "imagePrompt": "Close-up of a hand taking a single vitamin C tablet from a bottle.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "자연의 아세로라 체리로 만든 비타민이라 그런가 봐요. 프로필 링크 확인!",
+      "imagePrompt": "Nutrilite Vitamin C bottle displayed next to a small bowl of fresh acerola cherries.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "만성피로 직장인이 커피 대신 매일 챙겨 먹는 딱 한 가지",
+  "cta": "내 몸을 위한 똑똑한 습관, 프로필 링크에서 시작하세요!",
+  "hashtags": [
+    "#비타민C추천",
+    "#뉴트리라이트",
+    "#피로회복",
+    "#직장인영양제",
+    "#아세로라"
+  ],
+  "title": "피곤에 찌든 직장인이 커피 끊고 바꾼 '이것'의 정체",
+  "structure": "BEFORE_AFTER"
+}

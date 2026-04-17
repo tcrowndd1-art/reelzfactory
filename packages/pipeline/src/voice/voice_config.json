@@ -1,0 +1,96 @@
+﻿{
+  "_description": "애니메이션 장르 음성 스타일 - 기존 64 페르소나에 추가",
+  "version": "1.0",
+  "updated_at": "2026-03-12",
+  "genre_styles": {
+    "animation": {
+      "cognitive_gap": {
+        "id": "anim_cognitive_gap",
+        "label": "인지 부조화 (권위+귀여움)",
+        "label_emoji": "🎯",
+        "description": "귀여운 캐릭터에서 낮고 권위 있는 목소리. 시각-청각 갭이 스크롤 스톱 트리거",
+        "strategy": "cognitive_dissonance",
+        "male": {
+          "voiceName": "Charon",
+          "directorNote": "Deep, authoritative, calm confidence. Like a wise mentor speaking through a cute character. The contrast between visual and voice creates intrigue. NOT robotic — warm but commanding. Measured pace with deliberate pauses for impact.",
+          "speed": 0.95,
+          "scene_overrides": {
+            "hook": "[Tone: 충격적으로, 첫 단어를 강하게, 짧은 침묵 후 시작]",
+            "agitate": "[Tone: 점점 심각하게, 속도 약간 빠르게]",
+            "solution": "[Tone: 확신에 차서, 따뜻하지만 단호하게]",
+            "cta": "[Tone: 부드럽지만 명확하게, 마지막 단어 강조]"
+          }
+        },
+        "female": {
+          "voiceName": "Kore",
+          "directorNote": "Low-pitched for female, authoritative yet warm. Like a confident professor who happens to look adorable. Measured pace, deliberate pauses. Each sentence lands with weight.",
+          "speed": 0.95,
+          "scene_overrides": {
+            "hook": "[Tone: 차분하지만 충격적으로, 첫 문장에 힘]",
+            "agitate": "[Tone: 걱정스럽게, 진심 어린 경고]",
+            "solution": "[Tone: 밝아지며, 해결책을 제시하는 자신감]",
+            "cta": "[Tone: 따뜻하게 초대하듯]"
+          }
+        }
+      },
+      "provocateur": {
+        "id": "anim_provocateur",
+        "label": "도발자 (팩폭+귀여움)",
+        "label_emoji": "🔥",
+        "description": "귀여운 캐릭터에서 빠르고 도발적인 목소리. 이 캐릭터가 왜 이렇게 화났지? 호기심 유발",
+        "strategy": "cognitive_dissonance",
+        "male": {
+          "voiceName": "Puck",
+          "directorNote": "Fast, provocative, slightly aggressive. Like a personal trainer trapped in a cute body, calling out your excuses. High energy, punchy delivery. Short sentences hit hard. No mercy on bad health habits.",
+          "speed": 1.15,
+          "scene_overrides": {
+            "hook": "[Tone: 도발적으로, 질문을 던지듯, 빠르게]",
+            "agitate": "[Tone: 화난 듯, 팩트로 때리듯]",
+            "solution": "[Tone: 약간 누그러지며, 그래도 강하게]",
+            "cta": "[Tone: 도전적으로, 할 거야 말 거야?]"
+          }
+        },
+        "female": {
+          "voiceName": "Leda",
+          "directorNote": "Sharp, fast, sassy. Like a no-nonsense coach in a cute costume. Each sentence is a slap of truth. Energetic and unapologetic. Mix of tough love and genuine care.",
+          "speed": 1.15,
+          "scene_overrides": {
+            "hook": "[Tone: 사이다 발언, 직설적으로]",
+            "agitate": "[Tone: 답답하다는 듯, 왜 아직도 이러고 있어?]",
+            "solution": "[Tone: 자신만만하게, 이거면 끝이야]",
+            "cta": "[Tone: 도전장 내밀듯, 에너지 풀로]"
+          }
+        }
+      },
+      "gravity": {
+        "id": "anim_gravity",
+        "label": "중력감 (CEO+귀여움)",
+        "label_emoji": "💼",
+        "description": "귀여운 캐릭터에서 극도로 느리고 무거운 목소리. 스티브 잡스 프레젠테이션처럼 한 문장이 울림",
+        "strategy": "cognitive_dissonance",
+        "male": {
+          "voiceName": "Orus",
+          "directorNote": "Extremely slow, deep, gravitational. Like a CEO revealing a billion-dollar secret through a mascot. Long pauses between phrases. Every word carries weight. Whisper-to-power dynamic. Start quiet, build to authority.",
+          "speed": 0.85,
+          "scene_overrides": {
+            "hook": "[Tone: 속삭이듯 시작, 마지막 단어만 크게]",
+            "agitate": "[Tone: 무겁게, 한 단어씩 끊어서]",
+            "solution": "[Tone: 점점 힘이 실리며, 확신]",
+            "cta": "[Tone: 조용하지만 울림 있게, 여운 남기기]"
+          }
+        },
+        "female": {
+          "voiceName": "Aoede",
+          "directorNote": "Slow, rich, almost hypnotic. Like a narrator of a luxury documentary speaking through a playful character. Deliberate, magnetic, each pause builds anticipation. Velvet voice with steel underneath.",
+          "speed": 0.85,
+          "scene_overrides": {
+            "hook": "[Tone: 미스터리하게, 호기심 유발]",
+            "agitate": "[Tone: 안타깝다는 듯, 느리게]",
+            "solution": "[Tone: 눈이 빛나듯, 비밀을 알려주듯]",
+            "cta": "[Tone: 초대하듯, 우아하게]"
+          }
+        }
+      }
+    }
+  }
+}

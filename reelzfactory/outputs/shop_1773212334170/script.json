@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "점심만 먹으면 쏟아지는 잠, 커피로 버티는 것도 한계죠? 몸이 보내는 비상 신호입니다.",
+      "imagePrompt": "An empty coffee cup and scattered papers on a slightly messy, dimly lit office desk. The scene feels sluggish and tired. 4K quality, commercial product photography style.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "이제 오후 3시에도 방금 출근한 듯한 활력을 느껴보세요. 칙칙했던 안색까지 맑아지는 건 덤이고요.",
+      "imagePrompt": "A single Vitamin C tablet dropping into a clear glass of water, creating effervescent bubbles. The background is a bright, clean, sunlit workspace. Realistic, 4K quality.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "만성 피로와 생기를 한번에 잡는 비결, 바로 이 비타민C 한 알이에요. 지금 바로 프로필 링크를 확인하세요.",
+      "imagePrompt": "The Nutri Lite Vitamin C product package standing elegantly next to the bubbly glass of water on a clean white surface. Bright, crisp commercial lighting. Realistic, 4K quality.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "커피 달고 사는 분들, 이 영상 절대 그냥 넘기지 마세요.",
+  "cta": "지금 프로필 링크에서 확인하세요!",
+  "hashtags": [
+    "#비타민C추천",
+    "#피로회복",
+    "#직장인필수템",
+    "#영양제",
+    "#뉴트리라이트"
+  ],
+  "title": "오후 3시만 되면 방전되는 분들 필수 시청",
+  "structure": "BEFORE_AFTER"
+}

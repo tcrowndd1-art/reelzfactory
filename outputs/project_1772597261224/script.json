@@ -1,0 +1,77 @@
+{
+  "title": "비트코인 2026년 진짜 전망 (전문가들이 숨기는 것)",
+  "totalScenes": 4,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "2026년 비트코인, 1억 넘을까요? 아니면 그냥 폭망?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, dramatic close-up of a glowing golden bitcoin coin cracking open with blinding light, dark stormy background, tension and mystery atmosphere, hyper-realistic",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "1억",
+        "폭망"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "2025년 반감기 이후 역사적으로 항상 폭등했거든요. 근데 이번엔 다를 수 있어요.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, futuristic data visualization screen showing bitcoin halving cycle chart with glowing neon green upward trend lines, dark room with holographic displays, dramatic lighting",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "반감기",
+        "폭등"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "미국 ETF 승인에 기관 자금까지 들어오면서 2026년 목표가 최소 1억 5천만 원. 솔직히 무서운 숫자죠?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, Wall Street trading floor flooded with golden light, traders in suits looking at massive screens showing bitcoin price surging past 100000 dollars, epic wide angle shot, intense atmosphere",
+      "durationEstimate": 5.5,
+      "subtitleEmphasis": [
+        "ETF",
+        "1억 5천만 원"
+      ],
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "type": "cta",
+      "text": "근데 리스크도 있어요. 다음 영상에서 다 까발릴게요. 구독 안 하면 손해!",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, young confident korean content creator pointing directly at camera with a sly smirk, neon-lit studio background with bitcoin logos glowing, dynamic low angle shot, vibrant colors",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "리스크",
+        "구독"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "2026년 비트코인 1억 5천 간다고? 진짜 전망 팩폭🔥 #Shorts",
+    "description": "2026년 비트코인 전망을 전문가들도 말 못하는 진짜 시각으로 분석했습니다.\n반감기, ETF, 기관 자금까지 — 숫자가 말해주는 냉정한 현실.\n다음 영상에서는 리스크까지 완전 까발립니다. 구독하고 놓치지 마세요!",
+    "tags": [
+      "비트코인",
+      "비트코인전망",
+      "2026비트코인",
+      "비트코인반감기",
+      "암호화폐",
+      "코인투자",
+      "비트코인ETF",
+      "재테크",
+      "투자정보",
+      "쇼츠"
+    ],
+    "hashtags": [
+      "#비트코인",
+      "#비트코인전망2026",
+      "#코인투자",
+      "#반감기",
+      "#재테크shorts"
+    ]
+  }
+}

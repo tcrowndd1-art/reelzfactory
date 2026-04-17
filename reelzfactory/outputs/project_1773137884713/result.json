@@ -1,0 +1,51 @@
+{
+  "topic": "커피 매일 마시면 몸에 일어나는 변화",
+  "title": "커피 매일 마시면 몸에 일어나는 변화",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773137884713\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 53.56666666666666,
+  "metadata": {
+    "title": "☕ 커피 매일 마시면 몸에 생기는 일 (진짜 충격)",
+    "headline": {
+      "line1": "매일 커피",
+      "line2": "몸에 무슨 일이?"
+    },
+    "description": "매일 커피 마시는 사람이라면 꼭 알아야 할 정보\n하버드 연구 기반 카페인의 진짜 효과와 부작용\n뇌 수용체 변화부터 코르티솔 타이밍까지\n커피 마시는 시간 하나만 바꿔도 집중력이 달라질 수 있어요\n아는 사람만 챙기는 커피 마시는 법\n\n#커피 #카페인 #건강정보 #집중력 #하루루틴",
+    "tags": [
+      "커피",
+      "카페인",
+      "커피효능",
+      "커피부작용",
+      "집중력",
+      "건강정보",
+      "코르티솔",
+      "아침루틴",
+      "coffee",
+      "caffeine",
+      "health",
+      "focus",
+      "morning routine",
+      "wellness",
+      "brain health"
+    ],
+    "hashtags": [
+      "#커피",
+      "#카페인효과",
+      "#건강정보",
+      "#집중력향상",
+      "#아침루틴"
+    ],
+    "thumbnail": {
+      "text": "커피 매일 마시면 생기는 일",
+      "imagePrompt": "a dramatic close-up illustration of a human brain glowing with energy on one side and cracking on the other side, a large steaming coffee cup in the foreground, bold high contrast black and yellow colors, centered composition, no text overlay, dynamic lighting, simple bold graphic style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}

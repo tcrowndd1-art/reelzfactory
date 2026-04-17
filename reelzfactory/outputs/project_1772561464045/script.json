@@ -1,0 +1,78 @@
+{
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "totalScenes": 4,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 지금 네 직업... AI한테 뺏길 수도 있어😨",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a humanoid robot sitting confidently at a modern office desk, surrounded by glowing holographic screens, human employees looking shocked in the background, dramatic lighting, dystopian corporate atmosphere",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "AI한테",
+        "뺏길"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "2026년 AI가 씹어먹을 직업 TOP 5! 5위 콜센터 상담원, 4위 데이터 입력 사무직, 3위 번역가, 2위 기자·콘텐츠 작가, 그리고 1위는... 회계사😱",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, split-screen collage of five professionals — call center worker, office clerk, translator, journalist, accountant — each with a red glowing AI overlay replacing their face, neon red warning signs, high contrast dramatic lighting",
+      "durationEstimate": 18,
+      "subtitleEmphasis": [
+        "회계사",
+        "TOP 5"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "이미 ChatGPT가 기사 쓰고, AI가 세금 신고 다 해주는 세상이잖아. 근데도 '나는 괜찮겠지' 하고 있으면... 진짜 늦어😬",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, close-up of a laptop screen showing AI-generated news articles and automated tax filing software, a blurred human hand reaching toward the keyboard looking hesitant, moody blue and orange lighting, sense of urgency",
+      "durationEstimate": 12,
+      "subtitleEmphasis": [
+        "늦어",
+        "괜찮겠지"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "type": "cta",
+      "text": "다음 영상에서 'AI가 절대 못 뺏는 직업'도 알려줄게🔥 구독하고 놓치지 마!",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, energetic young Korean YouTuber pointing directly at camera with a bright confident smile, bold subscribe button animation in the foreground, vibrant studio background with glowing neon lights, dynamic angle",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "구독",
+        "절대 못 뺏는"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 😨 지금 네 직업 괜찮아?",
+    "description": "2026년, AI가 실제로 대체할 가능성이 높은 직업 TOP 5를 솔직하게 정리했어요.\n콜센터부터 회계사까지, 생각보다 훨씬 가까운 이야기일 수 있습니다.\n다음 영상에서는 AI가 절대 대체 못 하는 직업도 공개 예정! 구독하고 확인하세요🔥",
+    "tags": [
+      "AI대체직업",
+      "2026AI",
+      "직업미래",
+      "인공지능",
+      "ChatGPT",
+      "미래직업",
+      "Z세대",
+      "커리어"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026년직업",
+      "#인공지능",
+      "#미래직업",
+      "#ChatGPT",
+      "#직업추천",
+      "#Z세대",
+      "#쇼츠"
+    ]
+  }
+}

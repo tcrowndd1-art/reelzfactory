@@ -1,0 +1,33 @@
+{
+  "topic": "2026년 AI가 대체할 직업 TOP 5",
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1772560766489\\video\\shorts.mp4",
+  "totalScenes": 4,
+  "totalDuration": 14,
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 😱 너 괜찮아?",
+    "description": "2026년, AI가 진짜로 빼앗아 갈 직업 TOP 5를 정리했어요.\n지금 열심히 준비 중인 그 직종일 수도 있으니 꼭 확인하세요.\n다음 영상에서는 AI가 절대 대체 못 하는 직업도 공개합니다!",
+    "tags": [
+      "AI대체직업",
+      "2026년트렌드",
+      "미래직업",
+      "취업준비",
+      "인공지능"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026트렌드",
+      "#미래직업",
+      "#취준생필수",
+      "#인공지능"
+    ]
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.16",
+    "voice": "$0 (Edge TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.17"
+  }
+}

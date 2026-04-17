@@ -1,0 +1,50 @@
+{
+  "topic": "하루 만에 7조 원 매도한 투자자의 비밀",
+  "title": "하루 만에 7조 원 매도한 투자자의 비밀",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773030173549\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 43.233333333333334,
+  "metadata": {
+    "title": "💸 하루 7조 매도한 버핏의 진짜 속셈",
+    "description": "워런 버핏이 단 하루 만에 7조 원어치 애플 주식을 정리했습니다.\n현금 비중 38% — 이 숫자가 마지막으로 나왔던 건 닷컴 버블 직전이었어요.\n근데 이게 무조건 폭락 신호일까요?\n2016년 동일 패턴 이후 시장은 오히려 올랐다는 데이터가 있습니다.\n버핏의 매도 패턴과 그 역사적 흐름을 분석했습니다.\n\n#버핏 #애플주식 #투자전략 #주식매도 #트레이딩",
+    "tags": [
+      "버핏",
+      "애플주식",
+      "주식매도",
+      "트레이딩",
+      "매매",
+      "차트",
+      "코인",
+      "선물",
+      "투자전략",
+      "리스크관리",
+      "trading",
+      "forex",
+      "crypto",
+      "chart",
+      "futures",
+      "Warren Buffett",
+      "stock market",
+      "investment"
+    ],
+    "hashtags": [
+      "#버핏",
+      "#트레이딩",
+      "#주식투자",
+      "#애플주식",
+      "#투자전략"
+    ],
+    "thumbnail": {
+      "text": "버핏이 7조 판 이유",
+      "imagePrompt": "dramatic close-up illustration of a massive pile of gold coins with a bold downward arrow and the number 7 trillion in large font, high contrast black and yellow color scheme, shocked eye icon in corner, centered subject, whiteboard animation style, white background, no text overlay, full frame"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

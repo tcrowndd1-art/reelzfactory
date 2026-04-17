@@ -1,0 +1,51 @@
+{
+  "topic": "벤치마킹 기반 자동 주제",
+  "title": "Por que seu estômago ronca tanto na hora errada? 👀 #shorts #animação #saúde",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773128785680\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 38.233333333333334,
+  "metadata": {
+    "title": "👀 Por que sua barriga ronca na hora ERRADA? #shorts #saúde #animação",
+    "headline": {
+      "line1": "BARRIGA RONCA",
+      "line2": "na pior hora"
+    },
+    "description": "Já passou pela situação constrangedora de estar em silêncio total e sua barriga resolver falar mais alto que você? 😅\n\nNesse vídeo você vai entender o que pode estar acontecendo lá dentro — gases, fermentação e pressão intestinal — de um jeito simples e bem-humorado.\n\nEstudos indicam que o ronco estomacal (borborigmo) pode atingir até 80 decibéis em alguns casos, e está relacionado à fermentação bacteriana e ao movimento de gases no intestino.\n\nSe isso acontece com frequência, pode ser sinal de algo que vale a pena investigar com um profissional de saúde.\n\nAssiste até o final — tem um detalhe constrangedor que você não vai esquecer. 😂\n\n#barrigaronca #saúdeintestinal #gases #saúde #animação",
+    "tags": [
+      "barriga ronca",
+      "gases intestinais",
+      "saúde digestiva",
+      "borborigmo",
+      "por que a barriga ronca",
+      "saúde",
+      "animação",
+      "shorts saúde",
+      "intestino",
+      "digestão",
+      "stomach growling",
+      "intestinal gas",
+      "digestive health",
+      "health animation",
+      "funny health shorts"
+    ],
+    "hashtags": [
+      "#barrigaronca",
+      "#saúdeintestinal",
+      "#animação",
+      "#shorts",
+      "#saúde"
+    ],
+    "thumbnail": {
+      "text": "Barriga falou mais alto",
+      "imagePrompt": "cartoon character with extremely round bloated stomach, bright red embarrassed face, sound waves shooting out from belly, dramatic high contrast yellow and white background, bold black outlines, centered subject, no text overlay, whiteboard animation style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "topic": "Ways to Overcome Humiliation and Build Confidence",
+  "title": "창피당한 후 오히려 강해지는 사람들의 비밀",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773014407500\\video\\shorts.mp4",
+  "totalScenes": 6,
+  "totalDuration": 105.93333333333334,
+  "metadata": {
+    "title": "창피당한 뒤 오히려 강해지는 사람의 비밀 🧠💥",
+    "description": "창피를 당하고 무너지는 사람 vs 더 강해지는 사람.\n그 차이는 딱 한 문장에서 갈립니다.\n\n수치심이 물리적 고통과 같은 뇌 반응을 일으킨다는 사실, 알고 계셨나요?\n오늘 영상에서 창피를 무기로 바꾸는 3단계 방법을 알려드립니다.\n\n자존감이 낮아서 힘드신 분들께 특히 도움이 될 수 있습니다.\n증상이 지속된다면 전문가 상담을 권장합니다.\n\n#자존감 #심리학 #멘탈관리 #자기계발 #mindset",
+    "tags": [
+      "자존감",
+      "심리학",
+      "멘탈",
+      "습관",
+      "인간관계",
+      "수치심 극복",
+      "자기계발",
+      "psychology",
+      "mindset",
+      "motivation",
+      "self-esteem",
+      "habit",
+      "confidence",
+      "mental health",
+      "self improvement"
+    ],
+    "hashtags": [
+      "#자존감",
+      "#심리학",
+      "#멘탈관리",
+      "#자기계발",
+      "#mindset"
+    ],
+    "thumbnail": {
+      "text": "창피 → 무기로 바꾸는 법",
+      "imagePrompt": "a cartoon character split in half: left side shrinking with cracks and dark shadows, right side glowing with a confident pose and upward arrow, dramatic high contrast lighting, bold black outlines, white background, centered composition, no text overlay, eye-catching illustration style"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.24",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.25"
+  }
+}

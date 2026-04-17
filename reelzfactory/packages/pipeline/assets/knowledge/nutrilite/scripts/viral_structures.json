@@ -1,0 +1,156 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-12",
+  "structures": [
+    {
+      "id": "pas_fear_30",
+      "name": "PAS 공포형",
+      "type": "PAS",
+      "duration_target": 30,
+      "description": "구체적 공포 증상으로 시작, 방치 결과 심화, 해결책 제시",
+      "scenes": [
+        {"phase": "hook", "duration_sec": 3, "render_type": "lipsync", "direction": "구체적 신체 증상을 충격적으로 언급. 예: 새벽 3시에 종아리가 찢어지는 이유"},
+        {"phase": "problem", "duration_sec": 4, "render_type": "image_motion", "direction": "이 증상이 왜 생기는지 과학적 원인 1가지만 짧게"},
+        {"phase": "agitate_1", "duration_sec": 3, "render_type": "image_motion", "direction": "방치하면 어떻게 되는지 악화 시나리오"},
+        {"phase": "agitate_2", "duration_sec": 3, "render_type": "image_motion", "direction": "한국인 결핍률 통계로 공포 강화"},
+        {"phase": "solution_1", "duration_sec": 5, "render_type": "action", "direction": "해결 성분과 작동 원리 설명"},
+        {"phase": "solution_2", "duration_sec": 4, "render_type": "image_motion", "direction": "제품의 차별화 기술 강조"},
+        {"phase": "proof", "duration_sec": 3, "render_type": "image_motion", "direction": "인증/연구/리뷰 근거 1가지"},
+        {"phase": "solution_3", "duration_sec": 3, "render_type": "image_motion", "direction": "섭취 방법 또는 흡수 팁"},
+        {"phase": "cta", "duration_sec": 2, "render_type": "lipsync", "direction": "팔로우 유도 또는 댓글 유도"}
+      ],
+      "effectiveness": "건강 카테고리에서 공포 기반 PAS가 가장 높은 완시청률. 첫 3초 구체적 증상이 스크롤 스톱 트리거"
+    },
+    {
+      "id": "pas_curiosity_45",
+      "name": "PAS 호기심형",
+      "type": "PAS",
+      "duration_target": 45,
+      "description": "의외의 사실로 호기심 유발, 상식 뒤집기, 해결책",
+      "scenes": [
+        {"phase": "hook", "duration_sec": 3, "render_type": "lipsync", "direction": "상식을 뒤집는 질문. 예: 칼슘만 먹으면 뼈가 튼튼해진다고요?"},
+        {"phase": "problem", "duration_sec": 5, "render_type": "image_motion", "direction": "왜 상식이 틀렸는지 근거 제시"},
+        {"phase": "agitate_1", "duration_sec": 4, "render_type": "image_motion", "direction": "잘못된 방법을 쓰면 생기는 부작용"},
+        {"phase": "agitate_2", "duration_sec": 4, "render_type": "action", "direction": "캐릭터가 충격받는 리액션"},
+        {"phase": "agitate_3", "duration_sec": 3, "render_type": "image_motion", "direction": "통계로 뒷받침"},
+        {"phase": "solution_1", "duration_sec": 5, "render_type": "action", "direction": "올바른 방법과 핵심 성분"},
+        {"phase": "solution_2", "duration_sec": 4, "render_type": "image_motion", "direction": "제품 차별화 기술"},
+        {"phase": "solution_3", "duration_sec": 4, "render_type": "image_motion", "direction": "흡수율/효과 비교"},
+        {"phase": "proof", "duration_sec": 4, "render_type": "image_motion", "direction": "과학적 근거/인증"},
+        {"phase": "summary", "duration_sec": 3, "render_type": "image_motion", "direction": "핵심 요약 한 문장"},
+        {"phase": "cta", "duration_sec": 3, "render_type": "lipsync", "direction": "다음 영상 예고 + 팔로우 유도"}
+      ],
+      "effectiveness": "호기심형은 댓글 참여율이 공포형 대비 2배. 토론 유발로 알고리즘 부스트"
+    },
+    {
+      "id": "aida_value_30",
+      "name": "AIDA 가치제안형",
+      "type": "AIDA",
+      "duration_target": 30,
+      "description": "주의 끌기 → 관심 → 욕구 → 행동",
+      "scenes": [
+        {"phase": "attention", "duration_sec": 3, "render_type": "lipsync", "direction": "결과를 먼저 보여주는 리버스 훅. 예: 3개월 뒤 아침이 달라집니다"},
+        {"phase": "interest_1", "duration_sec": 4, "render_type": "image_motion", "direction": "왜 달라지는지 핵심 성분 1가지"},
+        {"phase": "interest_2", "duration_sec": 4, "render_type": "image_motion", "direction": "기술 차별점 (흡수율/공법)"},
+        {"phase": "desire_1", "duration_sec": 5, "render_type": "action", "direction": "캐릭터가 제품을 자신감 있게 보여줌"},
+        {"phase": "desire_2", "duration_sec": 4, "render_type": "image_motion", "direction": "리뷰/통계로 사회적 증거"},
+        {"phase": "desire_3", "duration_sec": 4, "render_type": "image_motion", "direction": "섭취 전후 생활 변화 (Before After 텍스트가 아닌 상황 묘사)"},
+        {"phase": "action", "duration_sec": 3, "render_type": "lipsync", "direction": "리스크 제거 멘트 + 팔로우"},
+        {"phase": "cta", "duration_sec": 3, "render_type": "image_motion", "direction": "다음 영상 예고"}
+      ],
+      "effectiveness": "AIDA는 이미 관심 있는 시청자의 전환율이 가장 높음. 리타겟팅 영상에 최적"
+    },
+    {
+      "id": "aida_premium_60",
+      "name": "AIDA 프리미엄형",
+      "type": "AIDA",
+      "duration_target": 60,
+      "description": "고급 브랜딩 + 깊은 정보 전달",
+      "scenes": [
+        {"phase": "attention", "duration_sec": 4, "render_type": "lipsync", "direction": "CEO 톤으로 큰 그림 제시. 예: 당신의 몸은 1% 배터리로 돌아가고 있습니다"},
+        {"phase": "interest_1", "duration_sec": 5, "render_type": "action", "direction": "문제의 규모를 시각화"},
+        {"phase": "interest_2", "duration_sec": 4, "render_type": "image_motion", "direction": "한국인 결핍 통계"},
+        {"phase": "interest_3", "duration_sec": 4, "render_type": "image_motion", "direction": "과학적 메커니즘 설명"},
+        {"phase": "desire_1", "duration_sec": 5, "render_type": "action", "direction": "제품 기술력 시각화 (아쿠아셀/파이토칼라)"},
+        {"phase": "desire_2", "duration_sec": 4, "render_type": "image_motion", "direction": "90년 역사/농장 스토리"},
+        {"phase": "desire_3", "duration_sec": 4, "render_type": "image_motion", "direction": "NSF 인증/글로벌 파트너십"},
+        {"phase": "desire_4", "duration_sec": 4, "render_type": "image_motion", "direction": "실제 섭취 루틴 제안"},
+        {"phase": "proof_1", "duration_sec": 4, "render_type": "image_motion", "direction": "연구 논문 근거"},
+        {"phase": "proof_2", "duration_sec": 4, "render_type": "image_motion", "direction": "리뷰/재구매율"},
+        {"phase": "summary", "duration_sec": 4, "render_type": "image_motion", "direction": "핵심 3줄 요약"},
+        {"phase": "action", "duration_sec": 3, "render_type": "lipsync", "direction": "팔로우 + 댓글 질문 유도"},
+        {"phase": "cta", "duration_sec": 3, "render_type": "image_motion", "direction": "시리즈 다음 편 예고"}
+      ],
+      "effectiveness": "60초 AIDA는 구독 전환율 최고. 채널 브랜딩과 시리즈화에 적합"
+    },
+    {
+      "id": "before_after_15",
+      "name": "Before-After 극초단형",
+      "type": "Before-After",
+      "duration_target": 15,
+      "description": "이미지 비교 없이 상황 대비로 변화를 보여줌",
+      "scenes": [
+        {"phase": "hook", "duration_sec": 3, "render_type": "lipsync", "direction": "Before 상황을 생생하게. 예: 오후 3시만 되면 눈이 감기시죠?"},
+        {"phase": "before", "duration_sec": 3, "render_type": "image_motion", "direction": "피곤한/힘든 상황 시각화"},
+        {"phase": "transition", "duration_sec": 2, "render_type": "action", "direction": "캐릭터가 제품을 꺼내드는 전환 모먼트"},
+        {"phase": "after", "duration_sec": 4, "render_type": "image_motion", "direction": "활기찬/건강한 상황 시각화"},
+        {"phase": "cta", "duration_sec": 3, "render_type": "lipsync", "direction": "핵심 한마디 + 팔로우"}
+      ],
+      "effectiveness": "15초 Before-After는 릴스/숏츠에서 반복 재생률 최고. 알고리즘 자동 푸시 트리거"
+    },
+    {
+      "id": "before_after_30",
+      "name": "Before-After 스토리형",
+      "type": "Before-After",
+      "duration_target": 30,
+      "description": "일상 스토리 기반 변화 묘사",
+      "scenes": [
+        {"phase": "hook", "duration_sec": 3, "render_type": "lipsync", "direction": "공감 질문. 예: 영양제 3개월 먹었는데 달라진 게 없다고요?"},
+        {"phase": "before_1", "duration_sec": 4, "render_type": "image_motion", "direction": "잘못된 섭취 습관/저품질 제품 묘사"},
+        {"phase": "before_2", "duration_sec": 3, "render_type": "image_motion", "direction": "왜 효과가 없었는지 원인 (흡수율/성분)"},
+        {"phase": "turning", "duration_sec": 3, "render_type": "action", "direction": "캐릭터가 깨달음의 순간 연출"},
+        {"phase": "after_1", "duration_sec": 5, "render_type": "action", "direction": "올바른 제품/성분으로 바꾼 후 변화"},
+        {"phase": "after_2", "duration_sec": 4, "render_type": "image_motion", "direction": "구체적 생활 변화 묘사"},
+        {"phase": "proof", "duration_sec": 3, "render_type": "image_motion", "direction": "과학적 근거 1줄"},
+        {"phase": "cta", "duration_sec": 3, "render_type": "lipsync", "direction": "경험 공유 유도 + 팔로우"}
+      ],
+      "effectiveness": "스토리형 Before-After는 저장률이 일반 대비 3배. 바이럴 공유 트리거"
+    },
+    {
+      "id": "qa_myth_15",
+      "name": "QA 상식파괴형",
+      "type": "QA",
+      "duration_target": 15,
+      "description": "하나의 질문에 충격적 답변",
+      "scenes": [
+        {"phase": "question", "duration_sec": 3, "render_type": "lipsync", "direction": "도발적 질문. 예: 비싼 오메가3가 소변으로 다 빠진다고?"},
+        {"phase": "answer_1", "duration_sec": 4, "render_type": "image_motion", "direction": "왜 그런지 과학적 이유 1가지"},
+        {"phase": "answer_2", "duration_sec": 3, "render_type": "action", "direction": "캐릭터가 해결책 제시"},
+        {"phase": "punchline", "duration_sec": 3, "render_type": "image_motion", "direction": "차별화 기술로 마무리 펀치"},
+        {"phase": "cta", "duration_sec": 2, "render_type": "lipsync", "direction": "더 알고 싶으면 팔로우"}
+      ],
+      "effectiveness": "QA 상식파괴형은 댓글 폭발 유발. 반박하려는 사람들이 engagement를 올려줌"
+    },
+    {
+      "id": "qa_debate_45",
+      "name": "QA 논쟁유발형",
+      "type": "QA",
+      "duration_target": 45,
+      "description": "논란 있는 주제로 양쪽 의견 제시 후 결론",
+      "scenes": [
+        {"phase": "question", "duration_sec": 3, "render_type": "lipsync", "direction": "논쟁 유발 질문. 예: 의사들이 영양제 추천 안 하는 진짜 이유?"},
+        {"phase": "side_a_1", "duration_sec": 4, "render_type": "image_motion", "direction": "반대 의견 공정하게 제시"},
+        {"phase": "side_a_2", "duration_sec": 3, "render_type": "image_motion", "direction": "반대 의견의 근거"},
+        {"phase": "side_b_1", "duration_sec": 4, "render_type": "action", "direction": "찬성 의견을 데이터로 제시"},
+        {"phase": "side_b_2", "duration_sec": 4, "render_type": "image_motion", "direction": "과학적 연구 근거"},
+        {"phase": "side_b_3", "duration_sec": 4, "render_type": "image_motion", "direction": "실제 사례/통계"},
+        {"phase": "verdict", "duration_sec": 5, "render_type": "action", "direction": "캐릭터의 결론 (제품 차별점 연결)"},
+        {"phase": "nuance", "duration_sec": 4, "render_type": "image_motion", "direction": "단 이런 경우는 주의하세요 (신뢰 구축)"},
+        {"phase": "proof", "duration_sec": 4, "render_type": "image_motion", "direction": "인증/파트너십 근거"},
+        {"phase": "cta_1", "duration_sec": 3, "render_type": "lipsync", "direction": "댓글로 의견 달아달라고 유도"},
+        {"phase": "cta_2", "duration_sec": 3, "render_type": "image_motion", "direction": "시리즈 다음 주제 예고"}
+      ],
+      "effectiveness": "논쟁형 QA는 댓글 100개 이상 유도 가능. 알고리즘이 engagement 높은 영상을 추천 페이지에 올림"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "2026년 AI가 대체할 직업 TOP 5",
+  "totalScenes": 4,
+  "scenes": [
+    {
+      "id": 1,
+      "type": "hook",
+      "text": "잠깐, 너 지금 하는 그 일… 2026년엔 AI가 한다고?",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a shocked young Korean office worker staring at a glowing AI robot sitting at their desk, dramatic lighting, neon blue tones, close-up facial expression of disbelief",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "2026년",
+        "AI가 한다"
+      ],
+      "transition": "zoom_in"
+    },
+    {
+      "id": 2,
+      "type": "content",
+      "text": "1위 콜센터 상담원, 2위 데이터 입력직, 3위 번역가, 4위 회계사, 5위 콘텐츠 작가. 다 AI한테 넘어간대.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a futuristic split-screen showing five different jobs being replaced by holographic AI interfaces, each panel fading from human to machine, cool blue and red contrast lighting, top-down dramatic angle",
+      "durationEstimate": 5,
+      "subtitleEmphasis": [
+        "TOP 5",
+        "AI한테 넘어간"
+      ],
+      "transition": "slide_left"
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "text": "근데 진짜 무서운 건, 지금 취준생들이 목숨 걸고 준비하는 직종들이라는 거야.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a stressed young Korean student surrounded by stacks of study books and a laptop showing AI takeover news, dark moody room with single desk lamp, shallow depth of field, realistic",
+      "durationEstimate": 4.5,
+      "subtitleEmphasis": [
+        "취준생",
+        "목숨 걸고"
+      ],
+      "transition": "cut"
+    },
+    {
+      "id": 4,
+      "type": "cta",
+      "text": "AI가 못 빼앗는 직업은 뭔지 궁금하면? 구독하고 다음 영상에서 확인해.",
+      "imagePrompt": "cinematic, high quality, detailed, 4k, a confident young Korean YouTuber pointing directly at camera with a glowing subscribe button floating in the air, vibrant studio background with neon lights, energetic and bold composition",
+      "durationEstimate": 4,
+      "subtitleEmphasis": [
+        "구독",
+        "다음 영상"
+      ],
+      "transition": "zoom_out"
+    }
+  ],
+  "metadata": {
+    "title": "2026년 AI가 대체할 직업 TOP 5 😱 너 괜찮아?",
+    "description": "2026년, AI가 진짜로 빼앗아 갈 직업 TOP 5를 정리했어요.\n지금 열심히 준비 중인 그 직종일 수도 있으니 꼭 확인하세요.\n다음 영상에서는 AI가 절대 대체 못 하는 직업도 공개합니다!",
+    "tags": [
+      "AI대체직업",
+      "2026년트렌드",
+      "미래직업",
+      "취업준비",
+      "인공지능"
+    ],
+    "hashtags": [
+      "#AI대체직업",
+      "#2026트렌드",
+      "#미래직업",
+      "#취준생필수",
+      "#인공지능"
+    ]
+  }
+}

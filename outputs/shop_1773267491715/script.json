@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "text": "오후 3시만 되면 꾸벅꾸벅, 커피로 버티는 거 이제 그만하세요. 밑 빠진 독에 물 붓기입니다.",
+      "imagePrompt": "An empty coffee mug and scattered paperwork on a messy office desk in the late afternoon light. The scene looks tired and drained of energy. 4K, realistic, commercial photography.",
+      "transition": "zoom_in"
+    },
+    {
+      "text": "하루 한 알이면 하루 종일 지치지 않는 에너지가 가득! 주변에서 얼굴 좋아졌다는 말, 지겹게 들으실 거예요.",
+      "imagePrompt": "A single Nutrilite Vitamin C tablet placed next to a tall glass of fresh, sparkling water with a slice of lemon. The background is bright, clean, and white. 4K quality, realistic.",
+      "transition": "pan_left"
+    },
+    {
+      "text": "이게 바로 약사 친구가 자기만 몰래 챙겨 먹던 비타민이에요. 진짜 활력을 찾고 싶다면 프로필 링크를 확인하세요!",
+      "imagePrompt": "A pristine bottle of Nutrilite Vitamin C standing on a clean marble countertop next to a small, vibrant green plant. Soft, natural morning light. 4K, commercial product shot.",
+      "transition": "zoom_out"
+    }
+  ],
+  "hook": "백화점 영양제 코너 VVIP가 갈아탄 인생 비타민C",
+  "cta": "지긋지긋한 피로와 작별하는 법, 프로필 링크에 있어요!",
+  "hashtags": [
+    "#뉴트리라이트",
+    "#비타민C",
+    "#피로회복",
+    "#영양제추천",
+    "#직장인필수템"
+  ],
+  "title": "오후 3시만 되면 방전? 커피 말고 이걸 드세요.",
+  "structure": "BEFORE_AFTER"
+}

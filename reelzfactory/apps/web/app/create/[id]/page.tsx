@@ -1,0 +1,1025 @@
+"use client";
+
+import { useState, useEffect, useRef, use } from "react";
+import { useRouter } from "next/navigation";
+import { getSettings, getProjects, saveProject, type Project } from "@/lib/store";
+
+type Step = "script" | "tts" | "storyboard" | "render" | "upload";
+type StepStatus = "pending" | "running" | "done" | "error";
+
+interface Scene {
+  sceneNumber: number;
+  narration: string;
+  imagePrompt: string;
+  duration: number;
+  section?: string;
+  textOverlay?: string;
+  imageUrl?: string;
+  audioUrl?: string;
+}
+
+interface GeneratedScript {
+  title: string;
+  description: string;
+  scenes: Scene[];
+  totalScenes: number;
+  estimatedDuration: string;
+  tags: string[];
+  thumbnailPrompt: string;
+  chapters?: { time: string; title: string }[];
+}
+
+const STEPS: { key: Step; label: string; icon: string }[] = [
+  { key: "script", label: "1. Script", icon: "📝" },
+  { key: "tts", label: "2. Voice", icon: "🎤" },
+  { key: "storyboard", label: "3. Storyboard", icon: "🖼️" },
+  { key: "render", label: "4. Render", icon: "🎬" },,
+  { key: "upload", label: "Upload", icon: "\u{1F4E4}" },
+];
+
+// ===== VOICE STYLES (애니메이션 3종) =====
+const VOICE_STYLES = [
+  { id: "cognitive_gap", label: "Authority (권위형)", desc: "깊고 차분한 멘토", maleVoice: "Charon", femaleVoice: "Kore", speed: 0.95 },
+  { id: "provocateur", label: "Provocateur (팩폭형)", desc: "빠르고 도발적, 에너지틱", maleVoice: "Puck", femaleVoice: "Leda", speed: 1.15 },
+  { id: "gravity", label: "Gravity (CEO형)", desc: "극도로 느리고 무거운", maleVoice: "Orus", femaleVoice: "Aoede", speed: 0.85 },
+];
+
+// ===== 카테고리별 보이스 옵션 (남녀 각 3개) =====
+const VOICE_OPTIONS: Record<string, {
+  male: { voiceName: string; label: string }[];
+  female: { voiceName: string; label: string }[];
+}> = {
+  shopping_tech:    { male: [{ voiceName: "Fenrir", label: "흥분형 언박서" }, { voiceName: "Puck", label: "밝은 에너지" }, { voiceName: "Charon", label: "차분한 분석가" }], female: [{ voiceName: "Leda", label: "밝고 트렌디" }, { voiceName: "Kore", label: "단단한 전문가" }, { voiceName: "Aoede", label: "경쾌한 리뷰어" }] },
+  shopping_home:    { male: [{ voiceName: "Puck", label: "밝은 실용파" }, { voiceName: "Charon", label: "신뢰형 전문가" }, { voiceName: "Fenrir", label: "열정 리뷰어" }], female: [{ voiceName: "Kore", label: "실용 리뷰어" }, { voiceName: "Sulafat", label: "따뜻한 이웃" }, { voiceName: "Leda", label: "밝은 에너지" }] },
+  shopping_beauty:  { male: [{ voiceName: "Puck", label: "밝은 에너지" }, { voiceName: "Enceladus", label: "속삭임 ASMR" }, { voiceName: "Fenrir", label: "흥분형" }], female: [{ voiceName: "Leda", label: "밝은 인플루언서" }, { voiceName: "Aoede", label: "경쾌한 뷰티" }, { voiceName: "Achernar", label: "부드러운 톤" }] },
+  shopping_health:  { male: [{ voiceName: "Charon", label: "신뢰형 전문가" }, { voiceName: "Algieba", label: "부드러운 어드바이저" }, { voiceName: "Rasalgethi", label: "정보 전달형" }], female: [{ voiceName: "Sulafat", label: "따뜻한 전문가" }, { voiceName: "Kore", label: "단단한 신뢰" }, { voiceName: "Vindemiatrix", label: "부드러운 상담" }] },
+  shopping_fashion: { male: [{ voiceName: "Puck", label: "밝은 스타일" }, { voiceName: "Zubenelgenubi", label: "캐주얼 톤" }, { voiceName: "Achird", label: "친근한 톤" }], female: [{ voiceName: "Aoede", label: "경쾌한 패셔니스타" }, { voiceName: "Leda", label: "밝고 트렌디" }, { voiceName: "Despina", label: "부드러운 스타일" }] },
+  shopping_food:    { male: [{ voiceName: "Puck", label: "밝은 푸디" }, { voiceName: "Fenrir", label: "흥분형 먹방" }, { voiceName: "Achird", label: "친근한 맛집" }], female: [{ voiceName: "Kore", label: "에너지 푸디" }, { voiceName: "Leda", label: "밝은 리뷰어" }, { voiceName: "Sulafat", label: "따뜻한 감성" }] },
+  health:           { male: [{ voiceName: "Charon", label: "신뢰형 전문가" }, { voiceName: "Algieba", label: "부드러운 어드바이저" }, { voiceName: "Rasalgethi", label: "정보 전달형" }], female: [{ voiceName: "Sulafat", label: "따뜻한 전문가" }, { voiceName: "Kore", label: "단단한 신뢰" }, { voiceName: "Vindemiatrix", label: "부드러운 상담" }] },
+  shorts_default:   { male: [{ voiceName: "Puck", label: "밝은 에너지" }, { voiceName: "Fenrir", label: "흥분형" }, { voiceName: "Charon", label: "차분한 톤" }], female: [{ voiceName: "Kore", label: "단단한 크리에이터" }, { voiceName: "Leda", label: "밝은 에너지" }, { voiceName: "Aoede", label: "경쾌한 톤" }] },
+  longform_default: { male: [{ voiceName: "Charon", label: "다큐 나레이터" }, { voiceName: "Algieba", label: "부드러운 톤" }, { voiceName: "Schedar", label: "균형잡힌 톤" }], female: [{ voiceName: "Sulafat", label: "따뜻한 나레이터" }, { voiceName: "Vindemiatrix", label: "부드러운 톤" }, { voiceName: "Gacrux", label: "성숙한 톤" }] },
+};
+
+// ===== Gemini TTS 전체 보이스 (직접 선택용) =====
+const ALL_VOICES = [
+  { name: "Zephyr", desc: "밝고 경쾌한", gender: "female" },
+  { name: "Puck", desc: "에너지틱한", gender: "male" },
+  { name: "Charon", desc: "깊고 권위있는", gender: "male" },
+  { name: "Kore", desc: "단단하고 신뢰감", gender: "female" },
+  { name: "Fenrir", desc: "힘있고 열정적", gender: "male" },
+  { name: "Leda", desc: "밝고 당당한", gender: "female" },
+  { name: "Orus", desc: "극도로 깊은", gender: "male" },
+  { name: "Aoede", desc: "우아하고 풍부한", gender: "female" },
+  { name: "Callirrhoe", desc: "부드럽고 자연스러운", gender: "female" },
+  { name: "Autonoe", desc: "차분하고 안정적", gender: "female" },
+  { name: "Enceladus", desc: "속삭이는 ASMR", gender: "male" },
+  { name: "Iapetus", desc: "무게감 있는", gender: "male" },
+  { name: "Umbriel", desc: "중립적이고 깔끔한", gender: "male" },
+  { name: "Algieba", desc: "부드러운 톤", gender: "male" },
+  { name: "Despina", desc: "가벼운 스타일", gender: "female" },
+  { name: "Sulafat", desc: "따뜻한", gender: "female" },
+  { name: "Vindemiatrix", desc: "부드러운 상담", gender: "female" },
+  { name: "Achernar", desc: "부드러운", gender: "female" },
+  { name: "Zubenelgenubi", desc: "캐주얼한", gender: "male" },
+  { name: "Achird", desc: "친근한", gender: "male" },
+  { name: "Rasalgethi", desc: "정보 전달형", gender: "male" },
+  { name: "Schedar", desc: "균형잡힌", gender: "male" },
+  { name: "Gacrux", desc: "성숙한", gender: "female" },
+  { name: "Sadachbia", desc: "따뜻하고 밝은", gender: "male" },
+];
+
+export default function PipelinePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
+  const router = useRouter();
+  const [project, setProject] = useState<Project | null>(null);
+  const [currentStep, setCurrentStep] = useState<Step>("script");
+  const [stepStatus, setStepStatus] = useState<Record<Step, StepStatus>>({
+    script: "pending", tts: "pending", storyboard: "pending", render: "pending", upload: "pending",
+  });
+
+  const [streamText, setStreamText] = useState("");
+  const [script, setScript] = useState<GeneratedScript | null>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [editingScene, setEditingScene] = useState<number | null>(null);
+  const [imageProgress, setImageProgress] = useState("");
+  const [imageErrors, setImageErrors] = useState<string[]>([]);
+  const [voiceProgress, setVoiceProgress] = useState("");
+  const [voiceErrors, setVoiceErrors] = useState<string[]>([]);
+  const [renderData, setRenderData] = useState<any>(null);
+  const [viewMode, setViewMode] = useState<"card" | "table">("card");
+  const streamRef = useRef<HTMLDivElement>(null);
+
+  // ===== Voice Modal State =====
+  const [showVoiceModal, setShowVoiceModal] = useState(false);
+  const [voiceStyle, setVoiceStyle] = useState<string>("cognitive_gap");
+  const [voiceGender, setVoiceGender] = useState<string>("male");
+  const [voiceSpeed, setVoiceSpeed] = useState<number>(1.0);
+  const [selectedVoiceName, setSelectedVoiceName] = useState<string>("");
+  const [voiceTab, setVoiceTab] = useState<"style" | "category" | "all">("style");
+
+  useEffect(() => {
+    const projects = getProjects();
+    const found = projects.find((p) => p.id === id);
+    if (!found) { router.push("/projects"); return; }
+    setProject(found);
+    try {
+      const savedScript = localStorage.getItem(`reelzfactory_script_${id}`);
+      if (savedScript) {
+        const parsed = JSON.parse(savedScript);
+        setScript(parsed);
+        const hasAudio = parsed.scenes?.some((s: any) => s.audioUrl);
+        const hasImages = parsed.scenes?.some((s: any) => s.imageUrl);
+        if (hasAudio && hasImages) {
+          setCurrentStep("storyboard");
+          setStepStatus(s => ({ ...s, script: "done", tts: "done", storyboard: "done" }));
+        } else if (hasAudio) {
+          setCurrentStep("storyboard");
+          setStepStatus(s => ({ ...s, script: "done", tts: "done" }));
+        } else if (parsed.scenes?.length > 0) {
+          setCurrentStep("tts");
+          setStepStatus(s => ({ ...s, script: "done" }));
+        }
+      }
+    } catch {}
+  }, [id, router]);
+
+  // voiceStyle 바뀌면 speed 자동 세팅
+  useEffect(() => {
+    const style = VOICE_STYLES.find(v => v.id === voiceStyle);
+    if (style) {
+      setVoiceSpeed(style.speed);
+      setSelectedVoiceName("");
+    }
+  }, [voiceStyle]);
+
+  // 우선순위: selectedVoiceName(직접선택) > voiceStyle 기본 voice
+  const getVoiceSource = () => {
+    if (selectedVoiceName) return "직접 선택";
+    return `${VOICE_STYLES.find(v => v.id === voiceStyle)?.label || "Style"} 기본`;
+  };
+
+  // 현재 선택된 보이스 이름 계산
+  const getActiveVoiceName = () => {
+    if (selectedVoiceName) return selectedVoiceName;
+    const style = VOICE_STYLES.find(v => v.id === voiceStyle);
+    if (!style) return "Charon";
+    return voiceGender === "male" ? style.maleVoice : style.femaleVoice;
+  };
+
+  const generateScript = async () => {
+    if (!project) return;
+    const settings = getSettings();
+    const apiKey = settings.apiKeys.openrouter;
+    if (!apiKey) { alert("OpenRouter API key required. Go to Settings."); return; }
+
+    setIsGenerating(true);
+    setStreamText("");
+    setScript(null);
+    setStepStatus((s) => ({ ...s, script: "running" }));
+
+    try {
+      const res = await fetch("/api/generate-script", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          topic: project.topic,
+          mode: project.mode,
+          scriptSource: project.scriptSource,
+          perspective: project.perspective,
+          benchmarkUrl: project.benchmarkUrl,
+          language: settings.channel.language,
+          niche: settings.channel.niche,
+          apiKey,
+        }),
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.error || "API request failed");
+      }
+
+      const reader = res.body?.getReader();
+      if (!reader) throw new Error("No reader");
+
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+        buffer = lines.pop() || "";
+
+        for (const line of lines) {
+          if (!line.startsWith("data: ")) continue;
+          const data = line.slice(6);
+          if (data === "[DONE]") continue;
+
+          try {
+            const parsed = JSON.parse(data);
+            if (parsed.type === "chunk") {
+              setStreamText((prev) => prev + parsed.content);
+              if (streamRef.current) {
+                streamRef.current.scrollTop = streamRef.current.scrollHeight;
+              }
+            } else if (parsed.type === "complete") {
+              setScript(parsed.script);
+              setStepStatus((s) => ({ ...s, script: "done" }));
+            } else if (parsed.type === "error") {
+              throw new Error(parsed.message);
+            }
+          } catch {}
+        }
+      }
+    } catch (err) {
+      setStepStatus((s) => ({ ...s, script: "error" }));
+      alert(`Script generation failed: ${err}`);
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const confirmScript = () => {
+    if (!project || !script) return;
+    saveProject({ ...project, status: "imaging", title: script.title });
+    setProject({ ...project, status: "imaging", title: script.title });
+    localStorage.setItem(`reelzfactory_script_${project.id}`, JSON.stringify(script));
+    setCurrentStep("tts");
+  };
+
+  const generateImages = async () => {
+    if (!script) return;
+    const settings = getSettings();
+    const falKey = settings.apiKeys?.falai;
+    if (!falKey) { setImageErrors(["Set fal.ai API key in Settings"]); return; }
+
+    setIsGenerating(true);
+    setImageErrors([]);
+    setImageProgress("Starting image generation...");
+
+    try {
+      const scenes = script.scenes.map((s, i) => ({
+        id: i + 1,
+        type: s.section || "core",
+        text: s.narration,
+        imagePrompt: s.imagePrompt,
+      }));
+
+      setImageProgress(`Generating ${scenes.length} images... This may take 1-2 minutes.`);
+
+      const res = await fetch("/api/generate-images", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ scenes, falKey }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Image generation failed");
+
+      const updated = { ...script };
+      const errors: string[] = [];
+      for (const result of data.results) {
+        const idx = result.sceneId - 1;
+        if (result.success && updated.scenes[idx]) {
+          updated.scenes[idx] = { ...updated.scenes[idx], imageUrl: result.imageUrl };
+        } else if (!result.success) {
+          errors.push(`Scene ${result.sceneId}: ${result.error}`);
+        }
+      }
+      setScript(updated);
+      setImageErrors(errors);
+      setImageProgress(`Done! ${data.summary.success}/${data.summary.total} images generated.`);
+
+      if (project) {
+        saveProject({ ...project, status: "imaging" });
+        localStorage.setItem(`reelzfactory_script_${project.id}`, JSON.stringify(updated));
+      }
+    } catch (err: any) {
+      setImageErrors([err.message]);
+      setImageProgress("");
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const generateVoices = async () => {
+    if (!script || !project) return;
+    const settings = getSettings();
+    const geminiKey = settings.apiKeys?.gemini;
+    const openaiKey = settings.apiKeys?.openai;
+    if (!geminiKey && !openaiKey && !settings.apiKeys?.openrouter) { setVoiceErrors(["Set Gemini, OpenAI, or OpenRouter API key in Settings"]); return; }
+
+    setShowVoiceModal(false);
+    setIsGenerating(true);
+    setVoiceErrors([]);
+    setVoiceProgress(`Generating voices... (${getActiveVoiceName()} / ${voiceStyle} / speed ${voiceSpeed}x)`);
+
+    try {
+      const scenes = script.scenes.map((s, i) => ({
+        id: i + 1,
+        type: s.section || "core",
+        text: s.narration,
+      }));
+
+      const category = project.category || "health";
+
+      const res = await fetch("/api/generate-voice", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          scenes,
+          geminiKey,
+          openaiKey,
+          openrouterKey: settings.apiKeys?.openrouter,
+          projectId: project.id,
+          category,
+          gender: voiceGender,
+          voiceStyle,
+          voiceName: selectedVoiceName || undefined,
+          speed: voiceSpeed,
+          language: settings.channel?.language || "ko",
+          isAnimation: true,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Voice generation failed");
+
+      const updated = { ...script };
+      const errors: string[] = [];
+      for (const result of data.results) {
+        const idx = result.sceneId - 1;
+        if (result.success && updated.scenes[idx]) {
+        updated.scenes[idx] = { ...updated.scenes[idx], audioUrl: result.audioUrl, model: result.model };
+        } else if (!result.success) {
+          errors.push("Scene " + result.sceneId + ": " + result.error);
+        }
+      }
+      setScript(updated);
+      setVoiceErrors(errors);
+      setVoiceProgress(`Done! ${data.summary.success}/${data.summary.total} voices (${data.summary.voiceName} / ${data.summary.style} / ${data.summary.speed}x)`);
+
+      if (project) {
+        saveProject({ ...project, status: "tts" });
+        localStorage.setItem("reelzfactory_script_" + project.id, JSON.stringify(updated));
+      }
+    } catch (err: any) {
+      setVoiceErrors([err.message]);
+      setVoiceProgress("");
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const updateSceneNarration = (idx: number, narration: string) => {
+    if (!script) return;
+    const updated = { ...script };
+    updated.scenes[idx] = { ...updated.scenes[idx], narration };
+    setScript(updated);
+    setEditingScene(null);
+  };
+
+  // 현재 카테고리의 보이스 옵션
+  const getCategoryVoices = () => {
+    const cat = project?.category || "health";
+    const key = cat.startsWith("shopping_") ? cat : (project?.mode === "longform" ? "longform_default" : "shorts_default");
+    return VOICE_OPTIONS[key] || VOICE_OPTIONS.shorts_default;
+  };
+
+  if (!project) return <div style={{ padding: 32, color: "#64748b" }}>Loading...</div>;
+
+  return (
+    <div style={{ padding: "32px 40px", maxWidth: 1200, margin: "0 auto" }} className="animate-fadeIn">
+      {/* Header */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 32 }}>
+        <div>
+          <button onClick={() => router.push("/projects")} style={{
+            background: "none", border: "none", color: "#64748b", fontSize: 13, cursor: "pointer", marginBottom: 8, padding: 0,
+          }}>{"\u{2190}"} Back to Projects</button>
+          <h1 style={{ fontSize: 24, fontWeight: 700, color: "#fff" }}>
+            {project.title || project.topic}
+          </h1>
+          <p style={{ fontSize: 13, color: "#64748b", marginTop: 4 }}>
+            {project.mode === "longform" ? "Long-form" : "Shorts"} · {project.scriptSource}
+          </p>
+        </div>
+      </div>
+
+      {/* Pipeline Steps */}
+      <div style={{
+        display: "flex", gap: 4, marginBottom: 32, background: "#0d1117",
+        borderRadius: 12, padding: 6, border: "1px solid #1e293b",
+      }}>
+        {STEPS.map((s) => {
+          const status = stepStatus[s.key];
+          const active = currentStep === s.key;
+          return (
+            <button key={s.key} onClick={() => { setCurrentStep(s.key); }} style={{
+              flex: 1, padding: "12px 8px", borderRadius: 8, textAlign: "center",
+              background: active ? "rgba(37,99,235,0.15)" : "transparent",
+              border: active ? "1px solid rgba(37,99,235,0.3)" : "1px solid transparent",
+              transition: "all 0.2s",
+              cursor: status === "done" || active ? "pointer" : "not-allowed",
+              opacity: status === "done" || active ? 1 : 0.5,
+            }}>
+              <div style={{ fontSize: 18, marginBottom: 4 }}>
+                {status === "done" ? "✅" : status === "running" ? "⏳" : status === "error" ? "❌" : s.icon}
+              </div>
+              <p style={{ fontSize: 11, color: active ? "#60a5fa" : status === "done" ? "#22c55e" : "#475569", fontWeight: active ? 600 : 400, margin: 0 }}>
+                {s.label}
+              </p>
+            </button>
+            );
+        })}
+      </div>
+
+      {/* ============ VOICE SETTINGS MODAL ============ */}
+      {showVoiceModal && (
+        <div style={{
+          position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
+          background: "rgba(0,0,0,0.7)", backdropFilter: "blur(4px)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          zIndex: 9999,
+        }} onClick={() => setShowVoiceModal(false)}>
+          <div onClick={(e) => e.stopPropagation()} style={{
+            background: "#111827", border: "1px solid #1e293b", borderRadius: 16,
+            width: "90%", maxWidth: 680, maxHeight: "85vh", overflow: "auto",
+            padding: 0, boxShadow: "0 24px 60px rgba(0,0,0,0.6)",
+          }}>
+            {/* Modal Header */}
+            <div style={{
+              display: "flex", justifyContent: "space-between", alignItems: "center",
+              padding: "20px 24px", borderBottom: "1px solid #1e293b",
+              position: "sticky", top: 0, background: "#111827", zIndex: 1,
+            }}>
+              <div>
+                <h2 style={{ fontSize: 18, fontWeight: 700, color: "#fff", margin: 0 }}>Voice Settings</h2>
+                <p style={{ fontSize: 12, color: "#64748b", margin: "4px 0 0" }}>
+                  현재: <span style={{ color: "#f59e0b" }}>{getActiveVoiceName()}</span> · {voiceStyle} · {voiceSpeed}x
+                </p>
+              </div>
+              <button onClick={() => setShowVoiceModal(false)} style={{
+                background: "none", border: "none", color: "#64748b", fontSize: 20, cursor: "pointer", padding: "4px 8px",
+              }}>{"\u{2715}"}</button>
+            </div>
+
+            {/* Modal Tabs */}
+            <div style={{ display: "flex", gap: 0, borderBottom: "1px solid #1e293b" }}>
+              {([
+                { key: "style" as const, label: "Voice Style" },
+                { key: "category" as const, label: "Category Voices" },
+                { key: "all" as const, label: "All Voices" },
+              ]).map((tab) => (
+                <button key={tab.key} onClick={() => setVoiceTab(tab.key)} style={{
+                  flex: 1, padding: "12px", border: "none", cursor: "pointer",
+                  background: voiceTab === tab.key ? "rgba(245,158,11,0.1)" : "transparent",
+                  color: voiceTab === tab.key ? "#f59e0b" : "#64748b",
+                  fontWeight: voiceTab === tab.key ? 600 : 400, fontSize: 13,
+                  borderBottom: voiceTab === tab.key ? "2px solid #f59e0b" : "2px solid transparent",
+                }}>{tab.label}</button>
+              ))}
+            </div>
+
+            <div style={{ padding: 24 }}>
+              {/* TAB 1: Voice Style (애니메이션 3종) */}
+              {voiceTab === "style" && (
+                <div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
+                    {VOICE_STYLES.map((vs) => (
+                      <button key={vs.id} onClick={() => { setVoiceStyle(vs.id); setSelectedVoiceName(""); }} style={{
+                        padding: "16px", borderRadius: 12, border: "1px solid",
+                        borderColor: voiceStyle === vs.id ? "#f59e0b" : "#1e293b",
+                        background: voiceStyle === vs.id ? "rgba(245,158,11,0.08)" : "#0d1117",
+                        cursor: "pointer", textAlign: "left", width: "100%",
+                      }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                          <div>
+                            <div style={{ fontSize: 14, fontWeight: 600, color: voiceStyle === vs.id ? "#f59e0b" : "#e2e8f0", marginBottom: 4 }}>
+                              {voiceStyle === vs.id ? "\u{1F7E1} " : "\u{26AA} "}{vs.label}
+                            </div>
+                            <div style={{ fontSize: 12, color: "#64748b" }}>{vs.desc}</div>
+                          </div>
+                          <div style={{ textAlign: "right", fontSize: 11, color: "#475569" }}>
+                            <div>M: {vs.maleVoice}</div>
+                            <div>F: {vs.femaleVoice}</div>
+                            <div style={{ color: "#f59e0b", marginTop: 2 }}>speed: {vs.speed}x</div>
+                          </div>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* TAB 2: Category Voices (카테고리별 남녀 3개씩) */}
+              {voiceTab === "category" && (
+                <div>
+                  <p style={{ fontSize: 12, color: "#64748b", marginBottom: 12 }}>
+                    카테고리: <span style={{ color: "#f59e0b" }}>{project.category || "health"}</span> 기반 추천
+                  </p>
+                  <div style={{ display: "flex", gap: 16 }}>
+                    {/* Male */}
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: "#94a3b8", marginBottom: 8 }}>{"\u{1F468}"} Male</div>
+                      {getCategoryVoices().male.map((v, i) => (
+                        <button key={v.voiceName} onClick={() => { setSelectedVoiceName(v.voiceName); setVoiceGender("male"); }} style={{
+                          width: "100%", padding: "10px 12px", borderRadius: 8, border: "1px solid",
+                          borderColor: selectedVoiceName === v.voiceName ? "#f59e0b" : "#1e293b",
+                          background: selectedVoiceName === v.voiceName ? "rgba(245,158,11,0.08)" : "#0d1117",
+                          cursor: "pointer", textAlign: "left", marginBottom: 6, display: "block",
+                        }}>
+                          <div style={{ fontSize: 13, fontWeight: 500, color: selectedVoiceName === v.voiceName ? "#f59e0b" : "#e2e8f0" }}>
+                            {i === 0 ? "\u{2B50} " : ""}{v.voiceName}
+                          </div>
+                          <div style={{ fontSize: 11, color: "#475569" }}>{v.label}{i === 0 ? " (추천)" : ""}</div>
+                        </button>
+                      ))}
+                    </div>
+                    {/* Female */}
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: "#94a3b8", marginBottom: 8 }}>{"\u{1F469}"} Female</div>
+                      {getCategoryVoices().female.map((v, i) => (
+                        <button key={v.voiceName} onClick={() => { setSelectedVoiceName(v.voiceName); setVoiceGender("female"); }} style={{
+                          width: "100%", padding: "10px 12px", borderRadius: 8, border: "1px solid",
+                          borderColor: selectedVoiceName === v.voiceName ? "#f59e0b" : "#1e293b",
+                          background: selectedVoiceName === v.voiceName ? "rgba(245,158,11,0.08)" : "#0d1117",
+                          cursor: "pointer", textAlign: "left", marginBottom: 6, display: "block",
+                        }}>
+                          <div style={{ fontSize: 13, fontWeight: 500, color: selectedVoiceName === v.voiceName ? "#f59e0b" : "#e2e8f0" }}>
+                            {i === 0 ? "\u{2B50} " : ""}{v.voiceName}
+                          </div>
+                          <div style={{ fontSize: 11, color: "#475569" }}>{v.label}{i === 0 ? " (추천)" : ""}</div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* TAB 3: All Voices (성별 필터 적용) */}
+              {voiceTab === "all" && (
+                <div>
+                  <p style={{ fontSize: 12, color: "#64748b", marginBottom: 12 }}>
+                    Gemini TTS 전체 보이스 — {voiceGender === "male" ? "남성" : "여성"} 필터 적용됨
+                  </p>
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
+                    {ALL_VOICES.filter(v => v.gender === voiceGender).map((v) => (
+                      <button key={v.name} onClick={() => { setSelectedVoiceName(v.name); setVoiceTab("style"); }} style={{
+                        padding: "10px", borderRadius: 8, border: "1px solid",
+                        borderColor: selectedVoiceName === v.name ? "#f59e0b" : "#1e293b",
+                        background: selectedVoiceName === v.name ? "rgba(245,158,11,0.08)" : "#0d1117",
+                        cursor: "pointer", textAlign: "center",
+                      }}>
+                        <div style={{ fontSize: 13, fontWeight: 500, color: selectedVoiceName === v.name ? "#f59e0b" : "#e2e8f0" }}>{v.name}</div>
+                        <div style={{ fontSize: 10, color: "#475569" }}>{v.desc}</div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Gender + Speed (모든 탭 공통) */}
+              <div style={{ borderTop: "1px solid #1e293b", paddingTop: 20, marginTop: 20 }}>
+                {/* Gender */}
+                <div style={{ marginBottom: 16 }}>
+                  <label style={{ display: "block", fontSize: 12, color: "#64748b", marginBottom: 8 }}>Gender</label>
+                  <div style={{ display: "flex", gap: 8 }}>
+                    {[{ id: "male", label: "Male", icon: "\u{1F468}" }, { id: "female", label: "Female", icon: "\u{1F469}" }].map((g) => (
+                      <button key={g.id} onClick={() => setVoiceGender(g.id)} style={{
+                        flex: 1, padding: "10px", borderRadius: 8, border: "1px solid",
+                        borderColor: voiceGender === g.id ? "#f59e0b" : "#1e293b",
+                        background: voiceGender === g.id ? "rgba(245,158,11,0.1)" : "#0d1117",
+                        cursor: "pointer", fontSize: 13, color: voiceGender === g.id ? "#f59e0b" : "#94a3b8",
+                      }}>{g.icon} {g.label}</button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Speed Slider */}
+                <div>
+                  <label style={{ display: "block", fontSize: 12, color: "#64748b", marginBottom: 8 }}>
+                    Speed: <span style={{ color: "#f59e0b", fontWeight: 600 }}>{voiceSpeed.toFixed(2)}x</span>
+                  </label>
+                  <input
+                    type="range" min={0.5} max={2.0} step={0.05} value={voiceSpeed}
+                    onChange={(e) => setVoiceSpeed(parseFloat(e.target.value))}
+                    style={{ width: "100%", accentColor: "#f59e0b" }}
+                  />
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10, color: "#475569" }}>
+                    <span>0.5x (느림)</span>
+                    <span>1.0x (보통)</span>
+                    <span>2.0x (빠름)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div style={{
+              display: "flex", gap: 12, padding: "16px 24px",
+              borderTop: "1px solid #1e293b", background: "#111827",
+              position: "sticky", bottom: 0,
+            }}>
+              <button onClick={() => setShowVoiceModal(false)} style={{
+                flex: 1, padding: "12px", borderRadius: 10, border: "1px solid #1e293b",
+                background: "transparent", color: "#64748b", cursor: "pointer", fontSize: 14,
+              }}>Cancel</button>
+              <button onClick={generateVoices} style={{
+                flex: 2, padding: "12px", borderRadius: 10, border: "none",
+                background: "linear-gradient(135deg, #f59e0b, #d97706)",
+                color: "#fff", fontWeight: 600, cursor: "pointer", fontSize: 14,
+              }}>{"\u{1F3A4}"} Generate with {getActiveVoiceName()} ({voiceSpeed}x)</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ============ STEP CONTENT ============ */}
+
+      {/* Script Step */}
+      {currentStep === "script" && (
+        <div>
+          {!script && !isGenerating && (
+            <div style={{ textAlign: "center", padding: "48px 0" }}>
+              <p style={{ fontSize: 48, marginBottom: 16 }}>{"\u{1F4DD}"}</p>
+              <h2 style={{ fontSize: 20, fontWeight: 600, color: "#fff", marginBottom: 8 }}>Generate Script</h2>
+              <p style={{ color: "#64748b", fontSize: 14, marginBottom: 24, maxWidth: 400, margin: "0 auto 24px" }}>
+                AI will create a full script with scenes, narration, and image prompts for your topic.
+              </p>
+              <button onClick={generateScript} style={{
+                background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
+                color: "#fff", padding: "14px 40px", borderRadius: 10,
+                fontWeight: 600, fontSize: 15, border: "none", cursor: "pointer",
+                boxShadow: "0 4px 20px rgba(37,99,235,0.3)",
+              }}>{"\u{26A1}"} Start Generation</button>
+            </div>
+          )}
+
+          {isGenerating && !script && (
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
+                <span className="animate-pulse-slow" style={{ fontSize: 20 }}>{"\u{23F3}"}</span>
+                <span style={{ color: "#60a5fa", fontSize: 14, fontWeight: 500 }}>Generating script...</span>
+              </div>
+              <div ref={streamRef} style={{
+                background: "#0d1117", border: "1px solid #1e293b", borderRadius: 12,
+                padding: 20, maxHeight: 400, overflow: "auto",
+                fontFamily: "monospace", fontSize: 12, color: "#94a3b8",
+                lineHeight: 1.8, whiteSpace: "pre-wrap",
+              }}>
+                {streamText || "Waiting for response..."}
+              </div>
+            </div>
+          )}
+
+          {script && (
+            <div>
+              <div style={{
+                background: "linear-gradient(145deg, #111827, #0f1520)",
+                border: "1px solid #1e293b", borderRadius: 14, padding: 24, marginBottom: 20,
+              }}>
+                <h2 style={{ fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>{script.title}</h2>
+                <p style={{ fontSize: 13, color: "#94a3b8", lineHeight: 1.6, marginBottom: 12 }}>
+                  {script.description?.substring(0, 200)}...
+                </p>
+                <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+                  <span style={{ fontSize: 12, color: "#64748b" }}>{"\u{1F3AC}"} {script.totalScenes} scenes</span>
+                  <span style={{ fontSize: 12, color: "#64748b" }}>{"\u{23F1}\u{FE0F}"} {script.estimatedDuration}</span>
+                  <span style={{ fontSize: 12, color: "#64748b" }}>{"\u{1F3F7}\u{FE0F}"} {script.tags?.length || 0} tags</span>
+                </div>
+              </div>
+
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                <h3 style={{ fontSize: 14, fontWeight: 600, color: "#94a3b8" }}>Scenes</h3>
+                <div style={{ display: "flex", gap: 4, background: "#0d1117", borderRadius: 8, padding: 3 }}>
+                  {(["card", "table"] as const).map((v) => (
+                    <button key={v} onClick={() => setViewMode(v)} style={{
+                      padding: "6px 14px", borderRadius: 6, fontSize: 12, border: "none", cursor: "pointer",
+                      background: viewMode === v ? "#1e293b" : "transparent",
+                      color: viewMode === v ? "#fff" : "#64748b",
+                    }}>{v === "card" ? "Cards" : "Table"}</button>
+                  ))}
+                </div>
+              </div>
+
+              {viewMode === "card" && (
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {script.scenes.map((scene, idx) => (
+                    <div key={idx} style={{
+                      background: "#111827", border: "1px solid #1e293b", borderRadius: 12, padding: 20,
+                      transition: "border-color 0.15s",
+                    }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                          <span style={{
+                            background: scene.section === "hook" ? "#dc2626" :
+                              scene.section === "retention_gate" ? "#f59e0b" :
+                              scene.section === "cta" ? "#10b981" : "#1e293b",
+                            color: "#fff", fontSize: 11, fontWeight: 700,
+                            padding: "3px 10px", borderRadius: 6,
+                          }}>#{scene.sceneNumber}</span>
+                          {scene.section && (<span style={{ fontSize: 11, color: "#475569" }}>{scene.section}</span>)}
+                          <span style={{ fontSize: 11, color: "#475569" }}>{scene.duration}s</span>
+                        </div>
+                        <button onClick={() => setEditingScene(editingScene === idx ? null : idx)} style={{
+                          background: "none", border: "1px solid #1e293b", borderRadius: 6,
+                          color: "#64748b", fontSize: 11, padding: "4px 10px", cursor: "pointer",
+                        }}>{editingScene === idx ? "Cancel" : "Edit"}</button>
+                      </div>
+                      {editingScene === idx ? (
+                        <div>
+                          <textarea defaultValue={scene.narration} rows={4} style={{
+                            width: "100%", background: "#0a0a0a", border: "1px solid #2563eb",
+                            borderRadius: 8, padding: 12, fontSize: 13, color: "#fff",
+                            outline: "none", resize: "vertical", lineHeight: 1.6,
+                          }} onBlur={(e) => updateSceneNarration(idx, e.target.value)} />
+                          <p style={{ fontSize: 11, color: "#475569", marginTop: 6 }}>Image: {scene.imagePrompt?.substring(0, 80)}...</p>
+                        </div>
+                      ) : (
+                        <div>
+                          <p style={{ fontSize: 13, color: "#cbd5e1", lineHeight: 1.7, marginBottom: 8 }}>{scene.narration}</p>
+                          <p style={{ fontSize: 11, color: "#334155" }}>{"\u{1F5BC}\u{FE0F}"} {scene.imagePrompt?.substring(0, 100)}...</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {viewMode === "table" && (
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                    <thead>
+                      <tr style={{ borderBottom: "1px solid #1e293b" }}>
+                        {["#", "Section", "Narration", "Image Prompt", "Duration"].map((h) => (
+                          <th key={h} style={{ padding: "10px 12px", textAlign: "left", color: "#64748b", fontWeight: 500 }}>{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {script.scenes.map((scene, idx) => (
+                        <tr key={idx} style={{ borderBottom: "1px solid #111827" }}>
+                          <td style={{ padding: "10px 12px", color: "#94a3b8" }}>{scene.sceneNumber}</td>
+                          <td style={{ padding: "10px 12px", color: "#475569" }}>{scene.section || "-"}</td>
+                          <td style={{ padding: "10px 12px", color: "#cbd5e1", maxWidth: 350 }}>{scene.narration?.substring(0, 100)}...</td>
+                          <td style={{ padding: "10px 12px", color: "#334155", maxWidth: 200 }}>{scene.imagePrompt?.substring(0, 60)}...</td>
+                          <td style={{ padding: "10px 12px", color: "#94a3b8" }}>{scene.duration}s</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
+                <button onClick={generateScript} style={{
+                  padding: "12px 24px", borderRadius: 10, fontSize: 14,
+                  border: "1px solid #1e293b", background: "transparent",
+                  color: "#64748b", cursor: "pointer",
+                }}>{"\u{1F504}"} 대본 재생성</button>
+                <button onClick={confirmScript} style={{
+                  flex: 1, padding: "14px 0", borderRadius: 10, fontSize: 15,
+                  fontWeight: 600, border: "none", cursor: "pointer",
+                  background: "linear-gradient(135deg, #10b981, #059669)",
+                  color: "#fff", boxShadow: "0 4px 20px rgba(16,185,129,0.3)",
+                }}>{"\u{2705}"} 대본 확정 → 음성 생성</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Image Generation Step */}
+      {currentStep === "storyboard" && script && (
+        <div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
+            <h2 style={{ fontSize: 20, fontWeight: 700, color: "#fff" }}>Image Generation</h2>
+            <button onClick={generateImages} disabled={isGenerating} style={{
+              padding: "12px 32px", borderRadius: 10, fontSize: 14, fontWeight: 600, border: "none", cursor: isGenerating ? "not-allowed" : "pointer",
+              background: isGenerating ? "#1e293b" : "linear-gradient(135deg, #6366f1, #8b5cf6)", color: "#fff",
+            }}>{isGenerating ? "생성 중..." : "전체 이미지 생성"}</button>
+          </div>
+          {imageProgress && (<div style={{ padding: "12px 16px", background: "#0f172a", borderRadius: 8, marginBottom: 16, fontSize: 13, color: "#10b981", border: "1px solid #1e293b" }}>{imageProgress}</div>)}
+          {imageErrors.length > 0 && (<div style={{ padding: "12px 16px", background: "#1a0000", borderRadius: 8, marginBottom: 16, fontSize: 13, color: "#ef4444", border: "1px solid #7f1d1d" }}>{imageErrors.map((e, i) => <div key={i}>{e}</div>)}</div>)}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
+            {script.scenes.map((scene, idx) => (
+              <div key={idx} style={{ background: "#0f172a", borderRadius: 12, overflow: "hidden", border: "1px solid #1e293b" }}>
+                {scene.imageUrl ? (
+                  <img src={scene.imageUrl} alt={`Scene ${idx + 1}`} style={{ width: "100%", height: 200, objectFit: "cover" }} />
+                ) : (
+                  <div style={{ width: "100%", height: 200, background: "#1e293b", display: "flex", alignItems: "center", justifyContent: "center", color: "#475569", fontSize: 13 }}>
+                    {isGenerating ? "생성 중..." : "No image yet"}
+                  </div>
+                )}
+                <div style={{ padding: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
+                    <span style={{ fontSize: 12, fontWeight: 600, color: "#94a3b8" }}>Scene {idx + 1}</span>
+                    <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 4, background: scene.section === "hook" ? "#dc262620" : scene.section === "cta" ? "#10b98120" : "#1e293b", color: scene.section === "hook" ? "#dc2626" : scene.section === "cta" ? "#10b981" : "#64748b" }}>{scene.section || scene.sceneNumber}</span>
+                  </div>
+                  <p style={{ fontSize: 12, color: "#64748b", lineHeight: 1.4, margin: 0 }}>{scene.narration?.substring(0, 80)}...</p>
+                  <div style={{ display: "flex", gap: 6, marginTop: 8 }}>
+                    <button onClick={async () => {
+                      const settings = getSettings();
+                      const falKey = settings.apiKeys?.falai;
+                      if (!falKey) { alert("Set fal.ai API key in Settings"); return; }
+                      const btn = document.activeElement as HTMLButtonElement;
+                      btn.textContent = "⏳";
+                      try {
+                        const res = await fetch("/api/generate-images", {
+                          method: "POST", headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ scenes: [{ id: idx + 1, imagePrompt: scene.imagePrompt }], falKey, projectId: project?.id }),
+                        });
+                        const data = await res.json();
+                        if (data.results?.[0]?.imageUrl) {
+                          const updated = { ...script };
+                          updated.scenes[idx] = { ...updated.scenes[idx], imageUrl: data.results[0].imageUrl };
+                          setScript(updated);
+                          localStorage.setItem(`reelzfactory_script_${project?.id}`, JSON.stringify(updated));
+                        }
+                      } catch (e) { alert("Regeneration failed"); }
+                      btn.textContent = "🔄";
+                    }} style={{ flex: 1, padding: "6px", borderRadius: 6, fontSize: 11, fontWeight: 600, border: "1px solid #1e293b", background: "#1e293b", color: "#94a3b8", cursor: "pointer" }}>🔄 Regen</button>
+                    <button onClick={() => { alert(`영상화 기능 준비중 (Scene ${idx + 1})`); }} style={{ flex: 1, padding: "6px", borderRadius: 6, fontSize: 11, fontWeight: 600, border: "1px solid #7c3aed30", background: "#7c3aed15", color: "#a78bfa", cursor: "pointer" }}>🎬 Video</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          {script.scenes.some(s => s.imageUrl) && (
+            <div style={{ marginTop: 24, textAlign: "center" }}>
+              <button onClick={() => { setCurrentStep("render"); setStepStatus(s => ({ ...s, storyboard: "done" })); }} style={{
+                padding: "14px 48px", borderRadius: 10, fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer",
+                background: "linear-gradient(135deg, #10b981, #059669)", color: "#fff",
+              }}>렌더링으로 이동</button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* TTS Step */}
+      {currentStep === "tts" && script && (
+        <div>
+          {/* TTS Header with Voice Settings Button */}
+          <div style={{
+            background: "#111827", border: "1px solid #1e293b", borderRadius: 12, padding: 20, marginBottom: 20,
+            display: "flex", justifyContent: "space-between", alignItems: "center",
+          }}>
+            <div>
+              <h2 style={{ fontSize: 20, fontWeight: 700, color: "#fff", margin: 0 }}>Voice Generation</h2>
+              <p style={{ fontSize: 12, color: "#64748b", margin: "6px 0 0" }}>
+                {"\u{1F3A4}"} <span style={{ color: "#f59e0b" }}>{getActiveVoiceName()}</span> · {voiceStyle} · {voiceGender} · {voiceSpeed}x
+              </p>
+            </div>
+            <div style={{ display: "flex", gap: 8 }}>
+              <button onClick={() => setShowVoiceModal(true)} style={{
+                padding: "10px 20px", borderRadius: 10, fontSize: 13, border: "1px solid #1e293b",
+                background: "#0d1117", color: "#94a3b8", cursor: "pointer",
+              }}>{"\u{2699}\u{FE0F}"} Voice Settings</button>
+              <button onClick={() => setShowVoiceModal(true)} disabled={isGenerating} style={{
+                padding: "10px 24px", borderRadius: 10, fontSize: 14, fontWeight: 600, border: "none",
+                cursor: isGenerating ? "not-allowed" : "pointer",
+                background: isGenerating ? "#1e293b" : "linear-gradient(135deg, #f59e0b, #d97706)", color: "#fff",
+              }}>{isGenerating ? "생성 중..." : "\u{1F3A4} 전체 음성 생성"}</button>
+            </div>
+          </div>
+
+          {voiceProgress && (<div style={{ padding: "12px 16px", background: "#0f172a", borderRadius: 8, marginBottom: 16, fontSize: 13, color: "#f59e0b", border: "1px solid #1e293b" }}>{voiceProgress}</div>)}
+          {voiceErrors.length > 0 && (<div style={{ padding: "12px 16px", background: "#1a0000", borderRadius: 8, marginBottom: 16, fontSize: 13, color: "#ef4444", border: "1px solid #7f1d1d" }}>{voiceErrors.map((e, i) => <div key={i}>{e}</div>)}</div>)}
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {script.scenes.map((scene, idx) => (
+              <div key={idx} style={{ background: "#0f172a", borderRadius: 12, padding: 16, border: "1px solid #1e293b", display: "flex", alignItems: "center", gap: 16 }}>
+                <div style={{ minWidth: 60, textAlign: "center" }}>
+                  <span style={{ fontSize: 12, fontWeight: 600, color: "#94a3b8" }}>Scene {idx + 1}</span>
+                  <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>{scene.section || "core"}</div>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontSize: 13, color: "#cbd5e1", margin: 0, lineHeight: 1.4 }}>{scene.narration?.substring(0, 100)}...</p>
+                </div>
+                <div style={{ minWidth: 120 }}>
+                  {scene.audioUrl ? (
+  <div>
+    <audio controls style={{ width: 120, height: 32 }} src={scene.audioUrl} />
+    {(scene as any).model && <div style={{ fontSize: 9, color: "#64748b", marginTop: 2, textAlign: "center" }}>{(scene as any).model}</div>}
+  </div>
+) : (
+                    <span style={{ fontSize: 12, color: "#475569" }}>{isGenerating ? "생성 중..." : "음성 없음"}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {script.scenes.some(s => s.audioUrl) && (
+            <div style={{ marginTop: 24, textAlign: "center" }}>
+              <button onClick={() => { setCurrentStep("storyboard"); setStepStatus(s => ({ ...s, tts: "done" })); }} style={{
+                padding: "14px 48px", borderRadius: 10, fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer",
+                background: "linear-gradient(135deg, #10b981, #059669)", color: "#fff",
+              }}>스토리보드로 이동</button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Future Steps */}
+      {/* ============ RENDER STEP ============ */}
+      {currentStep === "render" && script && (
+        <div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
+            <h2 style={{ fontSize: 20, fontWeight: 700, color: "#fff" }}>4. Render — Video Export</h2>
+            <button onClick={async () => {
+              const settings = getSettings();
+              const openaiKey = settings.apiKeys?.openai;
+              if (!openaiKey) { alert("Set OpenAI API key in Settings (needed for subtitle sync)"); return; }
+              setStepStatus(s => ({ ...s, render: "running" }));
+              try {
+                const res = await fetch("/api/render", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    projectId: project?.id,
+                    scenes: script.scenes.map((s, i) => ({ id: i + 1, imageUrl: s.imageUrl, narration: s.narration })),
+                    openaiKey,
+                  }),
+                });
+                const data = await res.json();
+                if (data.success) {
+                  setRenderData(data.renderData);
+                  setStepStatus(s => ({ ...s, render: "done" }));
+                } else {
+                  alert("Render prep failed: " + data.error);
+                  setStepStatus(s => ({ ...s, render: "error" }));
+                }
+              } catch (e: any) {
+                alert("Render error: " + e.message);
+                setStepStatus(s => ({ ...s, render: "error" }));
+              }
+            }} disabled={isGenerating} style={{
+              padding: "12px 32px", borderRadius: 10, fontSize: 14, fontWeight: 600,
+              border: "none", cursor: "pointer",
+              background: "linear-gradient(135deg, #8b5cf6, #7c3aed)", color: "#fff",
+            }}>🎬 렌더 준비</button>
+          </div>
+          {renderData && (
+            <div style={{ background: "#0f172a", borderRadius: 12, padding: 20, border: "1px solid #1e293b" }}>
+              <div style={{ display: "flex", gap: 16, marginBottom: 16 }}>
+                <div style={{ padding: "12px 20px", background: "#1e293b", borderRadius: 8 }}>
+                  <div style={{ fontSize: 11, color: "#64748b" }}>Total Duration</div>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: "#fff" }}>{renderData.totalDuration}s</div>
+                </div>
+                <div style={{ padding: "12px 20px", background: "#1e293b", borderRadius: 8 }}>
+                  <div style={{ fontSize: 11, color: "#64748b" }}>Scenes</div>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: "#fff" }}>{renderData.scenes.length}</div>
+                </div>
+                <div style={{ padding: "12px 20px", background: "#1e293b", borderRadius: 8 }}>
+                  <div style={{ fontSize: 11, color: "#64748b" }}>FPS</div>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: "#fff" }}>{renderData.fps}</div>
+                </div>
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
+                {renderData.scenes.map((s: any, i: number) => (
+                  <div key={i} style={{ background: "#1e293b", borderRadius: 8, padding: 12 }}>
+                    <div style={{ fontSize: 12, fontWeight: 600, color: "#94a3b8", marginBottom: 4 }}>Scene {i + 1}</div>
+                    <div style={{ fontSize: 11, color: "#64748b" }}>{s.words.length} words · {(s.durationInFrames / renderData.fps).toFixed(1)}s</div>
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginTop: 20, textAlign: "center" }}>
+                <button onClick={async () => {
+                  const btn = document.activeElement as HTMLButtonElement;
+                  btn.disabled = true;
+                  btn.textContent = "🎬 렌더링 중... (최대 5분)";
+                  try {
+                    const res = await fetch("/api/render-video", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ projectId: project?.id }),
+                    });
+                    const data = await res.json();
+                    if (data.success) {
+                      alert("렌더링 완료! 영상 다운로드 시작");
+                      window.open(data.videoUrl, "_blank");
+                    } else {
+                      alert("렌더링 실패: " + (data.error || "Unknown error"));
+                    }
+                  } catch (e: any) {
+                    alert("렌더링 오류: " + e.message);
+                  }
+                  btn.disabled = false;
+                  btn.textContent = "🎬 MP4 렌더링 시작";
+                }} style={{
+                  padding: "16px 48px", borderRadius: 12, fontSize: 16, fontWeight: 700,
+                  border: "none", cursor: "pointer",
+                  background: "linear-gradient(135deg, #ef4444, #dc2626)",
+                  color: "#fff", boxShadow: "0 4px 20px rgba(239,68,68,0.3)",
+                }}>🎬 MP4 렌더링 시작</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}

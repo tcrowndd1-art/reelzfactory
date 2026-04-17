@@ -1,0 +1,47 @@
+{
+  "topic": "벤치마킹 기반 자동 주제",
+  "title": "혈당 스파이크, 이렇게 막을 수 있다 🩸",
+  "videoPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\reelzfactory\\outputs\\project_1773088046126\\video\\shorts.mp4",
+  "totalScenes": 5,
+  "totalDuration": 33.300000000000004,
+  "metadata": {
+    "title": "밥 먹고 졸린 이유 따로 있었다 🩸 혈당 스파이크 막는 법",
+    "description": "밥 먹고 나서 왜 이렇게 피곤하고 졸릴까요?\n혈당 스파이크가 반복되면 만성 피로, 집중력 저하, 체중 증가로 이어질 수 있다는 연구가 있습니다.\n놀랍게도 식사 순서 하나만 바꿔도 혈당 반응이 달라질 수 있어요.\n채소 → 단백질 → 탄수화물 순서, 오늘부터 시도해볼 수 있습니다.\n다이어트나 건강 관리에 관심 있다면 꼭 알아두세요.\n\n#혈당스파이크 #식사순서 #혈당관리 #건강습관 #다이어트",
+    "tags": [
+      "혈당스파이크",
+      "혈당관리",
+      "식사순서",
+      "건강습관",
+      "만성피로",
+      "다이어트",
+      "혈당",
+      "건강",
+      "blood sugar",
+      "blood sugar spike",
+      "meal order",
+      "health tips",
+      "diet",
+      "wellness",
+      "glucose"
+    ],
+    "hashtags": [
+      "#혈당스파이크",
+      "#식사순서",
+      "#혈당관리",
+      "#건강습관",
+      "#다이어트"
+    ],
+    "thumbnail": {
+      "text": "밥 먹고 졸린 진짜 이유",
+      "imagePrompt": "a dramatic split image showing a sharp blood sugar spike graph on the left in red versus a smooth gentle curve on the right in green, bold high contrast colors, centered composition, no text overlay, clean illustration style, white background"
+    }
+  },
+  "costs": {
+    "script": "~$0.01",
+    "images": "~$0.20",
+    "voice": "$0 (Google TTS)",
+    "caption": "$0 (local Whisper)",
+    "render": "$0 (local Remotion)",
+    "total": "~$0.21"
+  }
+}
