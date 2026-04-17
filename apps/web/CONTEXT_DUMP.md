@@ -1,4 +1,72 @@
 ===== REELZFACTORY CONTEXT DUMP =====
+
+## 2026-04-17 세션 업데이트
+
+### GitHub 설정
+- 리모트: https://github.com/tcrowndd1-art/reelzfactory.git (origin/master)
+- `.env.local.bak` 커밋 기록에서 제거 (API 키 포함 파일)
+- `.gitignore`에 `*.env.local*` 패턴 추가
+- `.git/hooks/post-commit` — `git commit` 시 자동 push 훅 설정
+- 사용법: `git add . && git commit -m "메시지"` → 자동으로 GitHub까지 푸시
+
+### 설치된 스킬
+| 스킬 | 명령어 | 분류 |
+|------|--------|------|
+| commit | `/commit` | 외부 설치 (steveclarke/dotfiles) |
+| find-skills | `/find-skills` | 외부 설치 |
+| nextjs-code-review | `/nextjs-code-review` | 외부 설치 (giuseppe-trisciuoglio/developer-kit) |
+| simplify | `/simplify` | Claude Code 기본 내장 |
+| security-review | `/security-review` | Claude Code 기본 내장 |
+| review | `/review` | Claude Code 기본 내장 |
+- 스킬 경로: `C:\Users\ADMIN\.agents\skills\`
+- 새 스킬은 **새 대화 시작 후** 활성화됨 (현재 대화 재시작 불필요, 새 채팅만 열면 됨)
+
+### A/B/C 지침서 파이프라인 완성
+**구조:**
+- A지침서 (`instruction_a`) → system prompt 최상단 주입 (WORLDVIEW_OS 직후, Supabase 프롬프트 앞)
+- B지침서 (`knowledge_b`) → user prompt overlays 섹션 첫 번째로 주입
+- C지침서 (`knowledge_c`) → 이미지 생성 파이프라인용 (채널 Image 탭에만 존재, 아직 image API 미연결)
+
+**연결된 파일:**
+- `channels/[id]/page.tsx` — Script 탭: A/B지침서 textarea, Image 탭: C지침서 textarea (Image Style Guide + Visual DNA 삭제)
+- `lib/store.ts` — `DEFAULT_SCRIPT_PRESET`에 `instruction_a`, `knowledge_b` 추가, `use_master_prompt` 제거
+- `constants/presets.ts` — `DEFAULT_IMAGE_PRESET`에 `knowledge_c` 추가 (`visual_dna`는 C지침서에 통합으로 UI에서 제거)
+- `app/create/page.tsx` — requestBody에 `instruction_a`, `knowledge_b` 전달, `useMasterPrompt` 제거
+- `app/api/generate-script/route.ts` — A/B지침서 주입 로직, `useMasterPrompt` 분기 완전 제거
+
+### useMasterPrompt 레거시 제거
+- `ChannelProfile.use_master_prompt` 필드 삭제 (`store.ts`)
+- `generate-script/route.ts` — `if (!useMasterPrompt)` / `if (useMasterPrompt && customPrompt)` 분기 제거
+- 시스템 프롬프트 단일 흐름: Supabase 블록 → A지침서 → Knowledge Pack
+- 유저 프롬프트 단일 흐름: `reference` 모드 / 일반 모드 두 가지만
+- `skipChannelRules: false` (항상 채널 규칙 검증)
+- Category 셀렉터 항상 표시 (기존엔 use_master_prompt 시 숨김)
+
+### Validator 수정 (scriptValidator.ts)
+- `ALLOWED_ENDING_SIGNATURES` +16개 패턴 (A지침서 OUTRO 스타일 + 포르투갈어)
+- 마침표 규칙: 완전 금지 → 씬당 3개 이상일 때만 warning (skipChannelRules 가드 추가)
+- 쉼표 규칙: critical 완전 금지 → 씬당 3개 이상일 때만 warning
+- `ending_signature`: critical → warning (채널 자체 OUTRO 규칙 존중)
+
+### 프롬프트 플로우 (현재 최신)
+```
+[시스템 프롬프트]
+WORLDVIEW_OS
++ [채널 A지침서 — 최우선] (있을 때만)
++ Supabase shorts/longform 블록 (없으면 hardcoded fallback)
+
+[유저 프롬프트]
+buildUserPrompt(topic, mode, category, ...) + knowledgeText
++ overlays: [B지침서] + [카테고리 가이드라인] + [레거시 customPrompt]
+```
+
+### 미연결 작업 (다음 세션)
+- [ ] C지침서(`knowledge_c`) → `generate-images/route.ts` 주입
+- [ ] API 키 보안 개선: 클라이언트 request body 전달 → 서버 환경변수로 이동
+- [ ] `any` 타입 정리 (store.ts, pipeline 전반)
+- [ ] React 인라인 스타일 → CSS 모듈/Tailwind 이전 (channels/[id]/page.tsx 21K 토큰)
+
+---
 # ReelzFactory 작업 완료 내역 — 2026-04-15
 
 ## Voice 탭 전체 수정 완료
